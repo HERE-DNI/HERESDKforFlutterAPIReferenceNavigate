@@ -18,7 +18,7 @@
   <link rel="icon" href="../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.4.0 API Reference"><meta name="DC.Document.Id" content="238c7f1c-e134-4a2a-b741-c2a17e692d68"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.4.0"><meta name="DC.Creation.Date" content="2026-03-13T19:06:56+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="0d43b320-801b-464f-9642-7d2df918b447"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:54:45+00:00"></head>
 
 
 <body data-base-href="../" data-using-base-href="false" class="light-theme">
@@ -152,22 +152,6 @@ Gets the current camera tilt.
 
 </dd>
 
-        <dt id="cropRectangle" class="property">
-  <span class="name"><a href="../navigation/AreaCameraBehavior/cropRectangle.html">cropRectangle</a></span>
-  <span class="signature">↔ <a href="../core/Rectangle2D-class.html">Rectangle2D</a>?</span>
-  
-
-</dt>
-<dd>
-  The crop rectangle for camera updates.
-Defines a sub-space of the screen that the behavior should consider
-for camera updates.
-If not set, it uses the viewport bounds of the underlying map view.
-Gets the current crop rectangle, if it's set.
-  <div class="features"><span class="feature">getter/setter pair</span></div>
-
-</dd>
-
         <dt id="hashCode" class="property inherited">
   <span class="name"><a href="../navigation/CameraBehavior/hashCode.html">hashCode</a></span>
   <span class="signature">→ int</span>
@@ -198,16 +182,17 @@ Gets whether to include the current position.
 
 </dd>
 
-        <dt id="maxZoomLevel" class="property">
-  <span class="name"><a href="../navigation/AreaCameraBehavior/maxZoomLevel.html">maxZoomLevel</a></span>
-  <span class="signature">↔ double</span>
+        <dt id="maxZoom" class="property">
+  <span class="name"><a href="../navigation/AreaCameraBehavior/maxZoom.html">maxZoom</a></span>
+  <span class="signature">↔ <a href="../mapview/MapMeasure-class.html">MapMeasure</a></span>
   
 
 </dt>
 <dd>
-  Maximal allowed zoom level.
+  Maximal allowed zoom.
 Defines maximal zoom level to be applied to enclose geodetic bounding box.
-Gets maximal allowed zoom level.
+Defaults to a <a href="../mapview/MapMeasure-class.html">MapMeasure</a> with kind <a href="../mapview/MapMeasureKind.html">MapMeasureKind.zoomLevel</a> and value 20.0.
+Gets maximal allowed zoom.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -256,16 +241,18 @@ Gets the current principal point animation duration in milliseconds.
 
 </dd>
 
-        <dt id="visiblePoints" class="property">
-  <span class="name"><a href="../navigation/AreaCameraBehavior/visiblePoints.html">visiblePoints</a></span>
-  <span class="signature">↔ List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../core/GeoCoordinates-class.html">GeoCoordinates</a></span>&gt;</wbr></span></span>
+        <dt id="viewRectangle" class="property">
+  <span class="name"><a href="../navigation/AreaCameraBehavior/viewRectangle.html">viewRectangle</a></span>
+  <span class="signature">↔ <a href="../core/Rectangle2D-class.html">Rectangle2D</a>?</span>
   
 
 </dt>
 <dd>
-  List of geo points to show in camera view.
-Defines list of geo points to be visualized in camera view.
-Gets configured visible geo points.
+  The view rectangle for camera updates.
+Defines a sub-space of the screen that the behavior should consider
+for camera updates.
+Defaults to <code>null</code>. If not set, it uses the viewport bounds of the underlying map view.
+Gets the current view rectangle, if it's set.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -273,9 +260,22 @@ Gets configured visible geo points.
     </dl>
   </section>
     
-  <section class="summary offset-anchor inherited" id="instance-methods">
+  <section class="summary offset-anchor" id="instance-methods">
     <h2>Methods</h2>
     <dl class="callables">
+        <dt id="getVisiblePoints" class="callable">
+  <span class="name"><a href="../navigation/AreaCameraBehavior/getVisiblePoints.html">getVisiblePoints</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">→ List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../core/GeoCoordinates-class.html">GeoCoordinates</a></span>&gt;</wbr></span></span>
+  </wbr></span>
+  
+
+</dt>
+<dd>
+  Gets configured visible geo points.
+  
+
+</dd>
+
         <dt id="noSuchMethod" class="callable inherited">
   <span class="name"><a href="../navigation/CameraBehavior/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
     <span class="returntype parameter">→ dynamic</span>
@@ -286,6 +286,19 @@ Gets configured visible geo points.
 <dd class="inherited">
   Invoked when a nonexistent method or property is accessed.
   <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="setVisiblePoints" class="callable">
+  <span class="name"><a href="../navigation/AreaCameraBehavior/setVisiblePoints.html">setVisiblePoints</a></span><span class="signature">(<wbr><span class="parameter" id="setVisiblePoints-param-visiblePoints"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../core/GeoCoordinates-class.html">GeoCoordinates</a></span>&gt;</wbr></span></span> <span class="parameter-name">visiblePoints</span></span>)
+    <span class="returntype parameter">→ void</span>
+  </wbr></span>
+  
+
+</dt>
+<dd>
+  Sets the list of geo points to show in the camera view.
+  
 
 </dd>
 
@@ -357,7 +370,7 @@ Gets configured visible geo points.
 <footer>
   <span class="no-break">
     here_sdk
-      4.25.4
+      4.25.5
   </span>
 
   

@@ -18,7 +18,7 @@
   <link rel="icon" href="../../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.4.0 API Reference"><meta name="DC.Document.Id" content="238c7f1c-e134-4a2a-b741-c2a17e692d68"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.4.0"><meta name="DC.Creation.Date" content="2026-03-13T19:06:56+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="0d43b320-801b-464f-9642-7d2df918b447"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:54:45+00:00"></head>
 
 
 <body data-base-href="../../" data-using-base-href="false" class="light-theme">
@@ -61,7 +61,7 @@
 
 <span class="returntype">void</span>
 <span class="name ">setMemoryManagementOptions</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="setMemoryManagementOptions-param-memoryManagementOptions"><span class="type-annotation"><a href="../../mapview/MapContextMemoryManagementOptions-class.html">MapContextMemoryManagementOptions</a></span> <span class="parameter-name">memoryManagementOptions</span>, </span></li>
-<li><span class="parameter" id="setMemoryManagementOptions-param-callback"><span class="type-annotation"><a href="../../mapview/MapContextSetVideoMemoryLimitCallback.html">MapContextSetVideoMemoryLimitCallback</a>?</span> <span class="parameter-name">callback</span></span></li>
+<li><span class="parameter" id="setMemoryManagementOptions-param-callback"><span class="type-annotation"><a href="../../mapview/MapContextSetMemoryManagementOptionsCallback.html">MapContextSetMemoryManagementOptionsCallback</a>?</span> <span class="parameter-name">callback</span></span></li>
 </ol>)
 
       
@@ -69,18 +69,19 @@
     </wbr></section>
     
 <section class="desc markdown">
-  <p>Sets memory management options for tiles.</p>
-<p>Only the MemoryManagementStrategy parameter is required; all other parameters are optional.
-Optional parameters with null or negative values will be ignored, preserving their existing settings.
-Note: This is a beta release of this feature, so there could be a few bugs and unexpected
+  <p>Sets memory management options for controlling tile cache and video memory usage.</p>
+<p>In <a href="../../mapview/MapContextMemoryManagementOptions-class.html">MapContextMemoryManagementOptions</a> optional parameters with <code>null</code>
+or non positive values will be ignored, preserving their existing settings.</p>
+<p>Note: This is a beta release of this feature, so there could be a few bugs and unexpected
 behavior. Related APIs may change for new releases without a deprecation process.</p>
 <ul>
 <li>
 <p><code>memoryManagementOptions</code> The memory management options to set.</p>
 </li>
 <li>
-<p><code>callback</code> Optional callback used upon completion to pass the return value to the caller.
-The callback is called from an renderer thread.</p>
+<p><code>callback</code> Optional callback used upon
+completion to pass the return value to the caller.
+The callback is called from an arbitrary thread.</p>
 </li>
 </ul>
 </section>
@@ -89,7 +90,7 @@ The callback is called from an renderer thread.</p>
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">void setMemoryManagementOptions(MapContextMemoryManagementOptions memoryManagementOptions, MapContextSetVideoMemoryLimitCallback? callback);</code></pre>
+  <pre class="language-dart"><code class="language-dart">void setMemoryManagementOptions(MapContextMemoryManagementOptions memoryManagementOptions, MapContextSetMemoryManagementOptionsCallback? callback);</code></pre>
 </section>
 
 
@@ -123,7 +124,7 @@ The callback is called from an renderer thread.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.25.4
+      4.25.5
   </span>
 
   

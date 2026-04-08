@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-  <meta name="description" content="API docs for the MapContextSetVideoMemoryLimitCallback typedef from the mapview library, for the Dart programming language.">
-  <title>MapContextSetVideoMemoryLimitCallback typedef - mapview library - Dart API</title>
+  <meta name="description" content="API docs for the MapContextSetMemoryManagementOptionsCallback typedef from the mapview library, for the Dart programming language.">
+  <title>MapContextSetMemoryManagementOptionsCallback typedef - mapview library - Dart API</title>
 
 
   
@@ -18,7 +18,7 @@
   <link rel="icon" href="../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.4.0 API Reference"><meta name="DC.Document.Id" content="238c7f1c-e134-4a2a-b741-c2a17e692d68"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.4.0"><meta name="DC.Creation.Date" content="2026-03-13T19:06:56+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="0d43b320-801b-464f-9642-7d2df918b447"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:54:45+00:00"></head>
 
 
 <body data-base-href="../" data-using-base-href="false" class="light-theme">
@@ -30,9 +30,9 @@
   <ol class="breadcrumbs gt-separated dark hidden-xs">
     <li><a href="../index.html">here_sdk</a></li>
     <li><a href="../mapview/mapview-library.html">mapview.dart</a></li>
-    <li class="self-crumb">MapContextSetVideoMemoryLimitCallback typedef</li>
+    <li class="self-crumb">MapContextSetMemoryManagementOptionsCallback typedef</li>
   </ol>
-  <div class="self-name">MapContextSetVideoMemoryLimitCallback</div>
+  <div class="self-name">MapContextSetMemoryManagementOptionsCallback</div>
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
@@ -52,37 +52,30 @@
 
   <div id="dartdoc-main-content" class="main-content" data-above-sidebar="mapview/mapview-library-sidebar.html" data-below-sidebar="">
       <div>
-<h1><span class="kind-typedef">MapContextSetVideoMemoryLimitCallback</span> typedef 
+<h1><span class="kind-typedef">MapContextSetMemoryManagementOptionsCallback</span> typedef 
  
 </h1></div>
 
     <section class="multi-line-signature">
-        <span class="name ">MapContextSetVideoMemoryLimitCallback</span> =
-     <span class="returntype">void Function<span class="signature">(<span class="parameter" id="param-diffBetweenLimitAndRequirementInKB"><span class="type-annotation">int?</span> <span class="parameter-name">diffBetweenLimitAndRequirementInKB</span></span>)</span></span>
+        <span class="name ">MapContextSetMemoryManagementOptionsCallback</span> =
+     <span class="returntype">void Function<span class="signature">(<span class="parameter" id="param-result"><span class="type-annotation"><a href="../mapview/MapContextMemoryManagementResult-class.html">MapContextMemoryManagementResult</a></span> <span class="parameter-name">result</span></span>)</span></span>
 
     </section>
 
     
 <section class="desc markdown">
-  <p>Callback to handle the memory limit setting response.</p>
-<p>Called from the main thread after the video-memory limit is applied.</p>
+  <p>Callback to handle the memory management result.</p>
+<p>Note: This is a beta release of this feature, so there could be a few bugs and unexpected
+behavior. Related APIs may change for new releases without a deprecation process.</p>
 <ul>
-<li><code>diffBetweenLimitAndRequirementInKB</code> The difference in KiloBytes between the limit and the video-memory
-requirement for only the currently visible data. If positive, the returned value is the
-surplus value over the currently required bare minimum. Even when positive, if the limit
-set is low, the application could later breach the limit and delete even visible data.
-A negative value means the limit cannot fit the existing visible data and there could be
-data disappearing or flickering. If for some reason the callback is ignored or
-correct memory limit cannot be calculated, nullopt value is returned.
-Note: This is a beta release of this feature, so there could be a few bugs and unexpected
-behavior. Related APIs may change for new releases without a deprecation process.</li>
+<li><code>result</code> The memory management result.</li>
 </ul>
 </section>
 
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">typedef MapContextSetVideoMemoryLimitCallback = void Function(int? diffBetweenLimitAndRequirementInKB);</code></pre>
+  <pre class="language-dart"><code class="language-dart">typedef MapContextSetMemoryManagementOptionsCallback = void Function(MapContextMemoryManagementResult result);</code></pre>
 </section>
 
 
@@ -99,7 +92,7 @@ behavior. Related APIs may change for new releases without a deprecation process
 <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
     <li><a href="../index.html">here_sdk</a></li>
     <li><a href="../mapview/mapview-library.html">mapview</a></li>
-    <li class="self-crumb">MapContextSetVideoMemoryLimitCallback typedef</li>
+    <li class="self-crumb">MapContextSetMemoryManagementOptionsCallback typedef</li>
 </ol>
 
 
@@ -115,7 +108,7 @@ behavior. Related APIs may change for new releases without a deprecation process
 <footer>
   <span class="no-break">
     here_sdk
-      4.25.4
+      4.25.5
   </span>
 
   

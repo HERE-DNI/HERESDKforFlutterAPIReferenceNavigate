@@ -18,7 +18,7 @@
   <link rel="icon" href="../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.4.0 API Reference"><meta name="DC.Document.Id" content="238c7f1c-e134-4a2a-b741-c2a17e692d68"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.4.0"><meta name="DC.Creation.Date" content="2026-03-13T19:06:56+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="0d43b320-801b-464f-9642-7d2df918b447"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:54:45+00:00"></head>
 
 
 <body data-base-href="../" data-using-base-href="false" class="light-theme">
@@ -75,86 +75,50 @@ behaviors. Related APIs may change for new releases without a deprecation proces
         <h2>Values</h2>
 
         <dl class="properties">
-            <dt id="none" class="constant">
-    <span class="name ">none</span>
+            <dt id="engineNotAvailable" class="constant">
+    <span class="name ">engineNotAvailable</span>
   <span class="signature">→ const <a href="../electronic_horizon/ElectronicHorizonErrorCode.html">ElectronicHorizonErrorCode</a></span>
   
 
 </dt>
 <dd>
-  <p>No error is present.</p>
+  <p>Electronic horizon engine state is not available.</p>
   
 
 </dd>
 
-            <dt id="unknown" class="constant">
-    <span class="name ">unknown</span>
+            <dt id="positionNotFound" class="constant">
+    <span class="name ">positionNotFound</span>
   <span class="signature">→ const <a href="../electronic_horizon/ElectronicHorizonErrorCode.html">ElectronicHorizonErrorCode</a></span>
   
 
 </dt>
 <dd>
-  <p>Unknown error code.</p>
+  <p>Current position cannot be resolved in the current electronic horizon tree.</p>
   
 
 </dd>
 
-            <dt id="dataNotReady" class="constant">
-    <span class="name ">dataNotReady</span>
+            <dt id="positionOffRoad" class="constant">
+    <span class="name ">positionOffRoad</span>
   <span class="signature">→ const <a href="../electronic_horizon/ElectronicHorizonErrorCode.html">ElectronicHorizonErrorCode</a></span>
   
 
 </dt>
 <dd>
-  <p>Error code for the data in map not being ready.</p>
+  <p>Current position cannot be matched to a road segment.</p>
   
 
 </dd>
 
-            <dt id="segmentNotFoundInCache" class="constant">
-    <span class="name ">segmentNotFoundInCache</span>
+            <dt id="pathTreeInconsistent" class="constant">
+    <span class="name ">pathTreeInconsistent</span>
   <span class="signature">→ const <a href="../electronic_horizon/ElectronicHorizonErrorCode.html">ElectronicHorizonErrorCode</a></span>
   
 
 </dt>
 <dd>
-  <p>Segment not present in the cache.</p>
-  
-
-</dd>
-
-            <dt id="segmentNotReady" class="constant">
-    <span class="name ">segmentNotReady</span>
-  <span class="signature">→ const <a href="../electronic_horizon/ElectronicHorizonErrorCode.html">ElectronicHorizonErrorCode</a></span>
-  
-
-</dt>
-<dd>
-  <p>Segment is not yet loaded, but scheduled to be loaded.</p>
-  
-
-</dd>
-
-            <dt id="pathNotFound" class="constant">
-    <span class="name ">pathNotFound</span>
-  <span class="signature">→ const <a href="../electronic_horizon/ElectronicHorizonErrorCode.html">ElectronicHorizonErrorCode</a></span>
-  
-
-</dt>
-<dd>
-  <p>Path not found in the current tree</p>
-  
-
-</dd>
-
-            <dt id="invalidSegmentData" class="constant">
-    <span class="name ">invalidSegmentData</span>
-  <span class="signature">→ const <a href="../electronic_horizon/ElectronicHorizonErrorCode.html">ElectronicHorizonErrorCode</a></span>
-  
-
-</dt>
-<dd>
-  <p>Invalid directed segment</p>
+  <p>Path tree is inconsistent.</p>
   
 
 </dd>
@@ -306,7 +270,7 @@ behaviors. Related APIs may change for new releases without a deprecation proces
 <footer>
   <span class="no-break">
     here_sdk
-      4.25.4
+      4.25.5
   </span>
 
   

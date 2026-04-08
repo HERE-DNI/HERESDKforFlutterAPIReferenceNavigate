@@ -18,7 +18,7 @@
   <link rel="icon" href="../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.4.0 API Reference"><meta name="DC.Document.Id" content="238c7f1c-e134-4a2a-b741-c2a17e692d68"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.4.0"><meta name="DC.Creation.Date" content="2026-03-13T19:06:56+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="0d43b320-801b-464f-9642-7d2df918b447"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:54:45+00:00"></head>
 
 
 <body data-base-href="../" data-using-base-href="false" class="light-theme">
@@ -59,6 +59,8 @@
     
 <section class="desc markdown">
   <p>Memory management options.</p>
+<p>Note: This is a beta release of this feature, so there could be a few bugs and unexpected
+behavior. Related APIs may change for new releases without a deprecation process.</p>
 </section>
 
 
@@ -102,7 +104,7 @@
   The default setting MemoryManagementStrategy.DYNAMIC is suitable for common cases. The map
 data cache can adjust dynamically to fit visible data. When the visible data needs extra
 memory, it would increase. When it's not needed, it will reduce to a limit which is
-calculated internally or by using tileCacheMemoryLimitKb option.
+calculated internally or by using <a href="../mapview/MapContextMemoryManagementOptions/tileCacheMemoryLimitInKiB.html">MapContextMemoryManagementOptions.tileCacheMemoryLimitInKiB</a> option.
 The MemoryManagementStrategy.FIXED would be only useful when there is very
 strict memory consumption requirement for the application. It potentially can have
 flickering visual artifacts when the map data to be visualized is very large and exceeds
@@ -123,29 +125,29 @@ the cache limit.
 
 </dd>
 
-        <dt id="tileCacheMemoryLimitInKB" class="property">
-  <span class="name"><a href="../mapview/MapContextMemoryManagementOptions/tileCacheMemoryLimitInKB.html">tileCacheMemoryLimitInKB</a></span>
+        <dt id="tileCacheMemoryLimitInKiB" class="property">
+  <span class="name"><a href="../mapview/MapContextMemoryManagementOptions/tileCacheMemoryLimitInKiB.html">tileCacheMemoryLimitInKiB</a></span>
   <span class="signature">↔ int?</span>
   
 
 </dt>
 <dd>
-  Tile cache memory limit in KiloBytes. Negative or null values are ignored.
-Default value is null.
+  Tile cache memory limit in kibibytes. Non positive or <code>null</code> values are ignored.
+Default value is <code>null</code>.
 Low tile cache limit will lead to eviction of tiles only if MemoryManagementStrategy is set to FIXED.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
 
-        <dt id="videoMemoryLimitInKB" class="property">
-  <span class="name"><a href="../mapview/MapContextMemoryManagementOptions/videoMemoryLimitInKB.html">videoMemoryLimitInKB</a></span>
+        <dt id="videoMemoryLimitInKiB" class="property">
+  <span class="name"><a href="../mapview/MapContextMemoryManagementOptions/videoMemoryLimitInKiB.html">videoMemoryLimitInKiB</a></span>
   <span class="signature">↔ int?</span>
   
 
 </dt>
 <dd>
-  Target video memory limit in KiloBytes. Negative or null values are ignored.
-Default value is null.
+  Target video memory limit in kibibytes. Non positive or <code>null</code> values are ignored.
+Default value is <code>null</code>.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -237,7 +239,7 @@ Default value is null.
 <footer>
   <span class="no-break">
     here_sdk
-      4.25.4
+      4.25.5
   </span>
 
   
