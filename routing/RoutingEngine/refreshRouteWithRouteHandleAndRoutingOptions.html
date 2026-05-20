@@ -18,7 +18,7 @@
   <link rel="icon" href="../../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="0d43b320-801b-464f-9642-7d2df918b447"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:54:45+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="e667d9e6-e989-4ab0-ab07-20ce446bbd1b"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:20:20+00:00"></head>
 
 
 <body data-base-href="../../" data-using-base-href="false" class="light-theme">
@@ -31,7 +31,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../routing/routing-library.html">routing.dart</a></li>
     <li><a href="../../routing/RoutingEngine-class.html">RoutingEngine</a></li>
-    <li class="self-crumb">refreshRouteWithRouteHandleAndRoutingOptions abstract method</li>
+    <li class="self-crumb"><span class="deprecated">refreshRouteWithRouteHandleAndRoutingOptions</span> abstract method</li>
   </ol>
   <div class="self-name">refreshRouteWithRouteHandleAndRoutingOptions</div>
   <form class="search navbar-right" role="search">
@@ -58,9 +58,14 @@
 
     <section class="multi-line-signature">
       
+  <div>
+    <ol class="annotation-list">
+        <li>@Deprecated("Will be removed in v4.28.0. Use the `refresh_route()` methods with RefreshRouteParameters parameter instead.")</li>
+    </ol>
+  </div>
 
 <span class="returntype"><a href="../../core.threading/TaskHandle-class.html">TaskHandle</a></span>
-<span class="name ">refreshRouteWithRouteHandleAndRoutingOptions</span>(<wbr><ol class="parameter-list"> <li><span class="parameter" id="refreshRouteWithRouteHandleAndRoutingOptions-param-routeHandle"><span class="type-annotation"><a href="../../routing/RouteHandle-class.html">RouteHandle</a></span> <span class="parameter-name">routeHandle</span>, </span></li>
+<span class="name deprecated">refreshRouteWithRouteHandleAndRoutingOptions</span>(<wbr><ol class="parameter-list"> <li><span class="parameter" id="refreshRouteWithRouteHandleAndRoutingOptions-param-routeHandle"><span class="type-annotation"><a href="../../routing/RouteHandle-class.html">RouteHandle</a></span> <span class="parameter-name">routeHandle</span>, </span></li>
 <li><span class="parameter" id="refreshRouteWithRouteHandleAndRoutingOptions-param-startingPoint"><span class="type-annotation"><a href="../../routing/Waypoint-class.html">Waypoint</a></span> <span class="parameter-name">startingPoint</span>, </span></li>
 <li><span class="parameter" id="refreshRouteWithRouteHandleAndRoutingOptions-param-options"><span class="type-annotation"><a href="../../routing/RoutingOptions-class.html">RoutingOptions</a></span> <span class="parameter-name">options</span>, </span></li>
 <li><span class="parameter" id="refreshRouteWithRouteHandleAndRoutingOptions-param-callback"><span class="type-annotation"><a href="../../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name">callback</span>, </span></li>
@@ -109,7 +114,9 @@ It is always invoked on the main thread.</p>
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">TaskHandle refreshRouteWithRouteHandleAndRoutingOptions(RouteHandle routeHandle, Waypoint startingPoint, RoutingOptions options, CalculateRouteCallback callback);</code></pre>
+  <pre class="language-dart"><code class="language-dart">@Deprecated("Will be removed in v4.28.0. Use the `refresh_route()` methods with RefreshRouteParameters parameter instead.")
+
+TaskHandle refreshRouteWithRouteHandleAndRoutingOptions(RouteHandle routeHandle, Waypoint startingPoint, RoutingOptions options, CalculateRouteCallback callback);</code></pre>
 </section>
 
 
@@ -127,7 +134,7 @@ It is always invoked on the main thread.</p>
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../routing/routing-library.html">routing</a></li>
     <li><a href="../../routing/RoutingEngine-class.html">RoutingEngine</a></li>
-    <li class="self-crumb">refreshRouteWithRouteHandleAndRoutingOptions abstract method</li>
+    <li class="self-crumb"><span class="deprecated">refreshRouteWithRouteHandleAndRoutingOptions</span> abstract method</li>
 </ol>
 
 
@@ -143,7 +150,7 @@ It is always invoked on the main thread.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.25.5
+      4.26.0
   </span>
 
   

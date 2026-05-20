@@ -18,7 +18,7 @@
   <link rel="icon" href="../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="0d43b320-801b-464f-9642-7d2df918b447"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:54:45+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="e667d9e6-e989-4ab0-ab07-20ce446bbd1b"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:20:20+00:00"></head>
 
 
 <body data-base-href="../" data-using-base-href="false" class="light-theme">
@@ -90,7 +90,7 @@ be set with the maximum allowed height value.</p>
 </dt>
 <dd>
   The restriction to trucks with axles number within specified range during the trip.
-This property will be set if the <a href="../transport/TruckSpecifications/axleCount.html">TruckSpecifications.axleCount</a>
+This property will be set if the <a href="../transport/VehicleSpecification/axleCount.html">VehicleSpecification.axleCount</a>
 is within this range.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
@@ -119,7 +119,7 @@ This property is the intersection of the two lists.
 </dt>
 <dd>
   Constrains the restriction to trucks with number of trailer within specified range during the trip.
-This property will be set if the <a href="../transport/TruckSpecifications/trailerCount.html">TruckSpecifications.trailerCount</a>
+This property will be set if the <a href="../transport/VehicleSpecification/trailerCount.html">VehicleSpecification.trailerCount</a>
 is within this range.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
@@ -183,7 +183,7 @@ parameter used for route calculation.
 </dt>
 <dd>
   Max permitted height during the trip, in centimeters.
-This property will be set if the <a href="../transport/TruckSpecifications/heightInCentimeters.html">TruckSpecifications.heightInCentimeters</a>
+This property will be set if the <a href="../transport/VehicleSpecification/heightInCentimeters.html">VehicleSpecification.heightInCentimeters</a>
 exceeds this value.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
@@ -212,7 +212,7 @@ exceeds the specified value.
 </dt>
 <dd>
   Max permitted length during the trip, in centimeters.
-This property will be set if the <a href="../transport/TruckSpecifications/lengthInCentimeters.html">TruckSpecifications.lengthInCentimeters</a>
+This property will be set if the <a href="../transport/VehicleSpecification/lengthInCentimeters.html">VehicleSpecification.lengthInCentimeters</a>
 exceeds this value.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
@@ -239,7 +239,7 @@ This property will be set if the <a href="../transport/VehicleSpecification/tire
 </dt>
 <dd>
   Max permitted payload capacity during the trip, in kilograms.
-This property will be set if the <a href="../transport/TruckSpecifications/payloadCapacityInKilograms.html">TruckSpecifications.payloadCapacityInKilograms</a>
+This property will be set if the <a href="../transport/VehicleSpecification/payloadCapacityInKilograms.html">VehicleSpecification.payloadCapacityInKilograms</a>
 exceeds this value.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
@@ -268,7 +268,7 @@ exceeds this value.
 </dt>
 <dd>
   Max permitted weight during the trip, in kilograms, along with the specific type of maximum permitted weight restriction.
-This property will be set if the <a href="../transport/TruckSpecifications/grossWeightInKilograms.html">TruckSpecifications.grossWeightInKilograms</a>
+This property will be set if the <a href="../transport/VehicleSpecification/grossWeightInKilograms.html">VehicleSpecification.grossWeightInKilograms</a>
 parameter used for route calculation exceeds this value.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
@@ -282,7 +282,7 @@ parameter used for route calculation exceeds this value.
 </dt>
 <dd>
   Max permitted weight per axle group during the trip, in kilograms.
-This property will be set if the <a href="../transport/TruckSpecifications/weightPerAxleGroup.html">TruckSpecifications.weightPerAxleGroup</a>
+This property will be set if the <a href="../transport/VehicleSpecification/weightPerAxleGroup.html">VehicleSpecification.weightPerAxleGroup</a>
 exceeds this value.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
@@ -296,7 +296,7 @@ exceeds this value.
 </dt>
 <dd>
   Max permitted weight per axle during the trip, in kilograms.
-This property will be set if the <a href="../transport/TruckSpecifications/weightPerAxleInKilograms.html">TruckSpecifications.weightPerAxleInKilograms</a>
+This property will be set if the <a href="../transport/VehicleSpecification/weightPerAxleInKilograms.html">VehicleSpecification.weightPerAxleInKilograms</a>
 exceeds this value.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
@@ -310,7 +310,7 @@ exceeds this value.
 </dt>
 <dd>
   Max permitted width during the trip, in centimeters.
-This property will be set if the <a href="../transport/TruckSpecifications/widthInCentimeters.html">TruckSpecifications.widthInCentimeters</a>
+This property will be set if the <a href="../transport/VehicleSpecification/widthInCentimeters.html">VehicleSpecification.widthInCentimeters</a>
 exceeds this value.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
@@ -440,7 +440,7 @@ This property will be set if the <a href="../routing/AvoidanceOptions/zoneCatego
 <footer>
   <span class="no-break">
     here_sdk
-      4.25.5
+      4.26.0
   </span>
 
   

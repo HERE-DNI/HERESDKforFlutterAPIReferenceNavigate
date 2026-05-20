@@ -18,7 +18,7 @@
   <link rel="icon" href="../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="0d43b320-801b-464f-9642-7d2df918b447"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:54:45+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="e667d9e6-e989-4ab0-ab07-20ce446bbd1b"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:20:20+00:00"></head>
 
 
 <body data-base-href="../" data-using-base-href="false" class="light-theme">
@@ -69,19 +69,23 @@ Note that calling <code>updateCatalog(...)</code> will
 update the version, only when a map update is available in the catalog.</p>
 <p><strong>Notes</strong></p>
 <ul>
-<li>The <code>LayerConfiguration</code> is only available for the Navigate licenses that contains the offline maps
-feature. It has no effect on other license.</li>
-</ul>
-<p>Note that the <code>RENDERING</code> layer is a base layer that cannot be disabled: Therefore, it is not
-necessary to explicitly add the layer to a feature configuration - it will be always enabled.</p>
-<ul>
-<li>The <code>LayerConfiguration</code> cannot be set separately for a region, it will be applied globally
-for all regions that will be downloaded in the future.</li>
-<li>It is not possible to specify a separate <code>LayerConfiguration</code> for the map cache and offline maps.
-The <code>LayerConfiguration</code> will be always applied to both.</li>
-<li>If a <code>LayerConfiguration</code> is applied, then only the listed features will be enabled,
+<li>
+<p>The <code>LayerConfiguration</code> is only available for the Navigate licenses that contains the offline maps
+feature. It has no effect on other license.</p>
+</li>
+<li>
+<p>The <code>LayerConfiguration</code> cannot be set separately for a region, it will be applied globally
+for all regions that will be downloaded in the future.</p>
+</li>
+<li>
+<p>It is not possible to specify a separate <code>LayerConfiguration</code> for the map cache and offline maps.
+The <code>LayerConfiguration</code> will be always applied to both.</p>
+</li>
+<li>
+<p>If a <code>LayerConfiguration</code> is applied, then only the listed features will be enabled,
 all others will be disabled. For example, if you want to
-disable only one feature, then all other features need to be present, or they will be also disabled.</li>
+disable only one feature, then all other features need to be present, or they will be also disabled.</p>
+</li>
 </ul>
 <p>The <code>LayerConfiguration</code> controls which content will be subject of</p>
 <ul>
@@ -260,7 +264,7 @@ Implicit map prefetch will download map content for implicit prefetch features w
 <footer>
   <span class="no-break">
     here_sdk
-      4.25.5
+      4.26.0
   </span>
 
   

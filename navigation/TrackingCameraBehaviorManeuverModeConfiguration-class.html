@@ -18,7 +18,7 @@
   <link rel="icon" href="../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="0d43b320-801b-464f-9642-7d2df918b447"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:54:45+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="e667d9e6-e989-4ab0-ab07-20ce446bbd1b"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:20:20+00:00"></head>
 
 
 <body data-base-href="../" data-using-base-href="false" class="light-theme">
@@ -64,6 +64,7 @@ class, and the availability of maneuver data for at least one adjacent maneuver,
 checks for a match against the <a href="../navigation/TrackingCameraBehaviorManeuverModeConfiguration/maneuverRules.html">TrackingCameraBehaviorManeuverModeConfiguration.maneuverRules</a> in the order they are listed. If a match is
 found, subsequent rules are not checked. If no match is found, if inputs are unavailable,
 or if the matched rule has <code>null</code> options, the camera does not react.</p>
+<p>For correct default initialization, use <a href="../navigation/TrackingCameraBehavior/defaultManeuverModeConfiguration.html">TrackingCameraBehavior.defaultManeuverModeConfiguration</a>.</p>
 </section>
 
 
@@ -94,7 +95,7 @@ or if the matched rule has <code>null</code> options, the camera does not react.
 <dd>
   Maximum angle difference in degrees between the current bearing and the bearing to the
 maneuver point. If the difference exceeds this threshold, the camera does not turn
-towards the maneuver. Valid range is 0.0 to 180.0. Defaults to 30.0.
+towards the maneuver. Valid range is 0.0 to 180.0. Defaults to 25.0.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -120,7 +121,8 @@ towards the maneuver. Valid range is 0.0 to 180.0. Defaults to 30.0.
 <dd>
   Ordered list of maneuver rules. Rules are evaluated in order; the first matching rule
 determines the camera behavior. If empty, this configuration is not valid and the
-camera does not react to maneuvers.
+camera does not react to maneuvers. If <a href="../navigation/TrackingCameraBehavior/defaultManeuverModeConfiguration.html">TrackingCameraBehavior.defaultManeuverModeConfiguration</a> is not used
+for <a href="../navigation/TrackingCameraBehaviorManeuverModeConfiguration-class.html">TrackingCameraBehaviorManeuverModeConfiguration</a>, it will be an empty list.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -224,7 +226,7 @@ camera does not react to maneuvers.
 <footer>
   <span class="no-break">
     here_sdk
-      4.25.5
+      4.26.0
   </span>
 
   

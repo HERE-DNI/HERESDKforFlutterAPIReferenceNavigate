@@ -18,7 +18,7 @@
   <link rel="icon" href="../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="0d43b320-801b-464f-9642-7d2df918b447"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:54:45+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="e667d9e6-e989-4ab0-ab07-20ce446bbd1b"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:20:20+00:00"></head>
 
 
 <body data-base-href="../" data-using-base-href="false" class="light-theme">
@@ -59,6 +59,7 @@
     
 <section class="desc markdown">
   <p>Configuration for computing zoom levels from speed thresholds defined per road classification.</p>
+<p>For correct default initialization, use <a href="../navigation/TrackingCameraBehavior/defaultSpeedBasedZoomPolicyOptions.html">TrackingCameraBehavior.defaultSpeedBasedZoomPolicyOptions</a>.</p>
 </section>
 
 
@@ -88,7 +89,8 @@
 </dt>
 <dd>
   Minimum time interval that must pass before the zoom level is
-allowed to switch to a new speed threshold.
+allowed to switch to a new speed threshold. If <a href="../navigation/TrackingCameraBehavior/defaultSpeedBasedZoomPolicyOptions.html">TrackingCameraBehavior.defaultSpeedBasedZoomPolicyOptions</a> is not used
+for <a href="../navigation/TrackingCameraBehaviorSpeedBasedZoomPolicyOptions-class.html">TrackingCameraBehaviorSpeedBasedZoomPolicyOptions</a>, it will be <code>null</code>.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -113,7 +115,8 @@ allowed to switch to a new speed threshold.
 </dt>
 <dd>
   Defines, per road classification, how the zoom level should change in
-response to different vehicle speeds.
+response to different vehicle speeds. If <a href="../navigation/TrackingCameraBehavior/defaultSpeedBasedZoomPolicyOptions.html">TrackingCameraBehavior.defaultSpeedBasedZoomPolicyOptions</a> is not used
+for <a href="../navigation/TrackingCameraBehaviorSpeedBasedZoomPolicyOptions-class.html">TrackingCameraBehaviorSpeedBasedZoomPolicyOptions</a>, it will be an empty map.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -217,7 +220,7 @@ response to different vehicle speeds.
 <footer>
   <span class="no-break">
     here_sdk
-      4.25.5
+      4.26.0
   </span>
 
   

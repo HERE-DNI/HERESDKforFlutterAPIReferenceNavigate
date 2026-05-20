@@ -18,7 +18,7 @@
   <link rel="icon" href="../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="0d43b320-801b-464f-9642-7d2df918b447"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:54:45+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="e667d9e6-e989-4ab0-ab07-20ce446bbd1b"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:20:20+00:00"></head>
 
 
 <body data-base-href="../" data-using-base-href="false" class="light-theme">
@@ -688,8 +688,22 @@ the starting point and route metadata based on <a class="deprecated" href="../ro
 
 </dd>
 
+        <dt id="refreshRouteWithRouteHandleAndRefreshRouteParameters" class="callable">
+  <span class="name"><a href="../routing/RoutingEngine/refreshRouteWithRouteHandleAndRefreshRouteParameters.html">refreshRouteWithRouteHandleAndRefreshRouteParameters</a></span><span class="signature">(<wbr><span class="parameter" id="refreshRouteWithRouteHandleAndRefreshRouteParameters-param-refreshRouteParameters"><span class="type-annotation"><a href="../routing/RefreshRouteParameters-class.html">RefreshRouteParameters</a></span> <span class="parameter-name">refreshRouteParameters</span>, </span><span class="parameter" id="refreshRouteWithRouteHandleAndRefreshRouteParameters-param-routingOptions"><span class="type-annotation"><a href="../routing/RoutingOptions-class.html">RoutingOptions</a></span> <span class="parameter-name">routingOptions</span>, </span><span class="parameter" id="refreshRouteWithRouteHandleAndRefreshRouteParameters-param-callback"><span class="type-annotation"><a href="../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name">callback</span></span>)
+    <span class="returntype parameter">→ <a href="../core.threading/TaskHandle-class.html">TaskHandle</a></span>
+  </wbr></span>
+  
+
+</dt>
+<dd>
+  Asynchronously refreshes a previously calculated route from the provided <a href="../routing/RouteHandle-class.html">RouteHandle</a>, updating
+the starting point and route metadata based on <a href="../routing/RoutingOptions-class.html">RoutingOptions</a>.
+  
+
+</dd>
+
         <dt id="refreshRouteWithRouteHandleAndRoutingOptions" class="callable">
-  <span class="name"><a href="../routing/RoutingEngine/refreshRouteWithRouteHandleAndRoutingOptions.html">refreshRouteWithRouteHandleAndRoutingOptions</a></span><span class="signature">(<wbr><span class="parameter" id="refreshRouteWithRouteHandleAndRoutingOptions-param-routeHandle"><span class="type-annotation"><a href="../routing/RouteHandle-class.html">RouteHandle</a></span> <span class="parameter-name">routeHandle</span>, </span><span class="parameter" id="refreshRouteWithRouteHandleAndRoutingOptions-param-startingPoint"><span class="type-annotation"><a href="../routing/Waypoint-class.html">Waypoint</a></span> <span class="parameter-name">startingPoint</span>, </span><span class="parameter" id="refreshRouteWithRouteHandleAndRoutingOptions-param-options"><span class="type-annotation"><a href="../routing/RoutingOptions-class.html">RoutingOptions</a></span> <span class="parameter-name">options</span>, </span><span class="parameter" id="refreshRouteWithRouteHandleAndRoutingOptions-param-callback"><span class="type-annotation"><a href="../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name">callback</span></span>)
+  <span class="name deprecated"><a class="deprecated" href="../routing/RoutingEngine/refreshRouteWithRouteHandleAndRoutingOptions.html">refreshRouteWithRouteHandleAndRoutingOptions</a></span><span class="signature">(<wbr><span class="parameter" id="refreshRouteWithRouteHandleAndRoutingOptions-param-routeHandle"><span class="type-annotation"><a href="../routing/RouteHandle-class.html">RouteHandle</a></span> <span class="parameter-name">routeHandle</span>, </span><span class="parameter" id="refreshRouteWithRouteHandleAndRoutingOptions-param-startingPoint"><span class="type-annotation"><a href="../routing/Waypoint-class.html">Waypoint</a></span> <span class="parameter-name">startingPoint</span>, </span><span class="parameter" id="refreshRouteWithRouteHandleAndRoutingOptions-param-options"><span class="type-annotation"><a href="../routing/RoutingOptions-class.html">RoutingOptions</a></span> <span class="parameter-name">options</span>, </span><span class="parameter" id="refreshRouteWithRouteHandleAndRoutingOptions-param-callback"><span class="type-annotation"><a href="../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name">callback</span></span>)
     <span class="returntype parameter">→ <a href="../core.threading/TaskHandle-class.html">TaskHandle</a></span>
   </wbr></span>
   
@@ -717,7 +731,7 @@ the starting point and route metadata based on <a class="deprecated" href="../ro
 </dd>
 
         <dt id="refreshRouteWithTraveledDistanceAndRoutingOptions" class="callable">
-  <span class="name"><a href="../routing/RoutingEngine/refreshRouteWithTraveledDistanceAndRoutingOptions.html">refreshRouteWithTraveledDistanceAndRoutingOptions</a></span><span class="signature">(<wbr><span class="parameter" id="refreshRouteWithTraveledDistanceAndRoutingOptions-param-routeHandle"><span class="type-annotation"><a href="../routing/RouteHandle-class.html">RouteHandle</a></span> <span class="parameter-name">routeHandle</span>, </span><span class="parameter" id="refreshRouteWithTraveledDistanceAndRoutingOptions-param-startingPoint"><span class="type-annotation"><a href="../routing/Waypoint-class.html">Waypoint</a>?</span> <span class="parameter-name">startingPoint</span>, </span><span class="parameter" id="refreshRouteWithTraveledDistanceAndRoutingOptions-param-lastTraveledSectionIndex"><span class="type-annotation">int?</span> <span class="parameter-name">lastTraveledSectionIndex</span>, </span><span class="parameter" id="refreshRouteWithTraveledDistanceAndRoutingOptions-param-traveledDistanceOnLastSectionInMeters"><span class="type-annotation">int?</span> <span class="parameter-name">traveledDistanceOnLastSectionInMeters</span>, </span><span class="parameter" id="refreshRouteWithTraveledDistanceAndRoutingOptions-param-options"><span class="type-annotation"><a href="../routing/RoutingOptions-class.html">RoutingOptions</a></span> <span class="parameter-name">options</span>, </span><span class="parameter" id="refreshRouteWithTraveledDistanceAndRoutingOptions-param-callback"><span class="type-annotation"><a href="../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name">callback</span></span>)
+  <span class="name deprecated"><a class="deprecated" href="../routing/RoutingEngine/refreshRouteWithTraveledDistanceAndRoutingOptions.html">refreshRouteWithTraveledDistanceAndRoutingOptions</a></span><span class="signature">(<wbr><span class="parameter" id="refreshRouteWithTraveledDistanceAndRoutingOptions-param-routeHandle"><span class="type-annotation"><a href="../routing/RouteHandle-class.html">RouteHandle</a></span> <span class="parameter-name">routeHandle</span>, </span><span class="parameter" id="refreshRouteWithTraveledDistanceAndRoutingOptions-param-startingPoint"><span class="type-annotation"><a href="../routing/Waypoint-class.html">Waypoint</a>?</span> <span class="parameter-name">startingPoint</span>, </span><span class="parameter" id="refreshRouteWithTraveledDistanceAndRoutingOptions-param-lastTraveledSectionIndex"><span class="type-annotation">int?</span> <span class="parameter-name">lastTraveledSectionIndex</span>, </span><span class="parameter" id="refreshRouteWithTraveledDistanceAndRoutingOptions-param-traveledDistanceOnLastSectionInMeters"><span class="type-annotation">int?</span> <span class="parameter-name">traveledDistanceOnLastSectionInMeters</span>, </span><span class="parameter" id="refreshRouteWithTraveledDistanceAndRoutingOptions-param-options"><span class="type-annotation"><a href="../routing/RoutingOptions-class.html">RoutingOptions</a></span> <span class="parameter-name">options</span>, </span><span class="parameter" id="refreshRouteWithTraveledDistanceAndRoutingOptions-param-callback"><span class="type-annotation"><a href="../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name">callback</span></span>)
     <span class="returntype parameter">→ <a href="../core.threading/TaskHandle-class.html">TaskHandle</a></span>
   </wbr></span>
   
@@ -824,7 +838,7 @@ the starting point and route metadata based on <a href="../routing/RoutingOption
 <footer>
   <span class="no-break">
     here_sdk
-      4.25.5
+      4.26.0
   </span>
 
   

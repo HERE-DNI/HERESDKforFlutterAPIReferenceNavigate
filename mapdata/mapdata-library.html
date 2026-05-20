@@ -18,7 +18,7 @@
   <link rel="icon" href="../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="0d43b320-801b-464f-9642-7d2df918b447"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:54:45+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="e667d9e6-e989-4ab0-ab07-20ce446bbd1b"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:20:20+00:00"></head>
 
 
 <body data-base-href="../" data-using-base-href="false" class="light-theme">
@@ -69,6 +69,22 @@
       <h2>Classes</h2>
 
       <dl>
+          <dt id="AdminContextId">
+  <span class="name "><a href="../mapdata/AdminContextId-class.html">AdminContextId</a></span> 
+
+</dt>
+<dd>
+  Represents a set of administrative rules for a country or a state.
+</dd>
+
+          <dt id="AdministrativeCommercialVehicleRules">
+  <span class="name "><a href="../mapdata/AdministrativeCommercialVehicleRules-class.html">AdministrativeCommercialVehicleRules</a></span> 
+
+</dt>
+<dd>
+  Commercial vehicle regulations for an administrative region (country or state).
+</dd>
+
           <dt id="AdministrativeRules">
   <span class="name "><a href="../mapdata/AdministrativeRules-class.html">AdministrativeRules</a></span> 
 
@@ -127,6 +143,14 @@ all types of drivers.
   A class which identifies the configuration when downloading a file reference.
 </dd>
 
+          <dt id="DriveRestRegulation">
+  <span class="name "><a href="../mapdata/DriveRestRegulation-class.html">DriveRestRegulation</a></span> 
+
+</dt>
+<dd>
+  Drive-rest regulation defining mandatory rest requirements for commercial vehicle drivers.
+</dd>
+
           <dt id="FileReference">
   <span class="name "><a href="../mapdata/FileReference-class.html">FileReference</a></span> 
 
@@ -174,6 +198,14 @@ represented in form: Tile + Local ID's .
 </dt>
 <dd>
   Identifies the presence and the location of railway corssings.
+</dd>
+
+          <dt id="RoadProfileCondition">
+  <span class="name "><a href="../mapdata/RoadProfileCondition-class.html">RoadProfileCondition</a></span> 
+
+</dt>
+<dd>
+  Road profile conditions that must be met for a regulation to apply.
 </dd>
 
           <dt id="RoadUsages">
@@ -298,6 +330,38 @@ segments data available in the local OCM map.
   Identifies the presence and the location of traffic lights at an intersection
 </dd>
 
+          <dt id="VehicleProfileRestriction">
+  <span class="name "><a href="../mapdata/VehicleProfileRestriction-class.html">VehicleProfileRestriction</a></span> 
+
+</dt>
+<dd>
+  Physical and cargo profile of a vehicle that triggers a regulation.
+</dd>
+
+          <dt id="VehicleRestrictionCondition">
+  <span class="name "><a href="../mapdata/VehicleRestrictionCondition-class.html">VehicleRestrictionCondition</a></span> 
+
+</dt>
+<dd>
+  Combined set of conditions that must all be satisfied for a regulation to apply.
+</dd>
+
+          <dt id="VehicleSpecificAccess">
+  <span class="name "><a href="../mapdata/VehicleSpecificAccess-class.html">VehicleSpecificAccess</a></span> 
+
+</dt>
+<dd>
+  Access regulation for a specific vehicle type on a road segment.
+</dd>
+
+          <dt id="VehicleSpecificSpeedLimit">
+  <span class="name "><a href="../mapdata/VehicleSpecificSpeedLimit-class.html">VehicleSpecificSpeedLimit</a></span> 
+
+</dt>
+<dd>
+  Speed limit regulation specific to a vehicle type.
+</dd>
+
       </dl>
     </section>
 
@@ -305,6 +369,14 @@ segments data available in the local OCM map.
       <h2>Enums</h2>
 
       <dl>
+          <dt id="CommercialVehicleRoadType">
+  <span class="name "><a href="../mapdata/CommercialVehicleRoadType.html">CommercialVehicleRoadType</a></span> 
+
+</dt>
+<dd>
+  Concise description of road type used in commercial vehicle regulations.
+</dd>
+
           <dt id="DrivingSide">
   <span class="name "><a href="../mapdata/DrivingSide.html">DrivingSide</a></span> 
 
@@ -319,6 +391,14 @@ segments data available in the local OCM map.
 </dt>
 <dd>
   Type of reference file.
+</dd>
+
+          <dt id="HazardousMaterialType">
+  <span class="name "><a href="../mapdata/HazardousMaterialType.html">HazardousMaterialType</a></span> 
+
+</dt>
+<dd>
+  Hazardous material type as defined in the enum applicable for those that carry these
 </dd>
 
           <dt id="HeadlightsRequirement">
@@ -351,6 +431,15 @@ segments data available in the local OCM map.
 </dt>
 <dd>
   The regulations for parking on the side of the road.
+</dd>
+
+          <dt id="PhysicalStructure">
+  <span class="name "><a href="../mapdata/PhysicalStructure.html">PhysicalStructure</a></span> 
+
+</dt>
+<dd>
+  Physical structure of a road feature that causes an access restriction,
+such as a bridge or tunnel that may limit vehicle dimensions or weight.
 </dd>
 
           <dt id="RailwayCrossingType">
@@ -401,6 +490,14 @@ and U-turns at divided intersections or in the middle of divided segments.
 </dt>
 <dd>
   The regulations for turning on the red color of the traffic light.
+</dd>
+
+          <dt id="VehicleTypeCondition">
+  <span class="name "><a href="../mapdata/VehicleTypeCondition.html">VehicleTypeCondition</a></span> 
+
+</dt>
+<dd>
+  Type of commercial vehicle to which a regulation applies.
 </dd>
 
       </dl>
@@ -476,6 +573,7 @@ and U-turns at divided intersections or in the middle of divided segments.
       <li><a href="../venue.routing/venue.routing-library.html">venue.routing</a></li>
       <li><a href="../venue.service/venue.service-library.html">venue.service</a></li>
       <li><a href="../venue.style/venue.style-library.html">venue.style</a></li>
+      <li><a href="../warner/warner-library.html">warner</a></li>
 </ol>
 
   </div>
@@ -489,7 +587,7 @@ and U-turns at divided intersections or in the middle of divided segments.
 <footer>
   <span class="no-break">
     here_sdk
-      4.25.5
+      4.26.0
   </span>
 
   

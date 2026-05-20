@@ -18,7 +18,7 @@
   <link rel="icon" href="../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="0d43b320-801b-464f-9642-7d2df918b447"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:54:45+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="e667d9e6-e989-4ab0-ab07-20ce446bbd1b"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:20:20+00:00"></head>
 
 
 <body data-base-href="../" data-using-base-href="false" class="light-theme">
@@ -567,6 +567,19 @@ Gets the listener  to receive junction view lane assistance notifications.
 
 </dd>
 
+        <dt id="locationManager" class="property inherited">
+  <span class="name"><a href="../navigation/NavigatorInterface/locationManager.html">locationManager</a></span>
+  <span class="signature">→ <a href="../mapmatcher/LocationManager-class.html">LocationManager</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  The location manager used by the navigator for map-matched location processing.
+Gets the location manager instance used by the navigator.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
         <dt id="lowSpeedZoneWarningListener" class="property inherited">
   <span class="name"><a href="../navigation/NavigatorInterface/lowSpeedZoneWarningListener.html">lowSpeedZoneWarningListener</a></span>
   <span class="signature">↔ <a href="../navigation/LowSpeedZoneWarningListener-class.html">LowSpeedZoneWarningListener</a>?</span>
@@ -1065,18 +1078,35 @@ the the upcoming toll stop.
 </dd>
 
         <dt id="trackingTransportProfile" class="property inherited">
-  <span class="name"><a href="../navigation/NavigatorInterface/trackingTransportProfile.html">trackingTransportProfile</a></span>
-  <span class="signature">↔ <a href="../core/TransportProfile-class.html">TransportProfile</a>?</span>
+  <span class="name"><a class="deprecated" href="../navigation/NavigatorInterface/trackingTransportProfile.html">trackingTransportProfile</a></span>
+  <span class="signature">↔ <a class="deprecated" href="../core/TransportProfile-class.html">TransportProfile</a>?</span>
   
 
 </dt>
 <dd class="inherited">
   Defines the transport profile for the <a href="../navigation/Navigator-class.html">Navigator</a>, when no route is present.
 Properly setting the transport profile optimizes the navigation experience, and improves resource consumption.
-For example, a <a href="../core/TransportProfile-class.html">TransportProfile</a> can be defined with a <a href="../transport/VehicleProfile-class.html">VehicleProfile</a>.
-A vehicle profile can have several parameters such as <a href="../transport/VehicleType.html">VehicleType</a> to set the
+For example, a <a class="deprecated" href="../core/TransportProfile-class.html">TransportProfile</a> can be defined with a <a class="deprecated" href="../transport/VehicleProfile-class.html">VehicleProfile</a>.
+A vehicle profile can have several parameters such as <a class="deprecated" href="../transport/VehicleType.html">VehicleType</a> to set the
 source of information describing the vehicle.
 The default is a <a href="../transport/VehicleType.html">VehicleType.car</a> profile.
+  <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="trackingTransportSpecification" class="property inherited">
+  <span class="name"><a href="../navigation/NavigatorInterface/trackingTransportSpecification.html">trackingTransportSpecification</a></span>
+  <span class="signature">↔ <a href="../transport/TransportSpecification-class.html">TransportSpecification</a>?</span>
+  
+
+</dt>
+<dd class="inherited">
+  Defines the transport specification for the <a href="../navigation/Navigator-class.html">Navigator</a>, when no route is present.
+Properly setting the transport specification optimizes the navigation experience, and improves
+resource consumption. An <a href="../transport/TransportSpecification-class.html">TransportSpecification</a> must have the <a href="../transport/TransportSpecification/transportMode.html">TransportSpecification.transportMode</a> set.
+A transport specification can have several parameters defined such as <a href="../transport/VehicleSpecification/lengthInCentimeters.html">VehicleSpecification.lengthInCentimeters</a>
+defined in <a href="../transport/TransportSpecification/vehicleSpecification.html">TransportSpecification.vehicleSpecification</a> to set the source of information describing the vehicle.
+By default the <a href="../transport/TransportSpecification-class.html">TransportSpecification</a> will have the transport mode set to <a href="../transport/TransportMode.html">TransportMode.car</a>.
   <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
 
 </dd>
@@ -1154,6 +1184,20 @@ truck restrictions on the current road.
 Gets truck restrictions warning options that allow to filter truck restrictions to be
 passed to <a href="../navigation/TruckRestrictionsWarningListener-class.html">TruckRestrictionsWarningListener</a>.
   <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="warnerEngine" class="property inherited">
+  <span class="name"><a href="../navigation/NavigatorInterface/warnerEngine.html">warnerEngine</a></span>
+  <span class="signature">→ <a href="../warner/WarnerEngine-class.html">WarnerEngine</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  Warner engine used by the navigator.
+This engine can be used to configure navigation warnings.
+Gets the warner engine used by the navigator.
+  <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
 
 </dd>
 
@@ -1418,7 +1462,7 @@ passed to <a href="../navigation/TruckRestrictionsWarningListener-class.html">Tr
 <footer>
   <span class="no-break">
     here_sdk
-      4.25.5
+      4.26.0
   </span>
 
   

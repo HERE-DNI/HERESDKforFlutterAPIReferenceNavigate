@@ -18,7 +18,7 @@
   <link rel="icon" href="../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="0d43b320-801b-464f-9642-7d2df918b447"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:54:45+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="e667d9e6-e989-4ab0-ab07-20ce446bbd1b"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:20:20+00:00"></head>
 
 
 <body data-base-href="../" data-using-base-href="false" class="light-theme">
@@ -128,22 +128,6 @@ Gets the bearing in degrees.
 
 </dd>
 
-        <dt id="cropRectangle" class="property">
-  <span class="name"><a href="../navigation/TrackingCameraBehavior/cropRectangle.html">cropRectangle</a></span>
-  <span class="signature">↔ <a href="../core/Rectangle2D-class.html">Rectangle2D</a>?</span>
-  
-
-</dt>
-<dd>
-  The crop rectangle for camera updates.
-Defines a sub-space of the screen that the behavior should consider
-for camera updates.
-If not set, it uses the viewport bounds of the underlying map view.
-Gets the current crop rectangle, if it's set.
-  <div class="features"><span class="feature">getter/setter pair</span></div>
-
-</dd>
-
         <dt id="hashCode" class="property inherited">
   <span class="name"><a href="../navigation/CameraBehavior/hashCode.html">hashCode</a></span>
   <span class="signature">→ int</span>
@@ -165,25 +149,9 @@ Gets the current crop rectangle, if it's set.
 <dd>
   Whether maneuver detection is enabled.
 When <code>true</code>, the camera detects adjacent maneuvers and reacts according to
-the <a href="../navigation/TrackingCameraBehavior/maneuverModeConfiguration.html">TrackingCameraBehavior.maneuverModeConfiguration</a>. A valid <a href="../navigation/TrackingCameraBehaviorManeuverModeConfiguration-class.html">TrackingCameraBehaviorManeuverModeConfiguration</a> must be set for the
-camera to react. Defaults to <code>false</code>.
+the <a href="../navigation/TrackingCameraBehaviorManeuverModeConfiguration-class.html">TrackingCameraBehaviorManeuverModeConfiguration</a> set via <a href="../navigation/TrackingCameraBehavior/setManeuverModeConfiguration.html">TrackingCameraBehavior.setManeuverModeConfiguration</a>.
+A valid <a href="../navigation/TrackingCameraBehaviorManeuverModeConfiguration-class.html">TrackingCameraBehaviorManeuverModeConfiguration</a> must be set for the camera to react. Defaults to <code>false</code>.
 Gets whether maneuver detection is enabled.
-  <div class="features"><span class="feature">getter/setter pair</span></div>
-
-</dd>
-
-        <dt id="maneuverModeConfiguration" class="property">
-  <span class="name"><a href="../navigation/TrackingCameraBehavior/maneuverModeConfiguration.html">maneuverModeConfiguration</a></span>
-  <span class="signature">↔ <a href="../navigation/TrackingCameraBehaviorManeuverModeConfiguration-class.html">TrackingCameraBehaviorManeuverModeConfiguration</a>?</span>
-  
-
-</dt>
-<dd>
-  The configuration for camera behavior near maneuvers.
-Defines how the camera reacts to nearby maneuvers when
-<a href="../navigation/TrackingCameraBehavior/isManeuverDetectionEnabled.html">TrackingCameraBehavior.isManeuverDetectionEnabled</a> is <code>true</code>. When set to <code>null</code>, the camera does
-not react to maneuvers. The configuration must contain at least one rule to be valid.
-Gets the current maneuver mode configuration, or <code>null</code> if not set.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -278,6 +246,22 @@ Gets the camera tilt in degrees.
 
 </dd>
 
+        <dt id="viewRectangle" class="property">
+  <span class="name"><a href="../navigation/TrackingCameraBehavior/viewRectangle.html">viewRectangle</a></span>
+  <span class="signature">↔ <a href="../core/Rectangle2D-class.html">Rectangle2D</a>?</span>
+  
+
+</dt>
+<dd>
+  The view rectangle for camera updates.
+Defines a sub-space of the screen that the behavior should consider
+for camera updates.
+Defaults to <code>null</code>. If not set, it uses the viewport bounds of the underlying map view.
+Gets the current view rectangle, if it's set.
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
         <dt id="zoomPolicy" class="property">
   <span class="name"><a href="../navigation/TrackingCameraBehavior/zoomPolicy.html">zoomPolicy</a></span>
   <span class="signature">↔ <a href="../navigation/TrackingCameraBehaviorZoomPolicy-class.html">TrackingCameraBehaviorZoomPolicy</a></span>
@@ -287,6 +271,7 @@ Gets the camera tilt in degrees.
 <dd>
   The strategy of computing the zoom level.
 Defines the strategy used to compute the zoom level based on scene heuristics.
+Defaults to a fixed zoom policy at zoom level 16.5.
 Gets the current zoom computation strategy.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
@@ -327,6 +312,19 @@ Gets the zoom level transition speed.
 
 </dd>
 
+        <dt id="getManeuverModeConfiguration" class="callable">
+  <span class="name"><a href="../navigation/TrackingCameraBehavior/getManeuverModeConfiguration.html">getManeuverModeConfiguration</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">→ <a href="../navigation/TrackingCameraBehaviorManeuverModeConfiguration-class.html">TrackingCameraBehaviorManeuverModeConfiguration</a>?</span>
+  </wbr></span>
+  
+
+</dt>
+<dd>
+  Gets the current maneuver mode configuration, or <code>null</code> if not set.
+  
+
+</dd>
+
         <dt id="noSuchMethod" class="callable inherited">
   <span class="name"><a href="../navigation/CameraBehavior/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
     <span class="returntype parameter">→ dynamic</span>
@@ -337,6 +335,19 @@ Gets the zoom level transition speed.
 <dd class="inherited">
   Invoked when a nonexistent method or property is accessed.
   <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="setManeuverModeConfiguration" class="callable">
+  <span class="name"><a href="../navigation/TrackingCameraBehavior/setManeuverModeConfiguration.html">setManeuverModeConfiguration</a></span><span class="signature">(<wbr><span class="parameter" id="setManeuverModeConfiguration-param-maneuverModeConfiguration"><span class="type-annotation"><a href="../navigation/TrackingCameraBehaviorManeuverModeConfiguration-class.html">TrackingCameraBehaviorManeuverModeConfiguration</a>?</span> <span class="parameter-name">maneuverModeConfiguration</span></span>)
+    <span class="returntype parameter">→ void</span>
+  </wbr></span>
+  
+
+</dt>
+<dd>
+  Sets the configuration for camera behavior near maneuvers.
+  
 
 </dd>
 
@@ -376,6 +387,50 @@ Gets the zoom level transition speed.
   </section>
     
     
+  <section class="summary offset-anchor" id="static-methods">
+    <h2>Static Methods</h2>
+    <dl class="callables">
+        <dt id="defaultFunctionalRoadClassZoomPolicyOptions" class="callable">
+  <span class="name"><a href="../navigation/TrackingCameraBehavior/defaultFunctionalRoadClassZoomPolicyOptions.html">defaultFunctionalRoadClassZoomPolicyOptions</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">→ <a href="../navigation/TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions-class.html">TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions</a></span>
+  </wbr></span>
+  
+
+</dt>
+<dd>
+  Returns <a href="../navigation/TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions-class.html">TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions</a>. The default <a href="../navigation/TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions-class.html">TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions</a>.
+  
+
+</dd>
+
+        <dt id="defaultManeuverModeConfiguration" class="callable">
+  <span class="name"><a href="../navigation/TrackingCameraBehavior/defaultManeuverModeConfiguration.html">defaultManeuverModeConfiguration</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">→ <a href="../navigation/TrackingCameraBehaviorManeuverModeConfiguration-class.html">TrackingCameraBehaviorManeuverModeConfiguration</a></span>
+  </wbr></span>
+  
+
+</dt>
+<dd>
+  Returns <a href="../navigation/TrackingCameraBehaviorManeuverModeConfiguration-class.html">TrackingCameraBehaviorManeuverModeConfiguration</a>. The default <a href="../navigation/TrackingCameraBehaviorManeuverModeConfiguration-class.html">TrackingCameraBehaviorManeuverModeConfiguration</a>.
+  
+
+</dd>
+
+        <dt id="defaultSpeedBasedZoomPolicyOptions" class="callable">
+  <span class="name"><a href="../navigation/TrackingCameraBehavior/defaultSpeedBasedZoomPolicyOptions.html">defaultSpeedBasedZoomPolicyOptions</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">→ <a href="../navigation/TrackingCameraBehaviorSpeedBasedZoomPolicyOptions-class.html">TrackingCameraBehaviorSpeedBasedZoomPolicyOptions</a></span>
+  </wbr></span>
+  
+
+</dt>
+<dd>
+  Returns <a href="../navigation/TrackingCameraBehaviorSpeedBasedZoomPolicyOptions-class.html">TrackingCameraBehaviorSpeedBasedZoomPolicyOptions</a>. The default <a href="../navigation/TrackingCameraBehaviorSpeedBasedZoomPolicyOptions-class.html">TrackingCameraBehaviorSpeedBasedZoomPolicyOptions</a>.
+  
+
+</dd>
+
+    </dl>
+  </section>
     
 
 
@@ -408,7 +463,7 @@ Gets the zoom level transition speed.
 <footer>
   <span class="no-break">
     here_sdk
-      4.25.5
+      4.26.0
   </span>
 
   

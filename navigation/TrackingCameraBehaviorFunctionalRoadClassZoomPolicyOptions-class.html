@@ -18,7 +18,7 @@
   <link rel="icon" href="../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="0d43b320-801b-464f-9642-7d2df918b447"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:54:45+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="e667d9e6-e989-4ab0-ab07-20ce446bbd1b"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:20:20+00:00"></head>
 
 
 <body data-base-href="../" data-using-base-href="false" class="light-theme">
@@ -59,6 +59,7 @@
     
 <section class="desc markdown">
   <p>Configuration for mapping functional road classes to zoom levels.</p>
+<p>For correct default initialization, use <a href="../navigation/TrackingCameraBehavior/defaultFunctionalRoadClassZoomPolicyOptions.html">TrackingCameraBehavior.defaultFunctionalRoadClassZoomPolicyOptions</a>.</p>
 </section>
 
 
@@ -80,26 +81,29 @@
   <section class="summary offset-anchor" id="instance-properties">
     <h2>Properties</h2>
     <dl class="properties">
-        <dt id="defaultZoomLevel" class="property">
-  <span class="name"><a href="../navigation/TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions/defaultZoomLevel.html">defaultZoomLevel</a></span>
-  <span class="signature">↔ double</span>
+        <dt id="defaultZoom" class="property">
+  <span class="name"><a href="../navigation/TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions/defaultZoom.html">defaultZoom</a></span>
+  <span class="signature">↔ <a href="../mapview/MapMeasure-class.html">MapMeasure</a></span>
   
 
 </dt>
 <dd>
-  Default zoom level returned when the functional road class is missing or unmapped.
+  Default zoom returned when the functional road class is missing or unmapped.
+Defaults to a <a href="../mapview/MapMeasure-class.html">MapMeasure</a> with kind <a href="../mapview/MapMeasureKind.html">MapMeasureKind.zoomLevel</a> and value 16.5.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
 
-        <dt id="functionalRoadClassToZoomLevel" class="property">
-  <span class="name"><a href="../navigation/TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions/functionalRoadClassToZoomLevel.html">functionalRoadClassToZoomLevel</a></span>
-  <span class="signature">↔ Map<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../routing/FunctionalRoadClass.html">FunctionalRoadClass</a></span>, <span class="type-parameter">double</span>&gt;</wbr></span></span>
+        <dt id="functionalRoadClassToZoom" class="property">
+  <span class="name"><a href="../navigation/TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions/functionalRoadClassToZoom.html">functionalRoadClassToZoom</a></span>
+  <span class="signature">↔ Map<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../routing/FunctionalRoadClass.html">FunctionalRoadClass</a></span>, <span class="type-parameter"><a href="../mapview/MapMeasure-class.html">MapMeasure</a></span>&gt;</wbr></span></span>
   
 
 </dt>
 <dd>
-  Maps each functional road class to the zoom level that should be used for it.
+  Maps each functional road class to the zoom that should be used for it.
+If <a href="../navigation/TrackingCameraBehavior/defaultFunctionalRoadClassZoomPolicyOptions.html">TrackingCameraBehavior.defaultFunctionalRoadClassZoomPolicyOptions</a> is not used
+for <a href="../navigation/TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions-class.html">TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions</a>, it will be an empty map.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -215,7 +219,7 @@
 <footer>
   <span class="no-break">
     here_sdk
-      4.25.5
+      4.26.0
   </span>
 
   

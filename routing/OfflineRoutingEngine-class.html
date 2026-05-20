@@ -18,7 +18,7 @@
   <link rel="icon" href="../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="0d43b320-801b-464f-9642-7d2df918b447"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-26T13:54:45+00:00"></head>
+<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="e667d9e6-e989-4ab0-ab07-20ce446bbd1b"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:20:20+00:00"></head>
 
 
 <body data-base-href="../" data-using-base-href="false" class="light-theme">
@@ -86,6 +86,11 @@ Currently blocked or closed roads or roads with traffic incident are not conside
 the road may pass through such road.
 Only seasonal road closures are considered based on the departure time, if given.
 Traffic information is only considered for online route calculation with the <code>RoutingEngine</code>.</p>
+<p><strong>Note:</strong> Route handles produced by this engine are not compatible with those created by
+the <code>RoutingEngine</code>. Importing, refreshing, or returning to a route via a route
+handle is supported only when the route was calculated with the same engine. However,
+this engine supports returning to a route calculated with the <code>RoutingEngine</code> when
+the route object is provided.</p>
 </section>
 
 
@@ -379,6 +384,20 @@ passing through the given waypoints in the given order.
 
 </dd>
 
+        <dt id="refreshRouteWithRouteHandleAndRefreshRouteParameters" class="callable">
+  <span class="name"><a href="../routing/OfflineRoutingEngine/refreshRouteWithRouteHandleAndRefreshRouteParameters.html">refreshRouteWithRouteHandleAndRefreshRouteParameters</a></span><span class="signature">(<wbr><span class="parameter" id="refreshRouteWithRouteHandleAndRefreshRouteParameters-param-refreshRouteParameters"><span class="type-annotation"><a href="../routing/RefreshRouteParameters-class.html">RefreshRouteParameters</a></span> <span class="parameter-name">refreshRouteParameters</span>, </span><span class="parameter" id="refreshRouteWithRouteHandleAndRefreshRouteParameters-param-routingOptions"><span class="type-annotation"><a href="../routing/RoutingOptions-class.html">RoutingOptions</a></span> <span class="parameter-name">routingOptions</span>, </span><span class="parameter" id="refreshRouteWithRouteHandleAndRefreshRouteParameters-param-callback"><span class="type-annotation"><a href="../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name">callback</span></span>)
+    <span class="returntype parameter">→ <a href="../core.threading/TaskHandle-class.html">TaskHandle</a></span>
+  </wbr></span>
+  
+
+</dt>
+<dd>
+  Asynchronously refreshes a previously calculated route from the provided <a href="../routing/RouteHandle-class.html">RouteHandle</a>, updating
+the starting point and route metadata based on <a href="../routing/RoutingOptions-class.html">RoutingOptions</a>.
+  
+
+</dd>
+
         <dt id="returnToRouteWithTraveledDistance" class="callable inherited">
   <span class="name"><a href="../routing/RoutingInterface/returnToRouteWithTraveledDistance.html">returnToRouteWithTraveledDistance</a></span><span class="signature">(<wbr><span class="parameter" id="returnToRouteWithTraveledDistance-param-route"><span class="type-annotation"><a href="../routing/Route-class.html">Route</a></span> <span class="parameter-name">route</span>, </span><span class="parameter" id="returnToRouteWithTraveledDistance-param-startingPoint"><span class="type-annotation"><a href="../routing/Waypoint-class.html">Waypoint</a></span> <span class="parameter-name">startingPoint</span>, </span><span class="parameter" id="returnToRouteWithTraveledDistance-param-lastTraveledSectionIndex"><span class="type-annotation">int</span> <span class="parameter-name">lastTraveledSectionIndex</span>, </span><span class="parameter" id="returnToRouteWithTraveledDistance-param-traveledDistanceOnLastSectionInMeters"><span class="type-annotation">int</span> <span class="parameter-name">traveledDistanceOnLastSectionInMeters</span>, </span><span class="parameter" id="returnToRouteWithTraveledDistance-param-callback"><span class="type-annotation"><a href="../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name">callback</span></span>)
     <span class="returntype parameter">→ <a href="../core.threading/TaskHandle-class.html">TaskHandle</a></span>
@@ -473,7 +492,7 @@ passing through the given waypoints in the given order.
 <footer>
   <span class="no-break">
     here_sdk
-      4.25.5
+      4.26.0
   </span>
 
   
