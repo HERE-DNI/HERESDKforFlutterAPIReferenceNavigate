@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
@@ -10,7 +10,7 @@
 
   
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
   
   <link rel="stylesheet" href="../../static-assets/github.css?v1">
@@ -18,7 +18,7 @@
   <link rel="icon" href="../../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="e667d9e6-e989-4ab0-ab07-20ce446bbd1b"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:20:20+00:00"></head>
+</head>
 
 
 <body data-base-href="../../" data-using-base-href="false" class="light-theme">
@@ -51,7 +51,11 @@
 </header>
 <main>
 
-<div id="dartdoc-main-content" class="main-content" data-above-sidebar="routing/RoutingEngine-class-sidebar.html" data-below-sidebar="">
+<div
+    id="dartdoc-main-content"
+    class="main-content"
+    data-above-sidebar="routing&#47;RoutingEngine-class-sidebar.html"
+    data-below-sidebar="">
     <div>
 <h1><span class="kind-method">importPedestrianRoute</span> abstract method 
 </h1></div>
@@ -60,19 +64,19 @@
       
   <div>
     <ol class="annotation-list">
-        <li>@Deprecated("Will be removed in v4.28.0. Use the `import_route()` methods with RoutingOptions parameter instead.")</li>
+        <li>@Deprecated(&quot;Will be removed in v4.28.0. Use the `import_route()` methods with RoutingOptions parameter instead.&quot;)</li>
     </ol>
   </div>
 
 <span class="returntype"><a href="../../core.threading/TaskHandle-class.html">TaskHandle</a></span>
-<span class="name deprecated">importPedestrianRoute</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="importPedestrianRoute-param-locations"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../core/Location-class.html">Location</a></span>&gt;</wbr></span></span> <span class="parameter-name">locations</span>, </span></li>
+<span class="name deprecated">importPedestrianRoute</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="importPedestrianRoute-param-locations"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../core/Location-class.html">Location</a></span>&gt;</span></span> <span class="parameter-name">locations</span>, </span></li>
 <li><span class="parameter" id="importPedestrianRoute-param-pedestrianOptions"><span class="type-annotation"><a class="deprecated" href="../../routing/PedestrianOptions-class.html">PedestrianOptions</a></span> <span class="parameter-name">pedestrianOptions</span>, </span></li>
 <li><span class="parameter" id="importPedestrianRoute-param-callback"><span class="type-annotation"><a href="../../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name">callback</span></span></li>
 </ol>)
 
       
 
-    </wbr></section>
+    </section>
     
 <section class="desc markdown">
   <p>Asynchronously creates a pedestrian route from a sequence of geographic coordinates very close to each other.</p>
@@ -106,7 +110,7 @@ It is always invoked on the main thread.</p>
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">@Deprecated("Will be removed in v4.28.0. Use the `import_route()` methods with RoutingOptions parameter instead.")
+  <pre class="language-dart"><code class="language-dart">@Deprecated(&quot;Will be removed in v4.28.0. Use the `import_route()` methods with RoutingOptions parameter instead.&quot;)
 
 TaskHandle importPedestrianRoute(List&lt;Location&gt; locations, PedestrianOptions pedestrianOptions, CalculateRouteCallback callback);</code></pre>
 </section>
@@ -142,7 +146,7 @@ TaskHandle importPedestrianRoute(List&lt;Location&gt; locations, PedestrianOptio
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.0
+      4.26.4
   </span>
 
   
@@ -158,3 +162,4 @@ TaskHandle importPedestrianRoute(List&lt;Location&gt; locations, PedestrianOptio
 </body>
 
 </html>
+

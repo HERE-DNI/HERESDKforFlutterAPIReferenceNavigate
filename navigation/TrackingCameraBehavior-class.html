@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
@@ -10,7 +10,7 @@
 
   
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
   
   <link rel="stylesheet" href="../static-assets/github.css?v1">
@@ -18,7 +18,7 @@
   <link rel="icon" href="../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.26.0.0 API Reference"><meta name="DC.Document.Id" content="e667d9e6-e989-4ab0-ab07-20ce446bbd1b"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.26.0.0"><meta name="DC.Creation.Date" content="2026-05-18T13:20:20+00:00"></head>
+</head>
 
 
 <body data-base-href="../" data-using-base-href="false" class="light-theme">
@@ -50,7 +50,11 @@
 </header>
 <main>
 
-<div id="dartdoc-main-content" class="main-content" data-above-sidebar="navigation/navigation-library-sidebar.html" data-below-sidebar="navigation/TrackingCameraBehavior-class-sidebar.html">
+<div
+    id="dartdoc-main-content"
+    class="main-content"
+    data-above-sidebar="navigation&#47;navigation-library-sidebar.html"
+    data-below-sidebar="navigation&#47;TrackingCameraBehavior-class-sidebar.html">
     <div>
 <h1><span class="kind-class">TrackingCameraBehavior</span> class 
     <a href="https://dart.dev/language/class-modifiers#abstract" class="feature feature-abstract" title="This type can not be directly constructed.">abstract</a>
@@ -104,12 +108,14 @@ subject to change without a deprecation process.</p>
     </dl>
   </section>
     
-  <section class="summary offset-anchor" id="instance-properties">
+  <section
+      class="summary offset-anchor"
+      id="instance-properties">
     <h2>Properties</h2>
     <dl class="properties">
         <dt id="bearingInDegrees" class="property">
   <span class="name"><a href="../navigation/TrackingCameraBehavior/bearingInDegrees.html">bearingInDegrees</a></span>
-  <span class="signature">↔ double?</span>
+  <span class="signature">&#8596; double?</span>
   
 
 </dt>
@@ -130,7 +136,7 @@ Gets the bearing in degrees.
 
         <dt id="hashCode" class="property inherited">
   <span class="name"><a href="../navigation/CameraBehavior/hashCode.html">hashCode</a></span>
-  <span class="signature">→ int</span>
+  <span class="signature">&#8594; int</span>
   
 
 </dt>
@@ -140,9 +146,25 @@ Gets the bearing in degrees.
 
 </dd>
 
+        <dt id="headingStabilizationThresholdInDegrees" class="property">
+  <span class="name"><a href="../navigation/TrackingCameraBehavior/headingStabilizationThresholdInDegrees.html">headingStabilizationThresholdInDegrees</a></span>
+  <span class="signature">&#8596; double</span>
+  
+
+</dt>
+<dd>
+  The heading stabilization threshold in degrees.
+Minimum angular change required before the heading signal updates.
+Values below this threshold are filtered out to reduce noise and jitter.
+Defaults to 5 degrees.
+Gets the heading stabilization threshold in degrees.
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
         <dt id="isManeuverDetectionEnabled" class="property">
   <span class="name"><a href="../navigation/TrackingCameraBehavior/isManeuverDetectionEnabled.html">isManeuverDetectionEnabled</a></span>
-  <span class="signature">↔ bool</span>
+  <span class="signature">&#8596; bool</span>
   
 
 </dt>
@@ -158,15 +180,14 @@ Gets whether maneuver detection is enabled.
 
         <dt id="maxRotationSpeedInDegreesPerSecond" class="property">
   <span class="name"><a href="../navigation/TrackingCameraBehavior/maxRotationSpeedInDegreesPerSecond.html">maxRotationSpeedInDegreesPerSecond</a></span>
-  <span class="signature">↔ double</span>
+  <span class="signature">&#8596; double</span>
   
 
 </dt>
 <dd>
   The maximum rotation speed.
 Maximum bearing rotation speed in degrees per second,
-limiting how fast the camera turns.
-Defaults to 20 degrees per second.
+limiting how fast the camera turns. Defaults to 60 degrees per second.
 Gets the maximum rotation speed.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
@@ -174,7 +195,7 @@ Gets the maximum rotation speed.
 
         <dt id="normalizedPrincipalPoint" class="property inherited">
   <span class="name"><a href="../navigation/CameraBehavior/normalizedPrincipalPoint.html">normalizedPrincipalPoint</a></span>
-  <span class="signature">↔ <a href="../core/Anchor2D-class.html">Anchor2D</a></span>
+  <span class="signature">&#8596; <a href="../core/Anchor2D-class.html">Anchor2D</a></span>
   
 
 </dt>
@@ -190,14 +211,13 @@ Gets the currently set normalized principal point to be used during navigation.
 
         <dt id="principalPointAnimationDuration" class="property">
   <span class="name"><a href="../navigation/TrackingCameraBehavior/principalPointAnimationDuration.html">principalPointAnimationDuration</a></span>
-  <span class="signature">↔ Duration</span>
+  <span class="signature">&#8596; Duration</span>
   
 
 </dt>
 <dd>
   The duration of principal point animation in milliseconds.
-If the principal point is changed, the change will be animated
-over this duration.
+If the principal point is changed, the change is animated over this duration.
 Defaults to 500 milliseconds, or half a second.
 Gets the current principal point animation duration in milliseconds.
   <div class="features"><span class="feature">getter/setter pair</span></div>
@@ -206,7 +226,7 @@ Gets the current principal point animation duration in milliseconds.
 
         <dt id="recenterAnimationDuration" class="property">
   <span class="name"><a href="../navigation/TrackingCameraBehavior/recenterAnimationDuration.html">recenterAnimationDuration</a></span>
-  <span class="signature">↔ Duration</span>
+  <span class="signature">&#8596; Duration</span>
   
 
 </dt>
@@ -221,7 +241,7 @@ Gets the recenter animation duration in milliseconds.
 
         <dt id="runtimeType" class="property inherited">
   <span class="name"><a href="../navigation/CameraBehavior/runtimeType.html">runtimeType</a></span>
-  <span class="signature">→ Type</span>
+  <span class="signature">&#8594; Type</span>
   
 
 </dt>
@@ -233,7 +253,7 @@ Gets the recenter animation duration in milliseconds.
 
         <dt id="tiltInDegrees" class="property">
   <span class="name"><a href="../navigation/TrackingCameraBehavior/tiltInDegrees.html">tiltInDegrees</a></span>
-  <span class="signature">↔ double</span>
+  <span class="signature">&#8596; double</span>
   
 
 </dt>
@@ -248,7 +268,7 @@ Gets the camera tilt in degrees.
 
         <dt id="viewRectangle" class="property">
   <span class="name"><a href="../navigation/TrackingCameraBehavior/viewRectangle.html">viewRectangle</a></span>
-  <span class="signature">↔ <a href="../core/Rectangle2D-class.html">Rectangle2D</a>?</span>
+  <span class="signature">&#8596; <a href="../core/Rectangle2D-class.html">Rectangle2D</a>?</span>
   
 
 </dt>
@@ -264,14 +284,14 @@ Gets the current view rectangle, if it's set.
 
         <dt id="zoomPolicy" class="property">
   <span class="name"><a href="../navigation/TrackingCameraBehavior/zoomPolicy.html">zoomPolicy</a></span>
-  <span class="signature">↔ <a href="../navigation/TrackingCameraBehaviorZoomPolicy-class.html">TrackingCameraBehaviorZoomPolicy</a></span>
+  <span class="signature">&#8596; <a href="../navigation/TrackingCameraBehaviorZoomPolicy-class.html">TrackingCameraBehaviorZoomPolicy</a></span>
   
 
 </dt>
 <dd>
   The strategy of computing the zoom level.
 Defines the strategy used to compute the zoom level based on scene heuristics.
-Defaults to a fixed zoom policy at zoom level 16.5.
+Defaults to a fixed zoom policy at zoom level 19.0.
 Gets the current zoom computation strategy.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
@@ -279,7 +299,7 @@ Gets the current zoom computation strategy.
 
         <dt id="zoomSpeedInLevelsPerSecond" class="property">
   <span class="name"><a href="../navigation/TrackingCameraBehavior/zoomSpeedInLevelsPerSecond.html">zoomSpeedInLevelsPerSecond</a></span>
-  <span class="signature">↔ double</span>
+  <span class="signature">&#8596; double</span>
   
 
 </dt>
@@ -296,13 +316,15 @@ Gets the zoom level transition speed.
     </dl>
   </section>
     
-  <section class="summary offset-anchor" id="instance-methods">
+  <section
+      class="summary offset-anchor"
+      id="instance-methods">
     <h2>Methods</h2>
     <dl class="callables">
         <dt id="flagFixedDurationForNextAnimation" class="callable">
   <span class="name"><a href="../navigation/TrackingCameraBehavior/flagFixedDurationForNextAnimation.html">flagFixedDurationForNextAnimation</a></span><span class="signature">(<wbr>)
-    <span class="returntype parameter">→ void</span>
-  </wbr></span>
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
   
 
 </dt>
@@ -314,8 +336,8 @@ Gets the zoom level transition speed.
 
         <dt id="getManeuverModeConfiguration" class="callable">
   <span class="name"><a href="../navigation/TrackingCameraBehavior/getManeuverModeConfiguration.html">getManeuverModeConfiguration</a></span><span class="signature">(<wbr>)
-    <span class="returntype parameter">→ <a href="../navigation/TrackingCameraBehaviorManeuverModeConfiguration-class.html">TrackingCameraBehaviorManeuverModeConfiguration</a>?</span>
-  </wbr></span>
+    <span class="returntype parameter">&#8594; <a href="../navigation/TrackingCameraBehaviorManeuverModeConfiguration-class.html">TrackingCameraBehaviorManeuverModeConfiguration</a>?</span>
+  </span>
   
 
 </dt>
@@ -327,8 +349,8 @@ Gets the zoom level transition speed.
 
         <dt id="noSuchMethod" class="callable inherited">
   <span class="name"><a href="../navigation/CameraBehavior/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
-    <span class="returntype parameter">→ dynamic</span>
-  </wbr></span>
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
   
 
 </dt>
@@ -340,8 +362,8 @@ Gets the zoom level transition speed.
 
         <dt id="setManeuverModeConfiguration" class="callable">
   <span class="name"><a href="../navigation/TrackingCameraBehavior/setManeuverModeConfiguration.html">setManeuverModeConfiguration</a></span><span class="signature">(<wbr><span class="parameter" id="setManeuverModeConfiguration-param-maneuverModeConfiguration"><span class="type-annotation"><a href="../navigation/TrackingCameraBehaviorManeuverModeConfiguration-class.html">TrackingCameraBehaviorManeuverModeConfiguration</a>?</span> <span class="parameter-name">maneuverModeConfiguration</span></span>)
-    <span class="returntype parameter">→ void</span>
-  </wbr></span>
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
   
 
 </dt>
@@ -353,8 +375,8 @@ Gets the zoom level transition speed.
 
         <dt id="toString" class="callable inherited">
   <span class="name"><a href="../navigation/CameraBehavior/toString.html">toString</a></span><span class="signature">(<wbr>)
-    <span class="returntype parameter">→ String</span>
-  </wbr></span>
+    <span class="returntype parameter">&#8594; String</span>
+  </span>
   
 
 </dt>
@@ -367,13 +389,15 @@ Gets the zoom level transition speed.
     </dl>
   </section>
     
-  <section class="summary offset-anchor inherited" id="operators">
+  <section
+      class="summary offset-anchor inherited"
+      id="operators">
     <h2>Operators</h2>
     <dl class="callables">
         <dt id="operator ==" class="callable inherited">
   <span class="name"><a href="../navigation/CameraBehavior/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">Object</span> <span class="parameter-name">other</span></span>)
-    <span class="returntype parameter">→ bool</span>
-  </wbr></span>
+    <span class="returntype parameter">&#8594; bool</span>
+  </span>
   
 
 </dt>
@@ -392,8 +416,8 @@ Gets the zoom level transition speed.
     <dl class="callables">
         <dt id="defaultFunctionalRoadClassZoomPolicyOptions" class="callable">
   <span class="name"><a href="../navigation/TrackingCameraBehavior/defaultFunctionalRoadClassZoomPolicyOptions.html">defaultFunctionalRoadClassZoomPolicyOptions</a></span><span class="signature">(<wbr>)
-    <span class="returntype parameter">→ <a href="../navigation/TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions-class.html">TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions</a></span>
-  </wbr></span>
+    <span class="returntype parameter">&#8594; <a href="../navigation/TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions-class.html">TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions</a></span>
+  </span>
   
 
 </dt>
@@ -405,8 +429,8 @@ Gets the zoom level transition speed.
 
         <dt id="defaultManeuverModeConfiguration" class="callable">
   <span class="name"><a href="../navigation/TrackingCameraBehavior/defaultManeuverModeConfiguration.html">defaultManeuverModeConfiguration</a></span><span class="signature">(<wbr>)
-    <span class="returntype parameter">→ <a href="../navigation/TrackingCameraBehaviorManeuverModeConfiguration-class.html">TrackingCameraBehaviorManeuverModeConfiguration</a></span>
-  </wbr></span>
+    <span class="returntype parameter">&#8594; <a href="../navigation/TrackingCameraBehaviorManeuverModeConfiguration-class.html">TrackingCameraBehaviorManeuverModeConfiguration</a></span>
+  </span>
   
 
 </dt>
@@ -418,8 +442,8 @@ Gets the zoom level transition speed.
 
         <dt id="defaultSpeedBasedZoomPolicyOptions" class="callable">
   <span class="name"><a href="../navigation/TrackingCameraBehavior/defaultSpeedBasedZoomPolicyOptions.html">defaultSpeedBasedZoomPolicyOptions</a></span><span class="signature">(<wbr>)
-    <span class="returntype parameter">→ <a href="../navigation/TrackingCameraBehaviorSpeedBasedZoomPolicyOptions-class.html">TrackingCameraBehaviorSpeedBasedZoomPolicyOptions</a></span>
-  </wbr></span>
+    <span class="returntype parameter">&#8594; <a href="../navigation/TrackingCameraBehaviorSpeedBasedZoomPolicyOptions-class.html">TrackingCameraBehaviorSpeedBasedZoomPolicyOptions</a></span>
+  </span>
   
 
 </dt>
@@ -463,7 +487,7 @@ Gets the zoom level transition speed.
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.0
+      4.26.4
   </span>
 
   
@@ -479,3 +503,4 @@ Gets the zoom level transition speed.
 </body>
 
 </html>
+
