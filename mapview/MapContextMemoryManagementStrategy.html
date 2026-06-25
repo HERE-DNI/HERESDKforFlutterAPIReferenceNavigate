@@ -68,8 +68,7 @@
     
 <section class="desc markdown">
   <p>The memory management strategy.</p>
-<p>Note: This is a beta release of this feature, so there could be a few bugs and unexpected
-behavior. Related APIs may change for new releases without a deprecation process.</p>
+<p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</p>
 </section>
 
 
@@ -97,8 +96,10 @@ behavior. Related APIs may change for new releases without a deprecation process
 
 </dt>
 <dd>
-  <p>The cache of all loaded map-data can adjust dynamically to fit visible data.
-Cache grows when visible data needs more memory and shrinks when usage drops but not below the CPU tile cache memory limit in kibibytes.</p>
+  <p>The cache of all loaded map-data adjusts dynamically based on visible data requirements.
+Memory usage can grow beyond the configured tile cache limit when needed for visible data.
+When memory usage drops, excess memory is released but never below the configured limit,
+ensuring a minimum reserved cache is always maintained.</p>
   
 
 </dd>
@@ -256,7 +257,7 @@ Cache grows when visible data needs more memory and shrinks when usage drops but
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.4
+      4.26.5
   </span>
 
   

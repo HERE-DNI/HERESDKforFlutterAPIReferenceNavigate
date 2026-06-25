@@ -31,7 +31,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../mapview/mapview-library.html">mapview.dart</a></li>
     <li><a href="../../mapview/RoadShieldIconProperties-class.html">RoadShieldIconProperties</a></li>
-    <li class="self-crumb">RoadShieldIconProperties constructor</li>
+    <li class="self-crumb"><span class="deprecated">RoadShieldIconProperties</span> constructor</li>
   </ol>
   <div class="self-name">RoadShieldIconProperties</div>
   <form class="search navbar-right" role="search">
@@ -62,7 +62,12 @@
 
     <section class="multi-line-signature">
       
-      <span class="name ">RoadShieldIconProperties</span>(<wbr><ol class="parameter-list"> <li><span class="parameter" id="-param-routeType"><span class="type-annotation"><a href="../../core/RouteType.html">RouteType</a></span> <span class="parameter-name">routeType</span>, </span></li>
+  <div>
+    <ol class="annotation-list">
+        <li>@Deprecated(&quot;Will be removed in v4.29.0. Use `withIsoCountryCode` instead.&quot;)</li>
+    </ol>
+  </div>
+      <span class="name deprecated">RoadShieldIconProperties</span>(<wbr><ol class="parameter-list"> <li><span class="parameter" id="-param-routeType"><span class="type-annotation"><a href="../../core/RouteType.html">RouteType</a></span> <span class="parameter-name">routeType</span>, </span></li>
 <li><span class="parameter" id="-param-countryCode"><span class="type-annotation">String</span> <span class="parameter-name">countryCode</span>, </span></li>
 <li><span class="parameter" id="-param-stateCode"><span class="type-annotation">String</span> <span class="parameter-name">stateCode</span>, </span></li>
 <li><span class="parameter" id="-param-routeNumberName"><span class="type-annotation">String</span> <span class="parameter-name">routeNumberName</span>, </span></li>
@@ -72,7 +77,7 @@
 
     
 <section class="desc markdown">
-  <p>Creates a new instance.</p>
+  <p>Construct RoadShieldIconProperties instance.</p>
 <ul>
 <li><code>routeType</code> The type of route indicating the significance of the road in a range from 0 to 6. A value of
 1 stands for the most major route and 6 the most minor, with 0 being of unknown type.</li>
@@ -107,7 +112,9 @@ in reality. It will be in the output road-shield icon.</li>
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">RoadShieldIconProperties(this.routeType, this.countryCode, this.stateCode, this.routeNumberName, this.shieldText);</code></pre>
+  <pre class="language-dart"><code class="language-dart">@Deprecated(&quot;Will be removed in v4.29.0. Use `withIsoCountryCode` instead.&quot;)
+RoadShieldIconProperties(this.routeType, this.countryCode, this.stateCode, this.routeNumberName, this.shieldText)
+    : isoCountryCode = null;</code></pre>
 </section>
 
 
@@ -125,7 +132,7 @@ in reality. It will be in the output road-shield icon.</li>
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../mapview/mapview-library.html">mapview</a></li>
     <li><a href="../../mapview/RoadShieldIconProperties-class.html">RoadShieldIconProperties</a></li>
-    <li class="self-crumb">RoadShieldIconProperties constructor</li>
+    <li class="self-crumb"><span class="deprecated">RoadShieldIconProperties</span> constructor</li>
 </ol>
 
 
@@ -141,7 +148,7 @@ in reality. It will be in the output road-shield icon.</li>
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.4
+      4.26.5
   </span>
 
   

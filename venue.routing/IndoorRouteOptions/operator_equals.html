@@ -117,6 +117,7 @@ bool operator ==(Object other) {
   IndoorRouteOptions _other = other;
   return routeOptions == _other.routeOptions &amp;&amp;
       transportMode == _other.transportMode &amp;&amp;
+      venueTransportSpecification == _other.venueTransportSpecification &amp;&amp;
       indoorAvoidanceOptions == _other.indoorAvoidanceOptions &amp;&amp;
       speedInMetersPerSecond == _other.speedInMetersPerSecond;
 }</code></pre>
@@ -153,7 +154,7 @@ bool operator ==(Object other) {
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.4
+      4.26.5
   </span>
 
   

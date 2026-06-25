@@ -140,7 +140,9 @@ Gets the power consumption in kilowatt per hour necessary to traverse the span.
 </dt>
 <dd>
   The country code of the span. The value is <code>null</code> when no data is available.
+For enum representation limited to ISO 3166-1 alpha-3 country code, refer to <a href="../routing/Span/isoCountryCode.html">Span.isoCountryCode</a>.
 Gets the country code of the span. The value is <code>null</code> when no data is available.
+For enum representation limited to ISO 3166-1 alpha-3 country code, refer to <a href="../routing/Span/isoCountryCode.html">Span.isoCountryCode</a>.
   <div class="features"><span class="feature">no setter</span></div>
 
 </dd>
@@ -210,6 +212,23 @@ Gets the <a href="../core/GeoPolyline-class.html">GeoPolyline</a> object represe
 <dd class="inherited">
   The hash code for this object.
   <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="isoCountryCode" class="property">
+  <span class="name"><a href="../routing/Span/isoCountryCode.html">isoCountryCode</a></span>
+  <span class="signature">&#8594; <a href="../core/CountryCode.html">CountryCode</a>?</span>
+  
+
+</dt>
+<dd>
+  The ISO 3166-1 alpha-3 country code of the span as enum. The value is <code>null</code> when no data is available
+or the country code of the span cannot be mapped to ISO 3166-1 alpha-3 country code. In this case string
+representation of the country code can be obtained using <a href="../routing/Span/countryCode.html">Span.countryCode</a>.
+Gets the ISO 3166-1 alpha-3 country code of the span as enum. The value is <code>null</code> when no data is available
+or the country code of the span cannot be mapped to ISO 3166-1 alpha-3 country code. In this case string
+representation of the country code can be obtained using <a href="../routing/Span/countryCode.html">Span.countryCode</a>.
+  <div class="features"><span class="feature">no setter</span></div>
 
 </dd>
 
@@ -536,7 +555,7 @@ The list of walk attributes on the span.
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.4
+      4.26.5
   </span>
 
   

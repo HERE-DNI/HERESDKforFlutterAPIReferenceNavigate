@@ -115,6 +115,7 @@ int get hashCode {
   int result = 7;
   result = 31 * result + routeOptions.hashCode;
   result = 31 * result + transportMode.hashCode;
+  result = 31 * result + venueTransportSpecification.hashCode;
   result = 31 * result + indoorAvoidanceOptions.hashCode;
   result = 31 * result + speedInMetersPerSecond.hashCode;
   return result;
@@ -154,7 +155,7 @@ int get hashCode {
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.4
+      4.26.5
   </span>
 
   

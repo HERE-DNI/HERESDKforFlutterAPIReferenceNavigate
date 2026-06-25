@@ -75,28 +75,26 @@
     
 <section class="desc markdown">
   <p>Controls lights present in the scene.
-Provides access to a MapSceneLights instance that controls the lights in the scene.</p>
-<p>The behavior of the returned MapSceneLights instance depends on the state of the scene:</p>
+The behavior of the returned <a href="../../mapview/MapSceneLights-class.html">MapSceneLights</a> instance depends on the state of the scene:</p>
 <ul>
-<li>If the scene is not loaded, the returned MapSceneLights instance will not contain any light settings, as lights are not loaded without a scene.</li>
-<li>If the scene is loaded, the returned MapSceneLights instance reflects the current light settings of the loaded scene.</li>
+<li>If the scene is not loaded, the returned <a href="../../mapview/MapSceneLights-class.html">MapSceneLights</a> instance will not contain any light settings, as lights are not loaded without a scene.</li>
+<li>If the scene is loaded, the returned <a href="../../mapview/MapSceneLights-class.html">MapSceneLights</a> instance reflects the current light settings of the loaded scene.</li>
 </ul>
 <p>Scene Change Behavior:</p>
 <ul>
-<li>If the scene changes, the MapSceneLights instance will be updated to reflect the light settings of the new scene.</li>
-<li>Any user-defined settings to MapSceneLights will be overridden by the new scene's light settings when the scene changes.</li>
+<li>If the scene changes, the <a href="../../mapview/MapSceneLights-class.html">MapSceneLights</a> instance will be updated to reflect the light settings of the new scene.</li>
+<li>Any user-defined settings to <a href="../../mapview/MapSceneLights-class.html">MapSceneLights</a> will be overridden by the new scene's light settings when the scene changes.</li>
 </ul>
 <p>Error Handling:</p>
 <ul>
 <li>If the scene is loaded and the loaded scene does not utilize or specify light settings:
 <ul>
-<li>If the lights are not present, the error callback may return a NO_LIGHTS state.
-Gets a MapSceneLights instance that controls lights present in the scene.</li>
+<li>If the lights are not present, the error callback may return a {
+Gets a <a href="../../mapview/MapSceneLights-class.html">MapSceneLights</a> instance that controls lights present in the scene.</li>
 </ul>
 </li>
 </ul>
-<p>Note: This is a beta release of this feature, so there could be a few bugs and unexpected behaviors.
-Related APIs may change for new releases without a deprecation process.</p>
+<p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</p>
 </section>
 
     
@@ -138,7 +136,7 @@ Related APIs may change for new releases without a deprecation process.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.4
+      4.26.5
   </span>
 
   

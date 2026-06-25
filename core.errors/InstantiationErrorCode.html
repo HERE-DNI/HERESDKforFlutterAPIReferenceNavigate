@@ -132,7 +132,13 @@ Please initialise the SDK.</p>
 
 </dt>
 <dd>
-  <p>Access to the specified persistent map storage folder is denied</p>
+  <p>Access to the specified persistent map storage folder is denied
+This may occur on Android due to insufficient permissions or scoped storage restrictions
+(e.g. attempting to access paths outside the application sandbox such as /sdcard/...).
+Use application-specific directories (e.g. getFilesDir(), getExternalFilesDir())
+or ensure the app has appropriate access rights to the provided path.
+For detailed guidance, see the official Android documentation:
+<a href="https://developer.android.com/guide/topics/permissions/overview">https://developer.android.com/guide/topics/permissions/overview</a></p>
   
 
 </dd>
@@ -394,7 +400,7 @@ Check the corectness of HRNs and versions.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.4
+      4.26.5
   </span>
 
   

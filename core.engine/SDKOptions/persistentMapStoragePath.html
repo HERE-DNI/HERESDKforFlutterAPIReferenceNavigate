@@ -79,7 +79,16 @@ If a relative path is set then directory
 <strong>Note</strong>: Offline maps stored at <code>&lt;persistent_map_storage_path&gt;/v1/&lt;access_key_id&gt;/ocm-map/</code>, where <code>&lt;access_key_id&gt;</code> is
 taken from <code>SDKOptions.authenticationMode</code>.
 When <code>SDKOptions</code> initialized with <code>AuthenticationMode.withToken</code> or <code>AuthenticationMode.withExternal</code>, then <code>&lt;access_key_id&gt;</code> left empty.</p>
-<p>Note: If the persistent map storage location has the read only permission, then the <a href="../../core.engine/SDKOptions/dataPath.html">SDKOptions.dataPath</a> must be configured.</p>
+<p>Note: If the persistent map storage location has the read only permission, then the <a href="../../core.engine/SDKOptions/dataPath.html">SDKOptions.dataPath</a> must be configured.
+Note: On Android, using <code>persistentStoragePath</code> may fail due to file access restrictions introduced by scoped storage (Android 10+).
+Due to scoped storage restrictions, direct access to arbitrary file system paths (e.g. <code>/sdcard/...</code>) may be denied, even if traditional storage permissions are declared.
+This can result in errors such as: <code>PERSISTENT_MAP_STORAGE_FOLDER_ACCESS_DENIED</code>
+To ensure reliable access, avoid using raw absolute paths outside your app sandbox, and prefer application-specific directories:</p>
+<ul>
+<li><code>context.getFilesDir()</code></li>
+<li><code>context.getExternalFilesDir()</code>
+For detailed guidance, see the official <a href="https://developer.android.com/guide/topics/permissions/overview">Android documentation on permissions</a>.</li>
+</ul>
 </section>
 
       
@@ -119,7 +128,7 @@ When <code>SDKOptions</code> initialized with <code>AuthenticationMode.withToken
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.4
+      4.26.5
   </span>
 
   

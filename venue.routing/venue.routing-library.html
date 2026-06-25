@@ -81,6 +81,22 @@
   The options to specify restrictions for indoor route calculations.
 </dd>
 
+          <dt id="IndoorRouteNotice">
+  <span class="name "><a href="../venue.routing/IndoorRouteNotice-class.html">IndoorRouteNotice</a></span> 
+
+</dt>
+<dd>
+  Explains an issue encountered during indoor route calculation.
+</dd>
+
+          <dt id="IndoorRouteNoticeDetails">
+  <span class="name "><a href="../venue.routing/IndoorRouteNoticeDetails-class.html">IndoorRouteNoticeDetails</a></span> 
+
+</dt>
+<dd>
+  Detailed description entry for an indoor route notice.
+</dd>
+
           <dt id="IndoorRouteOptions">
   <span class="name "><a href="../venue.routing/IndoorRouteOptions-class.html">IndoorRouteOptions</a></span> 
 
@@ -121,6 +137,78 @@
   Represents an indoor waypoint, used as input for indoor route calculation.
 </dd>
 
+          <dt id="VenueCarSpecification">
+  <span class="name "><a href="../venue.routing/VenueCarSpecification-class.html">VenueCarSpecification</a></span> 
+
+</dt>
+<dd>
+  Contains venue car specific settings.
+</dd>
+
+          <dt id="VenuePedestrianSpecification">
+  <span class="name "><a href="../venue.routing/VenuePedestrianSpecification-class.html">VenuePedestrianSpecification</a></span> 
+
+</dt>
+<dd>
+  Venue pedestrian specific settings.
+</dd>
+
+          <dt id="VenueScooterSpecification">
+  <span class="name "><a href="../venue.routing/VenueScooterSpecification-class.html">VenueScooterSpecification</a></span> 
+
+</dt>
+<dd>
+  Contains venue scooter specific settings.
+</dd>
+
+          <dt id="VenueTaxiSpecification">
+  <span class="name "><a href="../venue.routing/VenueTaxiSpecification-class.html">VenueTaxiSpecification</a></span> 
+
+</dt>
+<dd>
+  Contains venue taxi specific settings.
+</dd>
+
+          <dt id="VenueTransportSpecification">
+  <span class="name "><a href="../venue.routing/VenueTransportSpecification-class.html">VenueTransportSpecification</a></span> 
+
+</dt>
+<dd>
+  Contains transport attributes details related to the venue transport mode.
+</dd>
+
+          <dt id="VenueTransportSpecificationCarBuilder">
+  <span class="name "><a href="../venue.routing/VenueTransportSpecificationCarBuilder-class.html">VenueTransportSpecificationCarBuilder</a></span> 
+
+</dt>
+<dd>
+  This class constructs a <a href="../venue.routing/VenueTransportSpecification-class.html">VenueTransportSpecification</a> for a car.
+</dd>
+
+          <dt id="VenueTransportSpecificationPedestrianBuilder">
+  <span class="name "><a href="../venue.routing/VenueTransportSpecificationPedestrianBuilder-class.html">VenueTransportSpecificationPedestrianBuilder</a></span> 
+
+</dt>
+<dd>
+  This class constructs a <a href="../venue.routing/VenueTransportSpecification-class.html">VenueTransportSpecification</a> for a pedestrian.
+</dd>
+
+          <dt id="VenueTransportSpecificationScooterBuilder">
+  <span class="name "><a href="../venue.routing/VenueTransportSpecificationScooterBuilder-class.html">VenueTransportSpecificationScooterBuilder</a></span> 
+
+</dt>
+<dd>
+  This class constructs a <a href="../venue.routing/VenueTransportSpecification-class.html">VenueTransportSpecification</a> for a scooter.
+</dd>
+
+          <dt id="VenueTransportSpecificationTaxiBuilder">
+  <span class="name "><a href="../venue.routing/VenueTransportSpecificationTaxiBuilder-class.html">VenueTransportSpecificationTaxiBuilder</a></span> 
+
+</dt>
+<dd>
+  This class constructs a <a href="../venue.routing/VenueTransportSpecification-class.html">VenueTransportSpecification</a> for a taxi.
+</dd>
+
       </dl>
     </section>
 
@@ -128,6 +216,22 @@
       <h2>Enums</h2>
 
       <dl>
+          <dt id="EnableOption">
+  <span class="name "><a href="../venue.routing/EnableOption.html">EnableOption</a></span> 
+
+</dt>
+<dd>
+  Defines where the transport mode is enabled along the route.
+</dd>
+
+          <dt id="IndoorRouteNoticeCode">
+  <span class="name "><a href="../venue.routing/IndoorRouteNoticeCode.html">IndoorRouteNoticeCode</a></span> 
+
+</dt>
+<dd>
+  Notice codes which point to the issues encountered during indoor route calculation.
+</dd>
+
           <dt id="IndoorRoutingError">
   <span class="name "><a href="../venue.routing/IndoorRoutingError.html">IndoorRoutingError</a></span> 
 
@@ -161,6 +265,20 @@
   <dt id="CalculateIndoorRouteCallback" class="callable">
     <span class="name"><a href="../venue.routing/CalculateIndoorRouteCallback.html">CalculateIndoorRouteCallback</a></span><span class="signature">
       <span class="returntype parameter">= void Function<span class="signature">(<span class="parameter" id="param-indoorRoutingError"><span class="type-annotation"><a href="../venue.routing/IndoorRoutingError.html">IndoorRoutingError</a>?</span> <span class="parameter-name">indoorRoutingError</span>, </span><span class="parameter" id="param-routeList"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../routing/Route-class.html">Route</a></span>&gt;</span>?</span> <span class="parameter-name">routeList</span></span>)</span></span>
+    </span>
+    
+
+  </dt>
+  <dd>
+    A function which is called by the IndoorRoutingEngine after route calculation has completed.
+    
+
+  </dd>
+
+          
+  <dt id="IndoorRouteCallback" class="callable">
+    <span class="name"><a href="../venue.routing/IndoorRouteCallback.html">IndoorRouteCallback</a></span><span class="signature">
+      <span class="returntype parameter">= void Function<span class="signature">(<span class="parameter" id="param-indoorRoutingError"><span class="type-annotation"><a href="../venue.routing/IndoorRoutingError.html">IndoorRoutingError</a>?</span> <span class="parameter-name">indoorRoutingError</span>, </span><span class="parameter" id="param-routeList"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../routing/Route-class.html">Route</a></span>&gt;</span>?</span> <span class="parameter-name">routeList</span>, </span><span class="parameter" id="param-routeNotices"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../venue.routing/IndoorRouteNotice-class.html">IndoorRouteNotice</a></span>&gt;</span>?</span> <span class="parameter-name">routeNotices</span></span>)</span></span>
     </span>
     
 
@@ -237,7 +355,7 @@
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.4
+      4.26.5
   </span>
 
   

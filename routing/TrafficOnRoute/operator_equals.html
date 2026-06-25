@@ -115,7 +115,8 @@ bool operator ==(Object other) {
   if (identical(this, other)) return true;
   if (other is! TrafficOnRoute) return false;
   TrafficOnRoute _other = other;
-  return lastTraveledSectionIndex == _other.lastTraveledSectionIndex &amp;&amp;
+  return routeTag == _other.routeTag &amp;&amp;
+      lastTraveledSectionIndex == _other.lastTraveledSectionIndex &amp;&amp;
       traveledDistanceOnLastSectionInMeters == _other.traveledDistanceOnLastSectionInMeters &amp;&amp;
       DeepCollectionEquality().equals(trafficSections, _other.trafficSections);
 }</code></pre>
@@ -152,7 +153,7 @@ bool operator ==(Object other) {
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.4
+      4.26.5
   </span>
 
   
