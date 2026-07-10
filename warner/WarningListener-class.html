@@ -80,7 +80,7 @@ behaviors. Related APIs may change for new releases without a deprecation proces
 
     <dl class="constructor-summary-list">
         <dt id="WarningListener" class="callable">
-          <span class="name"><a href="../warner/WarningListener/WarningListener.html">WarningListener</a></span><span class="signature">(<span class="parameter" id="-param-onWarningsLambda"><span class="type-annotation">void</span> <span class="parameter-name">onWarningsLambda</span>(<span class="parameter" id="param-"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../warner/Warning-class.html">Warning</a></span>&gt;</span></span></span>)</span>)</span>
+          <span class="name"><a href="../warner/WarningListener/WarningListener.html">WarningListener</a></span><span class="signature">(<span class="parameter" id="-param-onWarningsLambda"><span class="type-annotation">void</span> <span class="parameter-name">onWarningsLambda</span>(<span class="parameter" id="param-"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../warner/WarningUpdate-class.html">WarningUpdate</a></span>&gt;</span></span>, </span><span class="parameter" id="param-"><span class="type-annotation"><a href="../warner/WarningsRegistry-class.html">WarningsRegistry</a></span></span>)</span>)</span>
         </dt>
         <dd>
           A generic listener interface abstract class for receiving warning notifications.
@@ -140,14 +140,14 @@ behaviors. Related APIs may change for new releases without a deprecation proces
 </dd>
 
         <dt id="onWarnings" class="callable">
-  <span class="name"><a href="../warner/WarningListener/onWarnings.html">onWarnings</a></span><span class="signature">(<wbr><span class="parameter" id="onWarnings-param-warnings"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../warner/Warning-class.html">Warning</a></span>&gt;</span></span> <span class="parameter-name">warnings</span></span>)
+  <span class="name"><a href="../warner/WarningListener/onWarnings.html">onWarnings</a></span><span class="signature">(<wbr><span class="parameter" id="onWarnings-param-warnings"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../warner/WarningUpdate-class.html">WarningUpdate</a></span>&gt;</span></span> <span class="parameter-name">warnings</span>, </span><span class="parameter" id="onWarnings-param-warningsRegistry"><span class="type-annotation"><a href="../warner/WarningsRegistry-class.html">WarningsRegistry</a></span> <span class="parameter-name">warningsRegistry</span></span>)
     <span class="returntype parameter">&#8594; void</span>
   </span>
   
 
 </dt>
 <dd>
-  Called when a new warnings is detected.
+  Called after the every location update was processed.
   
 
 </dd>
@@ -222,7 +222,7 @@ behaviors. Related APIs may change for new releases without a deprecation proces
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.5
+      4.27.0
   </span>
 
   

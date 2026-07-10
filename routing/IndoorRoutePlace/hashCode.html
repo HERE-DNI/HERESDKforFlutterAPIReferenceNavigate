@@ -118,6 +118,9 @@ int get hashCode {
   result = 31 * result + levelZIndex.hashCode;
   result = 31 * result + venueId.hashCode;
   result = 31 * result + levelId.hashCode;
+  result = 31 * result + name.hashCode;
+  result = 31 * result + waypointIndex.hashCode;
+  result = 31 * result + originalLocation.hashCode;
   return result;
 }</code></pre>
 </section>
@@ -155,7 +158,7 @@ int get hashCode {
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.5
+      4.27.0
   </span>
 
   

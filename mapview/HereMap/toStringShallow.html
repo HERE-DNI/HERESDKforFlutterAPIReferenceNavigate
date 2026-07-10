@@ -96,10 +96,10 @@ in the output.</p>
   <pre class="language-dart"><code class="language-dart">String toStringShallow({String joiner = &#39;, &#39;, DiagnosticLevel minLevel = DiagnosticLevel.debug}) {
   String? shallowString;
   assert(() {
-    final StringBuffer result = StringBuffer();
+    final result = StringBuffer();
     result.write(toString());
     result.write(joiner);
-    final DiagnosticPropertiesBuilder builder = DiagnosticPropertiesBuilder();
+    final builder = DiagnosticPropertiesBuilder();
     debugFillProperties(builder);
     result.write(
       builder.properties.where((DiagnosticsNode n) =&gt; !n.isFiltered(minLevel)).join(joiner),
@@ -142,7 +142,7 @@ in the output.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.5
+      4.27.0
   </span>
 
   

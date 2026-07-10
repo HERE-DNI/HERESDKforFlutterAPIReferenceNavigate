@@ -76,7 +76,7 @@
           <span class="name"><a href="../routing/IndoorRoutePlace/IndoorRoutePlace.html">IndoorRoutePlace</a></span><span class="signature">(<span class="parameter" id="-param-type"><span class="type-annotation"><a href="../routing/RoutePlaceType.html">RoutePlaceType</a></span> <span class="parameter-name">type</span>, </span><span class="parameter" id="-param-coordinates"><span class="type-annotation"><a href="../core/GeoCoordinates-class.html">GeoCoordinates</a></span> <span class="parameter-name">coordinates</span>, </span><span class="parameter" id="-param-levelZIndex"><span class="type-annotation">int</span> <span class="parameter-name">levelZIndex</span>, </span><span class="parameter" id="-param-venueId"><span class="type-annotation">String</span> <span class="parameter-name">venueId</span>, </span><span class="parameter" id="-param-levelId"><span class="type-annotation">String</span> <span class="parameter-name">levelId</span></span>)</span>
         </dt>
         <dd>
-          Creates a new instance.
+          
         </dd>
     </dl>
   </section>
@@ -134,6 +134,31 @@
 
 </dd>
 
+        <dt id="name" class="property">
+  <span class="name"><a href="../routing/IndoorRoutePlace/name.html">name</a></span>
+  <span class="signature">&#8596; String?</span>
+  
+
+</dt>
+<dd>
+  The location name (if available).
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="originalLocation" class="property">
+  <span class="name"><a href="../routing/IndoorRoutePlace/originalLocation.html">originalLocation</a></span>
+  <span class="signature">&#8596; <a href="../routing/IndoorOriginalLocation-class.html">IndoorOriginalLocation</a>?</span>
+  
+
+</dt>
+<dd>
+  Original location from the request (if different from the matched location).
+This is populated when the routing service snaps the waypoint to a different location.
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
         <dt id="runtimeType" class="property inherited">
   <span class="name"><a href="../routing/IndoorRoutePlace/runtimeType.html">runtimeType</a></span>
   <span class="signature">&#8594; Type</span>
@@ -166,6 +191,18 @@
 </dt>
 <dd>
   The venue identifier of this indoor location.
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="waypointIndex" class="property">
+  <span class="name"><a href="../routing/IndoorRoutePlace/waypointIndex.html">waypointIndex</a></span>
+  <span class="signature">&#8596; int?</span>
+  
+
+</dt>
+<dd>
+  Index of the corresponding waypoint in the request (if this place corresponds to a user-provided waypoint).
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -261,7 +298,7 @@
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.5
+      4.27.0
   </span>
 
   

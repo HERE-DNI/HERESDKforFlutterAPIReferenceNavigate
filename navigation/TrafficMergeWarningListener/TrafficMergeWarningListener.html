@@ -31,7 +31,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../navigation/navigation-library.html">navigation.dart</a></li>
     <li><a href="../../navigation/TrafficMergeWarningListener-class.html">TrafficMergeWarningListener</a></li>
-    <li class="self-crumb">TrafficMergeWarningListener factory constructor</li>
+    <li class="self-crumb"><span class="deprecated">TrafficMergeWarningListener</span> factory constructor</li>
   </ol>
   <div class="self-name">TrafficMergeWarningListener</div>
   <form class="search navbar-right" role="search">
@@ -62,7 +62,12 @@
 
     <section class="multi-line-signature">
       
-      <span class="name ">TrafficMergeWarningListener</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="-param-onTrafficMergeWarningUpdatedLambda"><span class="type-annotation">void</span> <span class="parameter-name">onTrafficMergeWarningUpdatedLambda</span>(<ol class="parameter-list single-line"> <li><span class="parameter" id="param-"><span class="type-annotation"><a href="../../navigation/TrafficMergeWarning-class.html">TrafficMergeWarning</a></span></span></li>
+  <div>
+    <ol class="annotation-list">
+        <li>@Deprecated(&quot;Will be removed in v4.29.0. Use the `WarningListener` implementation instead.&quot;)</li>
+    </ol>
+  </div>
+      <span class="name deprecated">TrafficMergeWarningListener</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="-param-onTrafficMergeWarningUpdatedLambda"><span class="type-annotation">void</span> <span class="parameter-name">onTrafficMergeWarningUpdatedLambda</span>(<ol class="parameter-list single-line"> <li><span class="parameter" id="param-"><span class="type-annotation"><a href="../../navigation/TrafficMergeWarning-class.html">TrafficMergeWarning</a></span></span></li>
 </ol>)</span></li>
 </ol>)
     </section>
@@ -85,7 +90,9 @@ since that is the distance between the first and second warnings.</p>
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">factory TrafficMergeWarningListener(
+  <pre class="language-dart"><code class="language-dart">@Deprecated(&quot;Will be removed in v4.29.0. Use the `WarningListener` implementation instead.&quot;)
+
+factory TrafficMergeWarningListener(
   void Function(TrafficMergeWarning) onTrafficMergeWarningUpdatedLambda,
 
 ) =&gt; TrafficMergeWarningListener$Lambdas(
@@ -109,7 +116,7 @@ since that is the distance between the first and second warnings.</p>
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../navigation/navigation-library.html">navigation</a></li>
     <li><a href="../../navigation/TrafficMergeWarningListener-class.html">TrafficMergeWarningListener</a></li>
-    <li class="self-crumb">TrafficMergeWarningListener factory constructor</li>
+    <li class="self-crumb"><span class="deprecated">TrafficMergeWarningListener</span> factory constructor</li>
 </ol>
 
 
@@ -125,7 +132,7 @@ since that is the distance between the first and second warnings.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.5
+      4.27.0
   </span>
 
   

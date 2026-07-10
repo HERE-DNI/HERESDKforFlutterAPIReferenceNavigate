@@ -113,8 +113,6 @@ like <code>HashSet</code> or <code>HashMap</code>.</p>
   <pre class="language-dart"><code class="language-dart">@override
 int get hashCode {
   int result = 7;
-  result = 31 * result + sectionIndex.hashCode;
-  result = 31 * result + spanIndex.hashCode;
   result = 31 * result + DeepCollectionEquality().hash(sectionProgress);
   result = 31 * result + DeepCollectionEquality().hash(maneuverProgress);
   result = 31 * result + routeMatchedLocation.hashCode;
@@ -155,7 +153,7 @@ int get hashCode {
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.5
+      4.27.0
   </span>
 
   

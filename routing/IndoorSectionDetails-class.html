@@ -138,6 +138,38 @@ Gets the list of indoor maneuvers within this indoor section.
 
 </dd>
 
+        <dt id="passthroughWaypoints" class="property">
+  <span class="name"><a href="../routing/IndoorSectionDetails/passthroughWaypoints.html">passthroughWaypoints</a></span>
+  <span class="signature">&#8594; List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../routing/IndoorPassThroughWaypoint-class.html">IndoorPassThroughWaypoint</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  The list of passthrough waypoints within this section.
+Passthrough waypoints are via waypoints with passThrough=true. They appear along
+the section's polyline without creating a section boundary. Each passthrough waypoint includes
+its indoor location and offset along the section polyline.
+Gets the list of passthrough waypoints within this section.
+  <div class="features"><span class="feature">no setter</span></div>
+
+</dd>
+
+        <dt id="postActions" class="property">
+  <span class="name"><a href="../routing/IndoorSectionDetails/postActions.html">postActions</a></span>
+  <span class="signature">&#8594; List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../routing/IndoorManeuver-class.html">IndoorManeuver</a></span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  The list of post actions for this section.
+Post actions are actions that occur after traversing the section, such as
+wait actions at via waypoints with stopDuration. These actions are not part of the
+regular maneuvers but represent additional requirements for completing the section.
+Gets the list of post actions for this section.
+  <div class="features"><span class="feature">no setter</span></div>
+
+</dd>
+
         <dt id="runtimeType" class="property inherited">
   <span class="name"><a href="../routing/IndoorSectionDetails/runtimeType.html">runtimeType</a></span>
   <span class="signature">&#8594; Type</span>
@@ -258,7 +290,7 @@ Gets the notices which explains the issues encountered during processing of this
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.5
+      4.27.0
   </span>
 
   

@@ -64,6 +64,36 @@
     
 <section class="desc markdown">
   <p>Represents an indoor waypoint, used as input for indoor route calculation.</p>
+<p>IndoorWaypoint can be used to specify the origin, destination, and via waypoints
+in a route request. Each waypoint type has different constraints on the supported
+properties:</p>
+<p><strong>Origin Waypoint:</strong></p>
+<ul>
+<li>Does NOT support <code>stop_duration</code></li>
+<li>Does NOT support <code>pass_through</code></li>
+<li>Use the basic constructor <code>make(coordinates, venue_id, level_id)</code></li>
+</ul>
+<p><strong>Destination Waypoint:</strong></p>
+<ul>
+<li>Supports <code>stop_duration</code> (e.g., for specifying arrival/waiting time)</li>
+<li>Does NOT support <code>pass_through</code></li>
+<li>Use <code>make(coordinates, venue_id, level_id)</code> or
+<code>make(coordinates, venue_id, level_id, stop_duration)</code> constructors</li>
+</ul>
+<p><strong>Via Waypoint:</strong></p>
+<ul>
+<li>Supports both <code>stop_duration</code> and <code>pass_through</code></li>
+<li>Use <code>make(coordinates, venue_id, level_id)</code>,
+<code>make(coordinates, venue_id, level_id, stop_duration)</code>, or
+<code>make(coordinates, venue_id, level_id, pass_through)</code> constructors</li>
+<li>When <code>pass_through</code> is <code>true</code>, the route continues without stopping</li>
+<li>When <code>pass_through</code> is <code>false</code> or <code>null</code>, the route stops at the waypoint</li>
+<li>When <code>stop_duration</code> is specified, the route stops for the given duration</li>
+</ul>
+<p><strong>Validation:</strong>
+When a route request is made, the waypoints are validated according to the rules above.
+If validation fails (e.g., origin has stop_duration or pass_through, or destination has
+pass_through), the route request returns an error with <a href="../venue.routing/IndoorRoutingError.html">IndoorRoutingError.badRequest</a>.</p>
 </section>
 
 
@@ -85,6 +115,20 @@
         </dt>
         <dd>
           Creates an outdoor waypoint.
+            <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="IndoorWaypoint.withPassThrough" class="callable">
+          <span class="name"><a href="../venue.routing/IndoorWaypoint/IndoorWaypoint.withPassThrough.html">IndoorWaypoint.withPassThrough</a></span><span class="signature">(<span class="parameter" id="withPassThrough-param-coordinates"><span class="type-annotation"><a href="../core/GeoCoordinates-class.html">GeoCoordinates</a></span> <span class="parameter-name">coordinates</span>, </span><span class="parameter" id="withPassThrough-param-venueId"><span class="type-annotation">String</span> <span class="parameter-name">venueId</span>, </span><span class="parameter" id="withPassThrough-param-levelId"><span class="type-annotation">String</span> <span class="parameter-name">levelId</span>, </span><span class="parameter" id="withPassThrough-param-passThrough"><span class="type-annotation">bool</span> <span class="parameter-name">passThrough</span></span>)</span>
+        </dt>
+        <dd>
+          Creates a passthrough indoor waypoint (for via waypoints).
+            <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="IndoorWaypoint.withStopDuration" class="callable">
+          <span class="name"><a href="../venue.routing/IndoorWaypoint/IndoorWaypoint.withStopDuration.html">IndoorWaypoint.withStopDuration</a></span><span class="signature">(<span class="parameter" id="withStopDuration-param-coordinates"><span class="type-annotation"><a href="../core/GeoCoordinates-class.html">GeoCoordinates</a></span> <span class="parameter-name">coordinates</span>, </span><span class="parameter" id="withStopDuration-param-venueId"><span class="type-annotation">String</span> <span class="parameter-name">venueId</span>, </span><span class="parameter" id="withStopDuration-param-levelId"><span class="type-annotation">String</span> <span class="parameter-name">levelId</span>, </span><span class="parameter" id="withStopDuration-param-stopDuration"><span class="type-annotation">int</span> <span class="parameter-name">stopDuration</span></span>)</span>
+        </dt>
+        <dd>
+          Creates an indoor waypoint with stop duration.
             <div class="constructor-modifier features">factory</div>
         </dd>
     </dl>
@@ -119,6 +163,20 @@
 
 </dd>
 
+        <dt id="isPassThrough" class="property">
+  <span class="name"><a href="../venue.routing/IndoorWaypoint/isPassThrough.html">isPassThrough</a></span>
+  <span class="signature">&#8594; bool?</span>
+  
+
+</dt>
+<dd>
+  If <code>true</code>, the route passes through this waypoint without stopping (for via waypoints).
+If <code>false</code> or <code>null</code>, the route stops at this waypoint.
+Returns <code>null</code> if not explicitly set (equivalent to <code>false</code>).
+  <div class="features"><span class="feature">no setter</span></div>
+
+</dd>
+
         <dt id="levelId" class="property">
   <span class="name"><a href="../venue.routing/IndoorWaypoint/levelId.html">levelId</a></span>
   <span class="signature">&#8594; String?</span>
@@ -140,6 +198,20 @@
 <dd class="inherited">
   A representation of the runtime type of the object.
   <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="stopDuration" class="property">
+  <span class="name"><a href="../venue.routing/IndoorWaypoint/stopDuration.html">stopDuration</a></span>
+  <span class="signature">&#8594; int?</span>
+  
+
+</dt>
+<dd>
+  The duration in seconds to stop at this waypoint (0-49999 seconds).
+This is typically used for destination waypoints or via waypoints to specify a waiting time.
+Returns <code>null</code> if no stop duration is specified.
+  <div class="features"><span class="feature">no setter</span></div>
 
 </dd>
 
@@ -246,7 +318,7 @@
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.5
+      4.27.0
   </span>
 
   

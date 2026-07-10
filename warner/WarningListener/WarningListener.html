@@ -62,7 +62,8 @@
 
     <section class="multi-line-signature">
       
-      <span class="name ">WarningListener</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="-param-onWarningsLambda"><span class="type-annotation">void</span> <span class="parameter-name">onWarningsLambda</span>(<ol class="parameter-list single-line"> <li><span class="parameter" id="param-"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../warner/Warning-class.html">Warning</a></span>&gt;</span></span></span></li>
+      <span class="name ">WarningListener</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="-param-onWarningsLambda"><span class="type-annotation">void</span> <span class="parameter-name">onWarningsLambda</span>(<ol class="parameter-list single-line"> <li><span class="parameter" id="param-"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../warner/WarningUpdate-class.html">WarningUpdate</a></span>&gt;</span></span>, </span></li>
+<li><span class="parameter" id="param-"><span class="type-annotation"><a href="../../warner/WarningsRegistry-class.html">WarningsRegistry</a></span></span></li>
 </ol>)</span></li>
 </ol>)
     </section>
@@ -83,7 +84,7 @@ behaviors. Related APIs may change for new releases without a deprecation proces
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">factory WarningListener(
-  void Function(List&lt;Warning&gt;) onWarningsLambda,
+  void Function(List&lt;WarningUpdate&gt;, WarningsRegistry) onWarningsLambda,
 
 ) =&gt; WarningListener$Lambdas(
   onWarningsLambda,
@@ -122,7 +123,7 @@ behaviors. Related APIs may change for new releases without a deprecation proces
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.5
+      4.27.0
   </span>
 
   

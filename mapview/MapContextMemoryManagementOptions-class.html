@@ -130,6 +130,24 @@ the cache limit.
 
 </dd>
 
+        <dt id="sceneLoadCacheOptions" class="property">
+  <span class="name"><a href="../mapview/MapContextMemoryManagementOptions/sceneLoadCacheOptions.html">sceneLoadCacheOptions</a></span>
+  <span class="signature">&#8596; <a href="../mapview/MapContextSceneLoadCacheOptions-class.html">MapContextSceneLoadCacheOptions</a>?</span>
+  
+
+</dt>
+<dd>
+  Scene load cache options.
+Default value is <code>null</code>.
+When loading scenes into <a href="../mapview/MapScene-class.html">MapScene</a>, an internal cache is used for speeding up subsequent loads
+of the same scene. The cache utilizes some amount of memory for each entry and <a href="../mapview/MapContextSceneLoadCacheOptions-class.html">MapContextSceneLoadCacheOptions</a>
+allows customization according to the memory profile of the client: under memory constrained conditions
+the number of entries in this cache can be reduced or the cache can be disabled entirely, and for clients
+that circle through many scenes, the cache capacity can be increased.
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
         <dt id="tileCacheMemoryLimitInKiB" class="property">
   <span class="name"><a href="../mapview/MapContextMemoryManagementOptions/tileCacheMemoryLimitInKiB.html">tileCacheMemoryLimitInKiB</a></span>
   <span class="signature">&#8596; int?</span>
@@ -248,7 +266,7 @@ Default value is <code>null</code>.
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.5
+      4.27.0
   </span>
 
   

@@ -118,6 +118,7 @@ int get hashCode {
   result = 31 * result + venueTransportSpecification.hashCode;
   result = 31 * result + indoorAvoidanceOptions.hashCode;
   result = 31 * result + speedInMetersPerSecond.hashCode;
+  result = 31 * result + DeepCollectionEquality().hash(viaWaypoints);
   return result;
 }</code></pre>
 </section>
@@ -155,7 +156,7 @@ int get hashCode {
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.5
+      4.27.0
   </span>
 
   

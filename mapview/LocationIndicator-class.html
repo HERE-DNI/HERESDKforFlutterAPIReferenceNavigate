@@ -63,16 +63,12 @@
 
     
 <section class="desc markdown">
-  <p>Graphical object to represent the location of the user on the map.</p>
+  <p>A graphical object to represent the location of the user on the map.</p>
 <p>It is either a green dot for pedestrian style or a triangular arrow for vehicle navigation style.
 This style can be changed by <a href="../mapview/LocationIndicator/locationIndicatorStyle.html">LocationIndicator.locationIndicatorStyle</a></p>
 <p>The location is made available to an instance of this class by calling <a href="../mapview/LocationIndicator/updateLocation.html">LocationIndicator.updateLocation</a> or
 <a href="../mapview/LocationIndicator/updateLocationAndCamera.html">LocationIndicator.updateLocationAndCamera</a>.</p>
 <p>Use <a href="../mapview/LocationIndicator/enable.html">LocationIndicator.enable</a> to add this object to the map and <a href="../mapview/LocationIndicator/disable.html">LocationIndicator.disable</a> to remove it.</p>
-<p>Note: The LocationIndicator is always rendered at a fixed altitude near 0. Changing the MapCamera
-to look at geographic coordinates with an altitude that is higher can cause the following behavior: If the
-MapCamera angle is tilted and altitude is too high, the LocationIndicator can unexpectedly
-disappear from the viewport due to the new perspective.</p>
 </section>
 
 
@@ -274,19 +270,6 @@ Gets the current opacity of the location indicator.
 
 </dd>
 
-        <dt id="setMarker3dModel" class="callable">
-  <span class="name deprecated"><a class="deprecated" href="../mapview/LocationIndicator/setMarker3dModel.html">setMarker3dModel</a></span><span class="signature">(<wbr><span class="parameter" id="setMarker3dModel-param-model"><span class="type-annotation"><a href="../mapview/MapMarker3DModel-class.html">MapMarker3DModel</a></span> <span class="parameter-name">model</span>, </span><span class="parameter" id="setMarker3dModel-param-scale"><span class="type-annotation">double</span> <span class="parameter-name">scale</span>, </span><span class="parameter" id="setMarker3dModel-param-type"><span class="type-annotation"><a href="../mapview/LocationIndicatorMarkerType.html">LocationIndicatorMarkerType</a></span> <span class="parameter-name">type</span></span>)
-    <span class="returntype parameter">&#8594; void</span>
-  </span>
-  
-
-</dt>
-<dd>
-  Sets the MapMarker3DModel asset to be displayed as location indicator for a specified type.
-  
-
-</dd>
-
         <dt id="setMarker3dModelWithRenderSizeUnit" class="callable">
   <span class="name"><a href="../mapview/LocationIndicator/setMarker3dModelWithRenderSizeUnit.html">setMarker3dModelWithRenderSizeUnit</a></span><span class="signature">(<wbr><span class="parameter" id="setMarker3dModelWithRenderSizeUnit-param-model"><span class="type-annotation"><a href="../mapview/MapMarker3DModel-class.html">MapMarker3DModel</a></span> <span class="parameter-name">model</span>, </span><span class="parameter" id="setMarker3dModelWithRenderSizeUnit-param-scale"><span class="type-annotation">double</span> <span class="parameter-name">scale</span>, </span><span class="parameter" id="setMarker3dModelWithRenderSizeUnit-param-type"><span class="type-annotation"><a href="../mapview/LocationIndicatorMarkerType.html">LocationIndicatorMarkerType</a></span> <span class="parameter-name">type</span>, </span><span class="parameter" id="setMarker3dModelWithRenderSizeUnit-param-renderSizeUnit"><span class="type-annotation"><a href="../mapview/RenderSizeUnit.html">RenderSizeUnit</a></span> <span class="parameter-name">renderSizeUnit</span></span>)
     <span class="returntype parameter">&#8594; void</span>
@@ -396,7 +379,7 @@ Gets the current opacity of the location indicator.
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.5
+      4.27.0
   </span>
 
   

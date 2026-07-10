@@ -31,7 +31,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../navigation/navigation-library.html">navigation.dart</a></li>
     <li><a href="../../navigation/RealisticViewWarning-class.html">RealisticViewWarning</a></li>
-    <li class="self-crumb">RealisticViewWarning constructor</li>
+    <li class="self-crumb"><span class="deprecated">RealisticViewWarning</span> constructor</li>
   </ol>
   <div class="self-name">RealisticViewWarning</div>
   <form class="search navbar-right" role="search">
@@ -62,19 +62,52 @@
 
     <section class="multi-line-signature">
       
-      <span class="name ">RealisticViewWarning</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="-param-distanceToRealisticViewInMeters"><span class="type-annotation">double</span> <span class="parameter-name">distanceToRealisticViewInMeters</span>, </span></li>
-<li><span class="parameter" id="-param-distanceType"><span class="type-annotation"><a href="../../navigation/DistanceType.html">DistanceType</a></span> <span class="parameter-name">distanceType</span></span></li>
+  <div>
+    <ol class="annotation-list">
+        <li>@Deprecated(&quot;Will be removed in v4.29.0. Use the constructor without deprecated fields instead.&quot;)</li>
+    </ol>
+  </div>
+      <span class="name deprecated">RealisticViewWarning</span>(<wbr><ol class="parameter-list"> <li><span class="parameter" id="-param-id"><span class="type-annotation">int</span> <span class="parameter-name">id</span>, </span></li>
+<li><span class="parameter" id="-param-distanceToRealisticViewInMeters"><span class="type-annotation">double</span> <span class="parameter-name">distanceToRealisticViewInMeters</span>, </span></li>
+<li><span class="parameter" id="-param-realisticViewVectorImage"><span class="type-annotation"><a href="../../navigation/RealisticViewVectorImage-class.html">RealisticViewVectorImage</a>?</span> <span class="parameter-name">realisticViewVectorImage</span>, </span></li>
+<li><span class="parameter" id="-param-realisticViewRasterImage"><span class="type-annotation"><a href="../../navigation/RealisticViewRasterImage-class.html">RealisticViewRasterImage</a>?</span> <span class="parameter-name">realisticViewRasterImage</span>, </span></li>
+<li><span class="parameter" id="-param-distanceType"><span class="type-annotation"><a class="deprecated" href="../../navigation/DistanceType.html">DistanceType</a></span> <span class="parameter-name">distanceType</span>, </span></li>
 </ol>)
     </section>
 
     
+<section class="desc markdown">
+  <p>Creates a new instance.</p>
+<ul>
+<li><code>id</code> Unique identifier for this specific realistic view warning instance.
+Each warning type (truck restrictions, speed warnings, etc.) maintains its own independent ID namespace.
+Use this ID to track, update, or dismiss individual warning instances of this type.</li>
+<li><code>distanceToRealisticViewInMeters</code> Distance to the junction, for which the realistic view is given, expressed in meters.</li>
+<li><code>realisticViewVectorImage</code> The realistic view object for which the warning is given.
+Image resources are stored as vector graphics.
+Within <a href="../../navigation/RealisticViewWarning-class.html">RealisticViewWarning</a>, only one type of image, either raster or vector, will be provided.
+If this property is not <code>null</code>, then <a href="../../navigation/RealisticViewWarning/realisticViewRasterImage.html">RealisticViewWarning.realisticViewRasterImage</a> will be <code>null</code>.</li>
+</ul>
+<p><strong>Note:</strong> The realistic views for most of the countries are stored as vector images.</p>
+<ul>
+<li><code>realisticViewRasterImage</code> The realistic view object for which the warning is given.
+Image resources are stored as raster graphics.
+Within <a href="../../navigation/RealisticViewWarning-class.html">RealisticViewWarning</a>, only one type of image, either raster or vector, will be provided.
+If this property is not <code>null</code>, then <a href="../../navigation/RealisticViewWarning/realisticViewVectorImage.html">RealisticViewWarning.realisticViewVectorImage</a> will be <code>null</code>.
+<strong>Note:</strong> Certain countries support only raster images as realistic views. Currently, this is the case
+only for Japan, but in the future, more countries might support this type of realistic views.</li>
+<li><code>distanceType</code> The distance type for the warning, e.g. a warning for a new realistic view ahead or a warning
+for passing a realistic view. Since the realistic view warning is given relative to a single
+position on the route, <a href="../../navigation/DistanceType.html">DistanceType.reached</a> will never be given for this warning.</li>
+</ul>
+</section>
 
 
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">RealisticViewWarning(double distanceToRealisticViewInMeters, DistanceType distanceType)
-  : id = 0, distanceToRealisticViewInMeters = distanceToRealisticViewInMeters, realisticViewVectorImage = null, realisticViewRasterImage = null, distanceType = distanceType;</code></pre>
+  <pre class="language-dart"><code class="language-dart">@Deprecated(&quot;Will be removed in v4.29.0. Use the constructor without deprecated fields instead.&quot;)
+RealisticViewWarning(this.id, this.distanceToRealisticViewInMeters, this.realisticViewVectorImage, this.realisticViewRasterImage, this.distanceType);</code></pre>
 </section>
 
 
@@ -92,7 +125,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../navigation/navigation-library.html">navigation</a></li>
     <li><a href="../../navigation/RealisticViewWarning-class.html">RealisticViewWarning</a></li>
-    <li class="self-crumb">RealisticViewWarning constructor</li>
+    <li class="self-crumb"><span class="deprecated">RealisticViewWarning</span> constructor</li>
 </ol>
 
 
@@ -108,7 +141,7 @@
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.5
+      4.27.0
   </span>
 
   

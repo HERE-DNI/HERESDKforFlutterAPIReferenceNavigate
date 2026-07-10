@@ -31,7 +31,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../navigation/navigation-library.html">navigation.dart</a></li>
     <li><a href="../../navigation/SafetyCameraWarningListener-class.html">SafetyCameraWarningListener</a></li>
-    <li class="self-crumb">SafetyCameraWarningListener factory constructor</li>
+    <li class="self-crumb"><span class="deprecated">SafetyCameraWarningListener</span> factory constructor</li>
   </ol>
   <div class="self-name">SafetyCameraWarningListener</div>
   <form class="search navbar-right" role="search">
@@ -62,7 +62,12 @@
 
     <section class="multi-line-signature">
       
-      <span class="name ">SafetyCameraWarningListener</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="-param-onSafetyCameraWarningUpdatedLambda"><span class="type-annotation">void</span> <span class="parameter-name">onSafetyCameraWarningUpdatedLambda</span>(<ol class="parameter-list single-line"> <li><span class="parameter" id="param-"><span class="type-annotation"><a href="../../navigation/SafetyCameraWarning-class.html">SafetyCameraWarning</a></span></span></li>
+  <div>
+    <ol class="annotation-list">
+        <li>@Deprecated(&quot;Will be removed in v4.29.0. Use the `WarningListener` implementation instead.&quot;)</li>
+    </ol>
+  </div>
+      <span class="name deprecated">SafetyCameraWarningListener</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="-param-onSafetyCameraWarningUpdatedLambda"><span class="type-annotation">void</span> <span class="parameter-name">onSafetyCameraWarningUpdatedLambda</span>(<ol class="parameter-list single-line"> <li><span class="parameter" id="param-"><span class="type-annotation"><a href="../../navigation/SafetyCameraWarning-class.html">SafetyCameraWarning</a></span></span></li>
 </ol>)</span></li>
 </ol>)
     </section>
@@ -85,7 +90,9 @@ That is a first in first out approach is used when multiple safety cameras are r
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">factory SafetyCameraWarningListener(
+  <pre class="language-dart"><code class="language-dart">@Deprecated(&quot;Will be removed in v4.29.0. Use the `WarningListener` implementation instead.&quot;)
+
+factory SafetyCameraWarningListener(
   void Function(SafetyCameraWarning) onSafetyCameraWarningUpdatedLambda,
 
 ) =&gt; SafetyCameraWarningListener$Lambdas(
@@ -109,7 +116,7 @@ That is a first in first out approach is used when multiple safety cameras are r
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../navigation/navigation-library.html">navigation</a></li>
     <li><a href="../../navigation/SafetyCameraWarningListener-class.html">SafetyCameraWarningListener</a></li>
-    <li class="self-crumb">SafetyCameraWarningListener factory constructor</li>
+    <li class="self-crumb"><span class="deprecated">SafetyCameraWarningListener</span> factory constructor</li>
 </ol>
 
 
@@ -125,7 +132,7 @@ That is a first in first out approach is used when multiple safety cameras are r
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.5
+      4.27.0
   </span>
 
   

@@ -64,7 +64,8 @@
       
 
 <span class="returntype">void</span>
-<span class="name ">onWarnings</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="onWarnings-param-warnings"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../warner/Warning-class.html">Warning</a></span>&gt;</span></span> <span class="parameter-name">warnings</span></span></li>
+<span class="name ">onWarnings</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="onWarnings-param-warnings"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../warner/WarningUpdate-class.html">WarningUpdate</a></span>&gt;</span></span> <span class="parameter-name">warnings</span>, </span></li>
+<li><span class="parameter" id="onWarnings-param-warningsRegistry"><span class="type-annotation"><a href="../../warner/WarningsRegistry-class.html">WarningsRegistry</a></span> <span class="parameter-name">warningsRegistry</span></span></li>
 </ol>)
 
       
@@ -72,10 +73,14 @@
     </section>
     
 <section class="desc markdown">
-  <p>Called when a new warnings is detected.</p>
-<p>This method is invoked whenever a new list of warnings becomes available.</p>
+  <p>Called after the every location update was processed.</p>
 <ul>
-<li><code>warnings</code> The list of warning objects containing details about each warning.</li>
+<li>
+<p><code>warnings</code> The list of warning objects containing details about each warning.</p>
+</li>
+<li>
+<p><code>warningsRegistry</code> <a href="../../warner/WarningsRegistry-class.html">WarningsRegistry</a> object to retrieve the concrete warning instance.</p>
+</li>
 </ul>
 </section>
 
@@ -83,7 +88,7 @@
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">void onWarnings(List&lt;Warning&gt; warnings);</code></pre>
+  <pre class="language-dart"><code class="language-dart">void onWarnings(List&lt;WarningUpdate&gt; warnings, WarningsRegistry warningsRegistry);</code></pre>
 </section>
 
 
@@ -117,7 +122,7 @@
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.5
+      4.27.0
   </span>
 
   

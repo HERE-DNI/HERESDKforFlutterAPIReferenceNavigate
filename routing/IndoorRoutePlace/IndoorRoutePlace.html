@@ -71,22 +71,13 @@
     </section>
 
     
-<section class="desc markdown">
-  <p>Creates a new instance.</p>
-<ul>
-<li><code>type</code> The type of the route place.</li>
-<li><code>coordinates</code> Geographic coordinates of the place.</li>
-<li><code>levelZIndex</code> The vertical level index of this indoor location.</li>
-<li><code>venueId</code> The venue identifier of this indoor location.</li>
-<li><code>levelId</code> The level identifier of this indoor location.</li>
-</ul>
-</section>
 
 
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">IndoorRoutePlace(this.type, this.coordinates, this.levelZIndex, this.venueId, this.levelId);</code></pre>
+  <pre class="language-dart"><code class="language-dart">IndoorRoutePlace(RoutePlaceType type, GeoCoordinates coordinates, int levelZIndex, String venueId, String levelId)
+  : type = type, coordinates = coordinates, levelZIndex = levelZIndex, venueId = venueId, levelId = levelId, name = null, waypointIndex = null, originalLocation = null;</code></pre>
 </section>
 
 
@@ -120,7 +111,7 @@
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.5
+      4.27.0
   </span>
 
   

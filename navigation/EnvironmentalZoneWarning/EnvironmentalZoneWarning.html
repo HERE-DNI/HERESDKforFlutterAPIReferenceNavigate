@@ -31,7 +31,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../navigation/navigation-library.html">navigation.dart</a></li>
     <li><a href="../../navigation/EnvironmentalZoneWarning-class.html">EnvironmentalZoneWarning</a></li>
-    <li class="self-crumb">EnvironmentalZoneWarning constructor</li>
+    <li class="self-crumb"><span class="deprecated">EnvironmentalZoneWarning</span> constructor</li>
   </ol>
   <div class="self-name">EnvironmentalZoneWarning</div>
   <form class="search navbar-right" role="search">
@@ -62,21 +62,44 @@
 
     <section class="multi-line-signature">
       
-      <span class="name ">EnvironmentalZoneWarning</span>(<wbr><ol class="parameter-list"> <li><span class="parameter" id="-param-distanceInMeters"><span class="type-annotation">double</span> <span class="parameter-name">distanceInMeters</span>, </span></li>
-<li><span class="parameter" id="-param-distanceType"><span class="type-annotation"><a href="../../navigation/DistanceType.html">DistanceType</a></span> <span class="parameter-name">distanceType</span>, </span></li>
+  <div>
+    <ol class="annotation-list">
+        <li>@Deprecated(&quot;Will be removed in v4.29.0. Use the constructor without deprecated fields instead.&quot;)</li>
+    </ol>
+  </div>
+      <span class="name deprecated">EnvironmentalZoneWarning</span>(<wbr><ol class="parameter-list"> <li><span class="parameter" id="-param-id"><span class="type-annotation">int</span> <span class="parameter-name">id</span>, </span></li>
+<li><span class="parameter" id="-param-distanceInMeters"><span class="type-annotation">double</span> <span class="parameter-name">distanceInMeters</span>, </span></li>
+<li><span class="parameter" id="-param-distanceType"><span class="type-annotation"><a class="deprecated" href="../../navigation/DistanceType.html">DistanceType</a></span> <span class="parameter-name">distanceType</span>, </span></li>
 <li><span class="parameter" id="-param-zoneId"><span class="type-annotation">String</span> <span class="parameter-name">zoneId</span>, </span></li>
 <li><span class="parameter" id="-param-name"><span class="type-annotation">String</span> <span class="parameter-name">name</span>, </span></li>
+<li><span class="parameter" id="-param-description"><span class="type-annotation"><a href="../../core/LocalizedTexts-class.html">LocalizedTexts</a></span> <span class="parameter-name">description</span>, </span></li>
+<li><span class="parameter" id="-param-websiteUrl"><span class="type-annotation">String?</span> <span class="parameter-name">websiteUrl</span>, </span></li>
 </ol>)
     </section>
 
     
+<section class="desc markdown">
+  <p>Creates a new instance.</p>
+<ul>
+<li><code>id</code> Unique identifier for this specific environmental zone warning instance.
+Each warning type (truck restrictions, speed warnings, etc.) maintains its own independent ID namespace.
+Use this ID to track, update, or dismiss individual warning instances of this type.</li>
+<li><code>distanceInMeters</code> The distance from the current location to the environmental zone.</li>
+<li><code>distanceType</code> Indicates if the specified zone is ahead of the vehicle or has just passed by. If it is
+ahead, then <a class="deprecated" href="../../navigation/EnvironmentalZoneWarning/distanceInMeters.html">EnvironmentalZoneWarning.distanceInMeters</a> is greater than 0.</li>
+<li><code>zoneId</code> Indicates the environmental zone id in the map data.</li>
+<li><code>name</code> Indicates the official name of the environmental zone.</li>
+<li><code>description</code> Indicates the description of the environmental zone in the available languages.</li>
+<li><code>websiteUrl</code> Indicates the website of the environmental zone, if available.</li>
+</ul>
+</section>
 
 
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">EnvironmentalZoneWarning(double distanceInMeters, DistanceType distanceType, String zoneId, String name)
-  : id = 0, distanceInMeters = distanceInMeters, distanceType = distanceType, zoneId = zoneId, name = name, description = LocalizedTexts(), websiteUrl = null;</code></pre>
+  <pre class="language-dart"><code class="language-dart">@Deprecated(&quot;Will be removed in v4.29.0. Use the constructor without deprecated fields instead.&quot;)
+EnvironmentalZoneWarning(this.id, this.distanceInMeters, this.distanceType, this.zoneId, this.name, this.description, this.websiteUrl);</code></pre>
 </section>
 
 
@@ -94,7 +117,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../navigation/navigation-library.html">navigation</a></li>
     <li><a href="../../navigation/EnvironmentalZoneWarning-class.html">EnvironmentalZoneWarning</a></li>
-    <li class="self-crumb">EnvironmentalZoneWarning constructor</li>
+    <li class="self-crumb"><span class="deprecated">EnvironmentalZoneWarning</span> constructor</li>
 </ol>
 
 
@@ -110,7 +133,7 @@
 <footer>
   <span class="no-break">
     here_sdk
-      4.26.5
+      4.27.0
   </span>
 
   
