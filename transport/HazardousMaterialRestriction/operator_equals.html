@@ -115,7 +115,7 @@ bool operator ==(Object other) {
   if (identical(this, other)) return true;
   if (other is! HazardousMaterialRestriction) return false;
   HazardousMaterialRestriction _other = other;
-  return hazardousMaterial == _other.hazardousMaterial &amp;&amp;
+  return DeepCollectionEquality().equals(hazardousMaterials, _other.hazardousMaterials) &amp;&amp;
       tunnelCategory == _other.tunnelCategory;
 }</code></pre>
 </section>
@@ -151,7 +151,7 @@ bool operator ==(Object other) {
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.0
+      4.27.1
   </span>
 
   

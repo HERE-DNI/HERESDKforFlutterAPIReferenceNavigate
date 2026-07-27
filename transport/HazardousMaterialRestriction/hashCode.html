@@ -113,7 +113,7 @@ like <code>HashSet</code> or <code>HashMap</code>.</p>
   <pre class="language-dart"><code class="language-dart">@override
 int get hashCode {
   int result = 7;
-  result = 31 * result + hazardousMaterial.hashCode;
+  result = 31 * result + DeepCollectionEquality().hash(hazardousMaterials);
   result = 31 * result + tunnelCategory.hashCode;
   return result;
 }</code></pre>
@@ -152,7 +152,7 @@ int get hashCode {
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.0
+      4.27.1
   </span>
 
   

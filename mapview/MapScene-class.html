@@ -308,6 +308,19 @@ The behavior of the returned <a href="../mapview/MapSceneLights-class.html">MapS
 
 </dd>
 
+        <dt id="addMapPolylineLayer" class="callable">
+  <span class="name"><a href="../mapview/MapScene/addMapPolylineLayer.html">addMapPolylineLayer</a></span><span class="signature">(<wbr><span class="parameter" id="addMapPolylineLayer-param-name"><span class="type-annotation">String</span> <span class="parameter-name">name</span>, </span><span class="parameter" id="addMapPolylineLayer-param-layerPriority"><span class="type-annotation"><a href="../mapview/MapLayerPriority-class.html">MapLayerPriority</a>?</span> <span class="parameter-name">layerPriority</span></span>)
+    <span class="returntype parameter">&#8594; bool</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Creates and registers a new polyline layer for this map scene.
+  
+
+</dd>
+
         <dt id="addMapPolylines" class="callable">
   <span class="name"><a href="../mapview/MapScene/addMapPolylines.html">addMapPolylines</a></span><span class="signature">(<wbr><span class="parameter" id="addMapPolylines-param-mapPolylines"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../mapview/MapPolyline-class.html">MapPolyline</a></span>&gt;</span></span> <span class="parameter-name">mapPolylines</span></span>)
     <span class="returntype parameter">&#8594; void</span>
@@ -317,6 +330,32 @@ The behavior of the returned <a href="../mapview/MapSceneLights-class.html">MapS
 </dt>
 <dd>
   Adds map polylines to this map scene.
+  
+
+</dd>
+
+        <dt id="addMapPolylinesToLayer" class="callable">
+  <span class="name"><a href="../mapview/MapScene/addMapPolylinesToLayer.html">addMapPolylinesToLayer</a></span><span class="signature">(<wbr><span class="parameter" id="addMapPolylinesToLayer-param-mapPolylines"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../mapview/MapPolyline-class.html">MapPolyline</a></span>&gt;</span></span> <span class="parameter-name">mapPolylines</span>, </span><span class="parameter" id="addMapPolylinesToLayer-param-layerName"><span class="type-annotation">String</span> <span class="parameter-name">layerName</span></span>)
+    <span class="returntype parameter">&#8594; bool</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Adds multiple polylines to the layer identified by a layer name.
+  
+
+</dd>
+
+        <dt id="addMapPolylineToLayer" class="callable">
+  <span class="name"><a href="../mapview/MapScene/addMapPolylineToLayer.html">addMapPolylineToLayer</a></span><span class="signature">(<wbr><span class="parameter" id="addMapPolylineToLayer-param-mapPolyline"><span class="type-annotation"><a href="../mapview/MapPolyline-class.html">MapPolyline</a></span> <span class="parameter-name">mapPolyline</span>, </span><span class="parameter" id="addMapPolylineToLayer-param-layerName"><span class="type-annotation">String</span> <span class="parameter-name">layerName</span></span>)
+    <span class="returntype parameter">&#8594; bool</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Adds a single polyline to the layer identified by a layer name.
   
 
 </dd>
@@ -648,6 +687,20 @@ formats.
 
 </dd>
 
+        <dt id="removeMapPolylineLayer" class="callable">
+  <span class="name"><a href="../mapview/MapScene/removeMapPolylineLayer.html">removeMapPolylineLayer</a></span><span class="signature">(<wbr><span class="parameter" id="removeMapPolylineLayer-param-name"><span class="type-annotation">String</span> <span class="parameter-name">name</span></span>)
+    <span class="returntype parameter">&#8594; bool</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Removes the polyline layer identified by a name from this map scene, including all polylines
+contained in it.
+  
+
+</dd>
+
         <dt id="removeMapPolylines" class="callable">
   <span class="name"><a href="../mapview/MapScene/removeMapPolylines.html">removeMapPolylines</a></span><span class="signature">(<wbr><span class="parameter" id="removeMapPolylines-param-mapPolylines"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../mapview/MapPolyline-class.html">MapPolyline</a></span>&gt;</span></span> <span class="parameter-name">mapPolylines</span></span>)
     <span class="returntype parameter">&#8594; void</span>
@@ -744,7 +797,7 @@ formats.
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.0
+      4.27.1
   </span>
 
   

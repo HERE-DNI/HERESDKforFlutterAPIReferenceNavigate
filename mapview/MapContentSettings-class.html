@@ -175,6 +175,19 @@ can already be changed before a map view instance is created.</p>
   <section class="summary offset-anchor" id="static-methods">
     <h2>Static Methods</h2>
     <dl class="callables">
+        <dt id="configurePoiFilter" class="callable">
+  <span class="name"><a href="../mapview/MapContentSettings/configurePoiFilter.html">configurePoiFilter</a></span><span class="signature">(<wbr><span class="parameter" id="configurePoiFilter-param-filterCriteria"><span class="type-annotation"><a href="../core/PoiFilterCriteria-class.html">PoiFilterCriteria</a></span> <span class="parameter-name">filterCriteria</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Configures POI filters represented as opaque criteria.
+  
+
+</dd>
+
         <dt id="configureVehicleRestrictionFilter" class="callable">
   <span class="name deprecated"><a class="deprecated" href="../mapview/MapContentSettings/configureVehicleRestrictionFilter.html">configureVehicleRestrictionFilter</a></span><span class="signature">(<wbr><span class="parameter" id="configureVehicleRestrictionFilter-param-transportMode"><span class="type-annotation"><a href="../transport/TransportMode.html">TransportMode</a></span> <span class="parameter-name">transportMode</span>, </span><span class="parameter" id="configureVehicleRestrictionFilter-param-truckSpecifications"><span class="type-annotation"><a class="deprecated" href="../transport/TruckSpecifications-class.html">TruckSpecifications</a></span> <span class="parameter-name">truckSpecifications</span>, </span><span class="parameter" id="configureVehicleRestrictionFilter-param-hazardousMaterials"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../transport/HazardousMaterial.html">HazardousMaterial</a></span>&gt;</span>?</span> <span class="parameter-name">hazardousMaterials</span>, </span><span class="parameter" id="configureVehicleRestrictionFilter-param-tunnelCategory"><span class="type-annotation"><a href="../transport/TunnelCategory.html">TunnelCategory</a>?</span> <span class="parameter-name">tunnelCategory</span></span>)
     <span class="returntype parameter">&#8594; void</span>
@@ -226,6 +239,19 @@ criteria are shown when general display of traffic incidents is enabled.
 </dt>
 <dd>
   Resets POI categories visibility to their default state.
+  
+
+</dd>
+
+        <dt id="resetPoiFilters" class="callable">
+  <span class="name"><a href="../mapview/MapContentSettings/resetPoiFilters.html">resetPoiFilters</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Resets all previously applied POI filters across all POI categories.
   
 
 </dd>
@@ -337,7 +363,7 @@ map, by default).
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.0
+      4.27.1
   </span>
 
   

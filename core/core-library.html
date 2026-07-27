@@ -327,6 +327,14 @@ orientation events.
   Carries the result of picking a Carto POI (point of interest) object.
 </dd>
 
+          <dt id="PoiFilterCriteria">
+  <span class="name "><a href="../core/PoiFilterCriteria-class.html">PoiFilterCriteria</a></span> 
+
+</dt>
+<dd>
+  Opaque POI filtering criteria container that can be passed to map content APIs.
+</dd>
+
           <dt id="Point2D">
   <span class="name "><a href="../core/Point2D-class.html">Point2D</a></span> 
 
@@ -416,6 +424,14 @@ when reducing a size of polyline.
 </dt>
 <dd>
   Authentication error
+</dd>
+
+          <dt id="AuthorizationError">
+  <span class="name "><a href="../core/AuthorizationError.html">AuthorizationError</a></span> 
+
+</dt>
+<dd>
+  AuthorizationError represents an error's enum
 </dd>
 
           <dt id="BodyFrame">
@@ -561,6 +577,20 @@ from the end of <a href="../core/GeoPolyline/vertices.html">GeoPolyline.vertices
   </dd>
 
           
+  <dt id="AuthorizedFeaturesCallback" class="callable">
+    <span class="name"><a href="../core/AuthorizedFeaturesCallback.html">AuthorizedFeaturesCallback</a></span><span class="signature">
+      <span class="returntype parameter">= void Function<span class="signature">(<span class="parameter" id="param-features"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../core.engine/LayerConfigurationFeature.html">LayerConfigurationFeature</a></span>&gt;</span>?</span> <span class="parameter-name">features</span>, </span><span class="parameter" id="param-error"><span class="type-annotation"><a href="../core/AuthorizationError.html">AuthorizationError</a>?</span> <span class="parameter-name">error</span></span>)</span></span>
+    </span>
+    
+
+  </dt>
+  <dd>
+    Callback used to retrieve allowed features.
+    
+
+  </dd>
+
+          
   <dt id="PolylineSimplificationCallback" class="callable">
     <span class="name"><a href="../core/PolylineSimplificationCallback.html">PolylineSimplificationCallback</a></span><span class="signature">
       <span class="returntype parameter">= void Function<span class="signature">(<span class="parameter" id="param-queryError"><span class="type-annotation"><a href="../core/PolylineSimplificationError.html">PolylineSimplificationError</a>?</span> <span class="parameter-name">queryError</span>, </span><span class="parameter" id="param-result"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../core/GeoCoordinates-class.html">GeoCoordinates</a></span>&gt;</span>?</span> <span class="parameter-name">result</span></span>)</span></span>
@@ -588,6 +618,14 @@ from the end of <a href="../core/GeoPolyline/vertices.html">GeoPolyline.vertices
 </dt>
 <dd>
   Authentication exception
+</dd>
+
+          <dt id="AuthorizationExceptionException">
+  <span class="name "><a href="../core/AuthorizationExceptionException-class.html">AuthorizationExceptionException</a></span> 
+
+</dt>
+<dd>
+  Authorization exception
 </dd>
 
       </dl>
@@ -655,7 +693,7 @@ from the end of <a href="../core/GeoPolyline/vertices.html">GeoPolyline.vertices
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.0
+      4.27.1
   </span>
 
   
