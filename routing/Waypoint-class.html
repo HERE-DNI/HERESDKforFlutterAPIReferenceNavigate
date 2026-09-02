@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
@@ -10,7 +10,7 @@
 
   
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
   
   <link rel="stylesheet" href="../static-assets/github.css?v1">
@@ -18,7 +18,7 @@
   <link rel="icon" href="../static-assets/favicon.png?v1">
 
   
-<meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for Flutter Navigate v4.27.2.0 API Reference"><meta name="DC.Document.Id" content="9adbfd9f-45d9-4d38-ae14-1cf88c45a294"><meta name="DC.Document.Name" content="HERE SDK for Flutter - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for Flutter"><meta name="DC.Product.Version" content="4.27.2.0"><meta name="DC.Creation.Date" content="2026-08-05T14:39:43+00:00"></head>
+</head>
 
 
 <body data-base-href="../" data-using-base-href="false" class="light-theme">
@@ -50,7 +50,11 @@
 </header>
 <main>
 
-<div id="dartdoc-main-content" class="main-content" data-above-sidebar="routing/routing-library-sidebar.html" data-below-sidebar="routing/Waypoint-class-sidebar.html">
+<div
+    id="dartdoc-main-content"
+    class="main-content"
+    data-above-sidebar="routing&#47;routing-library-sidebar.html"
+    data-below-sidebar="routing&#47;Waypoint-class-sidebar.html">
     <div>
 <h1><span class="kind-class">Waypoint</span> class 
  
@@ -69,7 +73,7 @@
 
     <dl class="constructor-summary-list">
         <dt id="Waypoint" class="callable">
-          <span class="name"><a href="../routing/Waypoint/Waypoint.html">Waypoint</a></span><span class="signature">(<span class="parameter" id="-param-coordinates"><span class="type-annotation"><a href="../core/GeoCoordinates-class.html">GeoCoordinates</a></span> <span class="parameter-name">coordinates</span>, [</span><span class="parameter" id="-param-type"><span class="type-annotation"><a href="../routing/WaypointType.html">WaypointType</a></span> <span class="parameter-name">type</span> = <span class="default-value">WaypointType.stopover</span>, </span><span class="parameter" id="-param-transitRadiusInMeters"><span class="type-annotation">int</span> <span class="parameter-name">transitRadiusInMeters</span> = <span class="default-value">0</span>, </span><span class="parameter" id="-param-headingInDegrees"><span class="type-annotation">double?</span> <span class="parameter-name">headingInDegrees</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-sideOfStreetHint"><span class="type-annotation"><a href="../core/GeoCoordinates-class.html">GeoCoordinates</a>?</span> <span class="parameter-name">sideOfStreetHint</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-displayLocation"><span class="type-annotation"><a href="../core/GeoCoordinates-class.html">GeoCoordinates</a>?</span> <span class="parameter-name">displayLocation</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-minCourseDistanceInMeters"><span class="type-annotation">int?</span> <span class="parameter-name">minCourseDistanceInMeters</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-nameHint"><span class="type-annotation">String?</span> <span class="parameter-name">nameHint</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-matchSideOfStreet"><span class="type-annotation"><a href="../routing/MatchSideOfStreet.html">MatchSideOfStreet</a>?</span> <span class="parameter-name">matchSideOfStreet</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-duration"><span class="type-annotation">Duration</span> <span class="parameter-name">duration</span> = <span class="default-value">const Duration(seconds: 0)</span>, </span><span class="parameter" id="-param-segmentHint"><span class="type-annotation"><a href="../routing/SegmentReference-class.html">SegmentReference</a>?</span> <span class="parameter-name">segmentHint</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-onRoadThresholdInMeters"><span class="type-annotation">int?</span> <span class="parameter-name">onRoadThresholdInMeters</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-chargingStop"><span class="type-annotation"><a href="../routing/ChargingStop-class.html">ChargingStop</a>?</span> <span class="parameter-name">chargingStop</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-currentWeightChangeInKilograms"><span class="type-annotation">int?</span> <span class="parameter-name">currentWeightChangeInKilograms</span> = <span class="default-value">null</span></span>])</span>
+          <span class="name"><a href="../routing/Waypoint/Waypoint.html">Waypoint</a></span><span class="signature">(<span class="parameter" id="-param-coordinates"><span class="type-annotation"><a href="../core/GeoCoordinates-class.html">GeoCoordinates</a></span> <span class="parameter-name">coordinates</span>, [</span><span class="parameter" id="-param-type"><span class="type-annotation"><a href="../routing/WaypointType.html">WaypointType</a></span> <span class="parameter-name">type</span> = <span class="default-value">WaypointType.stopover</span>, </span><span class="parameter" id="-param-transitRadiusInMeters"><span class="type-annotation">int</span> <span class="parameter-name">transitRadiusInMeters</span> = <span class="default-value">0</span>, </span><span class="parameter" id="-param-headingInDegrees"><span class="type-annotation">double?</span> <span class="parameter-name">headingInDegrees</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-sideOfStreetHint"><span class="type-annotation"><a href="../core/GeoCoordinates-class.html">GeoCoordinates</a>?</span> <span class="parameter-name">sideOfStreetHint</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-displayLocation"><span class="type-annotation"><a href="../core/GeoCoordinates-class.html">GeoCoordinates</a>?</span> <span class="parameter-name">displayLocation</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-minCourseDistanceInMeters"><span class="type-annotation">int?</span> <span class="parameter-name">minCourseDistanceInMeters</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-nameHint"><span class="type-annotation">String?</span> <span class="parameter-name">nameHint</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-matchSideOfStreet"><span class="type-annotation"><a href="../routing/MatchSideOfStreet.html">MatchSideOfStreet</a>?</span> <span class="parameter-name">matchSideOfStreet</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-duration"><span class="type-annotation">Duration</span> <span class="parameter-name">duration</span> = <span class="default-value">const Duration(seconds: 0)</span>, </span><span class="parameter" id="-param-segmentHint"><span class="type-annotation"><a href="../routing/SegmentReference-class.html">SegmentReference</a>?</span> <span class="parameter-name">segmentHint</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-onRoadThresholdInMeters"><span class="type-annotation">int?</span> <span class="parameter-name">onRoadThresholdInMeters</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-chargingStop"><span class="type-annotation"><a href="../routing/ChargingStop-class.html">ChargingStop</a>?</span> <span class="parameter-name">chargingStop</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-currentWeightChangeInKilograms"><span class="type-annotation">int?</span> <span class="parameter-name">currentWeightChangeInKilograms</span> = <span class="default-value">null</span>, </span><span class="parameter" id="-param-radiusInMeters"><span class="type-annotation">int</span> <span class="parameter-name">radiusInMeters</span> = <span class="default-value">0</span></span>])</span>
         </dt>
         <dd>
           Creates a new instance.
@@ -83,12 +87,14 @@
     </dl>
   </section>
     
-  <section class="summary offset-anchor" id="instance-properties">
+  <section
+      class="summary offset-anchor"
+      id="instance-properties">
     <h2>Properties</h2>
     <dl class="properties">
         <dt id="chargingStop" class="property">
   <span class="name"><a href="../routing/Waypoint/chargingStop.html">chargingStop</a></span>
-  <span class="signature">↔ <a href="../routing/ChargingStop-class.html">ChargingStop</a>?</span>
+  <span class="signature">&#8596; <a href="../routing/ChargingStop-class.html">ChargingStop</a>?</span>
   
 
 </dt>
@@ -105,7 +111,7 @@ route calculation may suggest a better charging stop instead of this stop.
 
         <dt id="coordinates" class="property">
   <span class="name"><a href="../routing/Waypoint/coordinates.html">coordinates</a></span>
-  <span class="signature">↔ <a href="../core/GeoCoordinates-class.html">GeoCoordinates</a></span>
+  <span class="signature">&#8596; <a href="../core/GeoCoordinates-class.html">GeoCoordinates</a></span>
   
 
 </dt>
@@ -117,7 +123,7 @@ route calculation may suggest a better charging stop instead of this stop.
 
         <dt id="currentWeightChangeInKilograms" class="property">
   <span class="name"><a href="../routing/Waypoint/currentWeightChangeInKilograms.html">currentWeightChangeInKilograms</a></span>
-  <span class="signature">↔ int?</span>
+  <span class="signature">&#8596; int?</span>
   
 
 </dt>
@@ -133,7 +139,7 @@ Relative value in kilograms. Available range: from -40000 to 40000 (inclusive).
 
         <dt id="displayLocation" class="property">
   <span class="name"><a href="../routing/Waypoint/displayLocation.html">displayLocation</a></span>
-  <span class="signature">↔ <a href="../core/GeoCoordinates-class.html">GeoCoordinates</a>?</span>
+  <span class="signature">&#8596; <a href="../core/GeoCoordinates-class.html">GeoCoordinates</a>?</span>
   
 
 </dt>
@@ -148,7 +154,7 @@ display_location is used for visualization of the PoI regardless of road network
 
         <dt id="duration" class="property">
   <span class="name"><a href="../routing/Waypoint/duration.html">duration</a></span>
-  <span class="signature">↔ Duration</span>
+  <span class="signature">&#8596; Duration</span>
   
 
 </dt>
@@ -163,7 +169,7 @@ The default duration is 0 seconds.
 
         <dt id="hashCode" class="property">
   <span class="name"><a href="../routing/Waypoint/hashCode.html">hashCode</a></span>
-  <span class="signature">→ int</span>
+  <span class="signature">&#8594; int</span>
   
 
 </dt>
@@ -175,7 +181,7 @@ The default duration is 0 seconds.
 
         <dt id="headingInDegrees" class="property">
   <span class="name"><a href="../routing/Waypoint/headingInDegrees.html">headingInDegrees</a></span>
-  <span class="signature">↔ double?</span>
+  <span class="signature">&#8596; double?</span>
   
 
 </dt>
@@ -192,7 +198,7 @@ heading is ignored for route calculation.
 
         <dt id="matchSideOfStreet" class="property">
   <span class="name"><a href="../routing/Waypoint/matchSideOfStreet.html">matchSideOfStreet</a></span>
-  <span class="signature">↔ <a href="../routing/MatchSideOfStreet.html">MatchSideOfStreet</a>?</span>
+  <span class="signature">&#8596; <a href="../routing/MatchSideOfStreet.html">MatchSideOfStreet</a>?</span>
   
 
 </dt>
@@ -204,7 +210,7 @@ heading is ignored for route calculation.
 
         <dt id="minCourseDistanceInMeters" class="property">
   <span class="name"><a href="../routing/Waypoint/minCourseDistanceInMeters.html">minCourseDistanceInMeters</a></span>
-  <span class="signature">↔ int?</span>
+  <span class="signature">&#8596; int?</span>
   
 
 </dt>
@@ -218,7 +224,7 @@ as a sharp right turn.
 
         <dt id="nameHint" class="property">
   <span class="name"><a href="../routing/Waypoint/nameHint.html">nameHint</a></span>
-  <span class="signature">↔ String?</span>
+  <span class="signature">&#8596; String?</span>
   
 
 </dt>
@@ -233,7 +239,7 @@ select a residential street.
 
         <dt id="onRoadThresholdInMeters" class="property">
   <span class="name"><a href="../routing/Waypoint/onRoadThresholdInMeters.html">onRoadThresholdInMeters</a></span>
-  <span class="signature">↔ int?</span>
+  <span class="signature">&#8596; int?</span>
   
 
 </dt>
@@ -245,9 +251,29 @@ Outside the threshold only segments which aren't one of highway/bridge/tunnel/sl
 
 </dd>
 
+        <dt id="radiusInMeters" class="property">
+  <span class="name"><a href="../routing/Waypoint/radiusInMeters.html">radiusInMeters</a></span>
+  <span class="signature">&#8596; int</span>
+  
+
+</dt>
+<dd>
+  The radius for potential candidates of a road to be used as a waypoint
+for the route calculation. This could be used either because it is not important which place is used,
+or because it is unknown. The default radius is zero.
+If the route should pass the waypoint as close as possible, the default value
+should be kept. Note that the waypoint will be matched to a road.
+Non-zero values allow a greater tolerance.
+If negative, route calculation will fail with an <a href="../routing/RoutingError.html">RoutingError.invalidParameter</a> error.
+Note that <a href="../routing/Waypoint/sideOfStreetHint.html">Waypoint.sideOfStreetHint</a> option is ignored if the user sets this option with a value
+greater than zero.
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
         <dt id="runtimeType" class="property inherited">
   <span class="name"><a href="../routing/Waypoint/runtimeType.html">runtimeType</a></span>
-  <span class="signature">→ Type</span>
+  <span class="signature">&#8594; Type</span>
   
 
 </dt>
@@ -259,7 +285,7 @@ Outside the threshold only segments which aren't one of highway/bridge/tunnel/sl
 
         <dt id="segmentHint" class="property">
   <span class="name"><a href="../routing/Waypoint/segmentHint.html">segmentHint</a></span>
-  <span class="signature">↔ <a href="../routing/SegmentReference-class.html">SegmentReference</a>?</span>
+  <span class="signature">&#8596; <a href="../routing/SegmentReference-class.html">SegmentReference</a>?</span>
   
 
 </dt>
@@ -274,7 +300,7 @@ Only topology segment id and travel direction are used to define the segment hin
 
         <dt id="sideOfStreetHint" class="property">
   <span class="name"><a href="../routing/Waypoint/sideOfStreetHint.html">sideOfStreetHint</a></span>
-  <span class="signature">↔ <a href="../core/GeoCoordinates-class.html">GeoCoordinates</a>?</span>
+  <span class="signature">&#8596; <a href="../core/GeoCoordinates-class.html">GeoCoordinates</a>?</span>
   
 
 </dt>
@@ -282,15 +308,15 @@ Only topology segment id and travel direction are used to define the segment hin
   Optional coordinates to indicate which side of the street should be used to reach the waypoint.
 For example, if the location is to the left of the street, the router will prefer using that side
 in case the street has dividers.
-Note that this option is ignored if the user sets <a href="../routing/Waypoint/transitRadiusInMeters.html">Waypoint.transitRadiusInMeters</a> option with a
-value greater than zero.
+Note that this option is ignored if the user sets <a href="../routing/Waypoint/radiusInMeters.html">Waypoint.radiusInMeters</a> or <a class="deprecated" href="../routing/Waypoint/transitRadiusInMeters.html">Waypoint.transitRadiusInMeters</a>
+option with a value greater than zero.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
 
         <dt id="transitRadiusInMeters" class="property">
-  <span class="name"><a href="../routing/Waypoint/transitRadiusInMeters.html">transitRadiusInMeters</a></span>
-  <span class="signature">↔ int</span>
+  <span class="name"><a class="deprecated" href="../routing/Waypoint/transitRadiusInMeters.html">transitRadiusInMeters</a></span>
+  <span class="signature">&#8596; int</span>
   
 
 </dt>
@@ -310,7 +336,7 @@ greater than zero.
 
         <dt id="type" class="property">
   <span class="name"><a href="../routing/Waypoint/type.html">type</a></span>
-  <span class="signature">↔ <a href="../routing/WaypointType.html">WaypointType</a></span>
+  <span class="signature">&#8596; <a href="../routing/WaypointType.html">WaypointType</a></span>
   
 
 </dt>
@@ -324,13 +350,15 @@ The default waypoint type is <a href="../routing/WaypointType.html">WaypointType
     </dl>
   </section>
     
-  <section class="summary offset-anchor inherited" id="instance-methods">
+  <section
+      class="summary offset-anchor inherited"
+      id="instance-methods">
     <h2>Methods</h2>
     <dl class="callables">
         <dt id="noSuchMethod" class="callable inherited">
   <span class="name"><a href="../routing/Waypoint/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
-    <span class="returntype parameter">→ dynamic</span>
-  </wbr></span>
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
   
 
 </dt>
@@ -342,8 +370,8 @@ The default waypoint type is <a href="../routing/WaypointType.html">WaypointType
 
         <dt id="toString" class="callable inherited">
   <span class="name"><a href="../routing/Waypoint/toString.html">toString</a></span><span class="signature">(<wbr>)
-    <span class="returntype parameter">→ String</span>
-  </wbr></span>
+    <span class="returntype parameter">&#8594; String</span>
+  </span>
   
 
 </dt>
@@ -356,13 +384,15 @@ The default waypoint type is <a href="../routing/WaypointType.html">WaypointType
     </dl>
   </section>
     
-  <section class="summary offset-anchor" id="operators">
+  <section
+      class="summary offset-anchor"
+      id="operators">
     <h2>Operators</h2>
     <dl class="callables">
         <dt id="operator ==" class="callable">
   <span class="name"><a href="../routing/Waypoint/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation">Object</span> <span class="parameter-name">other</span></span>)
-    <span class="returntype parameter">→ bool</span>
-  </wbr></span>
+    <span class="returntype parameter">&#8594; bool</span>
+  </span>
   
 
 </dt>
@@ -408,7 +438,7 @@ The default waypoint type is <a href="../routing/WaypointType.html">WaypointType
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.2
+      4.27.3
   </span>
 
   
@@ -424,3 +454,4 @@ The default waypoint type is <a href="../routing/WaypointType.html">WaypointType
 </body>
 
 </html>
+
