@@ -304,6 +304,20 @@ geographic coordinates.
 
 </dd>
 
+        <dt id="searchByPlaceIds" class="callable">
+  <span class="name"><a href="../search/SearchEngine/searchByPlaceIds.html">searchByPlaceIds</a></span><span class="signature">(<wbr><span class="parameter" id="searchByPlaceIds-param-queries"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../search/PlaceIdQuery-class.html">PlaceIdQuery</a></span>&gt;</span></span> <span class="parameter-name">queries</span>, </span><span class="parameter" id="searchByPlaceIds-param-languageCode"><span class="type-annotation"><a href="../core/LanguageCode.html">LanguageCode</a>?</span> <span class="parameter-name">languageCode</span>, </span><span class="parameter" id="searchByPlaceIds-param-callback"><span class="type-annotation"><a href="../search/PlaceIdsSearchCallback.html">PlaceIdsSearchCallback</a></span> <span class="parameter-name">callback</span></span>)
+    <span class="returntype parameter">&#8594; <a href="../core.threading/TaskHandle-class.html">TaskHandle</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Performs an asynchronous request to search for <a href="../search/PlaceIdResult-class.html">PlaceIdResult</a> instances
+based on the provided IDs and <a href="../core/LanguageCode.html">LanguageCode</a>.
+  
+
+</dd>
+
         <dt id="searchByPlaceIdWithLanguageCodeExtended" class="callable">
   <span class="name"><a href="../search/SearchEngine/searchByPlaceIdWithLanguageCodeExtended.html">searchByPlaceIdWithLanguageCodeExtended</a></span><span class="signature">(<wbr><span class="parameter" id="searchByPlaceIdWithLanguageCodeExtended-param-query"><span class="type-annotation"><a href="../search/PlaceIdQuery-class.html">PlaceIdQuery</a></span> <span class="parameter-name">query</span>, </span><span class="parameter" id="searchByPlaceIdWithLanguageCodeExtended-param-languageCode"><span class="type-annotation"><a href="../core/LanguageCode.html">LanguageCode</a>?</span> <span class="parameter-name">languageCode</span>, </span><span class="parameter" id="searchByPlaceIdWithLanguageCodeExtended-param-callback"><span class="type-annotation"><a href="../search/PlaceIdSearchCallbackExtended.html">PlaceIdSearchCallbackExtended</a></span> <span class="parameter-name">callback</span></span>)
     <span class="returntype parameter">&#8594; <a href="../core.threading/TaskHandle-class.html">TaskHandle</a></span>
@@ -494,7 +508,7 @@ returns candidate suggestions sorted by relevance.
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

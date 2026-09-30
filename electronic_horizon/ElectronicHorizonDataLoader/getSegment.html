@@ -31,7 +31,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../electronic_horizon/electronic_horizon-library.html">electronic_horizon.dart</a></li>
     <li><a href="../../electronic_horizon/ElectronicHorizonDataLoader-class.html">ElectronicHorizonDataLoader</a></li>
-    <li class="self-crumb">getSegment abstract method</li>
+    <li class="self-crumb"><span class="deprecated">getSegment</span> abstract method</li>
   </ol>
   <div class="self-name">getSegment</div>
   <form class="search navbar-right" role="search">
@@ -62,9 +62,14 @@
 
     <section class="multi-line-signature">
       
+  <div>
+    <ol class="annotation-list">
+        <li>@Deprecated(&quot;Will be removed in v4.30.0. Use `get_local_segment()` instead.&quot;)</li>
+    </ol>
+  </div>
 
 <span class="returntype"><a href="../../electronic_horizon/ElectronicHorizonDataLoaderResult-class.html">ElectronicHorizonDataLoaderResult</a></span>
-<span class="name ">getSegment</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="getSegment-param-segmentId"><span class="type-annotation"><a href="../../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a></span> <span class="parameter-name">segmentId</span></span></li>
+<span class="name deprecated">getSegment</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="getSegment-param-segmentId"><span class="type-annotation"><a class="deprecated" href="../../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a></span> <span class="parameter-name">segmentId</span></span></li>
 </ol>)
 
       
@@ -84,7 +89,9 @@
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">ElectronicHorizonDataLoaderResult getSegment(DirectedOCMSegmentId segmentId);</code></pre>
+  <pre class="language-dart"><code class="language-dart">@Deprecated(&quot;Will be removed in v4.30.0. Use `get_local_segment()` instead.&quot;)
+
+ElectronicHorizonDataLoaderResult getSegment(DirectedOCMSegmentId segmentId);</code></pre>
 </section>
 
 
@@ -102,7 +109,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../electronic_horizon/electronic_horizon-library.html">electronic_horizon</a></li>
     <li><a href="../../electronic_horizon/ElectronicHorizonDataLoader-class.html">ElectronicHorizonDataLoader</a></li>
-    <li class="self-crumb">getSegment abstract method</li>
+    <li class="self-crumb"><span class="deprecated">getSegment</span> abstract method</li>
 </ol>
 
 
@@ -118,7 +125,7 @@
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

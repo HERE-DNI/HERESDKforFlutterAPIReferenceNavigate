@@ -63,7 +63,7 @@
     <section class="multi-line-signature">
       
       <span class="name ">DataAttributesBase</span>(<wbr><ol class="parameter-list"> <li><span class="parameter" id="-param-getAttributeNamesLambda"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span> <span class="parameter-name">getAttributeNamesLambda</span>(), </span></li>
-<li><span class="parameter" id="-param-getValueTypeLambda"><span class="type-annotation"><a href="../../mapview.datasource/DataAttributeValueValueType.html">DataAttributeValueValueType</a>?</span> <span class="parameter-name">getValueTypeLambda</span>(<ol class="parameter-list single-line"> <li><span class="parameter" id="param-"><span class="type-annotation">String</span></span></li>
+<li><span class="parameter" id="-param-getValueTypeLambda"><span class="type-annotation"><a href="../../mapview.datasource/DataAttributeValueType.html">DataAttributeValueType</a>?</span> <span class="parameter-name">getValueTypeLambda</span>(<ol class="parameter-list single-line"> <li><span class="parameter" id="param-"><span class="type-annotation">String</span></span></li>
 </ol>), </span></li>
 <li><span class="parameter" id="-param-getAsStringLambda"><span class="type-annotation">String?</span> <span class="parameter-name">getAsStringLambda</span>(<ol class="parameter-list single-line"> <li><span class="parameter" id="param-"><span class="type-annotation">String</span></span></li>
 </ol>), </span></li>
@@ -96,7 +96,7 @@
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">factory DataAttributesBase(
   List&lt;String&gt; Function() getAttributeNamesLambda,
-  DataAttributeValueValueType? Function(String) getValueTypeLambda,
+  DataAttributeValueType? Function(String) getValueTypeLambda,
   String? Function(String) getAsStringLambda,
   String? Function(String) getStringLambda,
   int? Function(String) getInt64Lambda,
@@ -152,7 +152,7 @@
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

@@ -74,16 +74,20 @@
 
     
 <section class="desc markdown">
-  <p>Determines the pixel point where the target is placed within the map view. Setting a new
-principal point instantly moves the map to render the current target coordinates
-at the new principal point.
-Gets the pixel point that determines where the target is placed within the map view.
-By default, the principal point is located at the center of the map view.</p>
+  <p>The pixel point where the target is placed within the map view.
+By default, the principal point is located at the center of the map view.
+It is set in pixels relative to the map view's origin top-left <code>(0, 0)</code>.</p>
+<p>The valid range for the principal point is: <code>0 &lt;= x &lt;= width</code> and <code>0 &lt;= y &lt;= height</code>,
+where <code>width</code> and <code>height</code> are the dimensions of the map view in pixels.</p>
 <p>The value of the principal point is adjusted when the dimensions of the
 map view change, so that it stays in the same point relative to width
-and height. Meaning that when a principal point it set to bottom
+and height. Meaning that when a principal point is set to bottom
 middle of the map view, it will stay in the bottom middle regardless
 of the changes to dimensions and orientation of the view.</p>
+<p>Note: The principal point affects all programmatic map transformations (rotate, orbit, tilt and zoom)
+and the two-finger-pan gesture to tilt the map. Other gestures, like pinch-rotate,
+are not affected.
+Gets the pixel point that determines where the target is placed within the map view.</p>
 </section>
 
     
@@ -108,24 +112,24 @@ of the changes to dimensions and orientation of the view.</p>
 
     
 <section class="desc markdown">
-  <p>Determines the pixel point where the target is placed within the map view. Setting a new
-principal point instantly moves the map to render the current target coordinates
-at the new principal point.
-Sets the pixel point that determines where the target appears within the map view.
-This instantly moves the map to render the current target coordinates
-at the new principal point.</p>
-<p>By default, the principal point is located at the center of the map view.
-It is set in pixels relative to the map view's origin top-left (0, 0).
-Values outside the map view's dimensions (x &lt; 0 || x &gt; width, y &lt; 0 || y &gt; height)
-will be rejected silently and the current principal point is kept.</p>
+  <p>The pixel point where the target is placed within the map view.
+By default, the principal point is located at the center of the map view.
+It is set in pixels relative to the map view's origin top-left <code>(0, 0)</code>.</p>
+<p>The valid range for the principal point is: <code>0 &lt;= x &lt;= width</code> and <code>0 &lt;= y &lt;= height</code>,
+where <code>width</code> and <code>height</code> are the dimensions of the map view in pixels.</p>
 <p>The value of the principal point is adjusted when the dimensions of the
 map view change, so that it stays in the same point relative to width
-and height. Meaning that when a principal point it set to bottom
+and height. Meaning that when a principal point is set to bottom
 middle of the map view, it will stay in the bottom middle regardless
 of the changes to dimensions and orientation of the view.</p>
-<p>Note: The principal point affects all programmatical map transformations (rotate, orbit, tilt and zoom)
+<p>Note: The principal point affects all programmatic map transformations (rotate, orbit, tilt and zoom)
 and the two-finger-pan gesture to tilt the map. Other gestures, like pinch-rotate,
-are not affected.</p>
+are not affected.
+Sets the pixel point that determines where the target appears within the map view.</p>
+<p>This instantly moves the map to render the current target coordinates
+at the new principal point.</p>
+<p>Values outside the map view's dimensions will be rejected silently
+and the current principal point is kept.</p>
 </section>
 
     
@@ -166,7 +170,7 @@ are not affected.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

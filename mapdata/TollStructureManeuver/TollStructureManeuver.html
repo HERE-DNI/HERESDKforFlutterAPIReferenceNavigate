@@ -62,8 +62,7 @@
 
     <section class="multi-line-signature">
       
-      <span class="name ">TollStructureManeuver</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="-param-destinations"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a></span>&gt;</span></span> <span class="parameter-name">destinations</span></span></li>
-</ol>)
+      <span class="name ">TollStructureManeuver</span>(<wbr>)
     </section>
 
     
@@ -72,8 +71,8 @@
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">TollStructureManeuver(List&lt;DirectedOCMSegmentId&gt; destinations)
-  : tollStructure = null, isCheckpoint = false, destinations = destinations, etcGuidanceFile = null;</code></pre>
+  <pre class="language-dart"><code class="language-dart">TollStructureManeuver()
+  : tollStructure = null, isCheckpoint = false, destinations = [], localDestinations = [], etcGuidanceFile = null;</code></pre>
 </section>
 
 
@@ -107,7 +106,7 @@
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

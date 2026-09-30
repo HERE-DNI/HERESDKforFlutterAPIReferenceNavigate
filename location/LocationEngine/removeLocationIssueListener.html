@@ -67,7 +67,7 @@
 <span class="name ">removeLocationIssueListener</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="removeLocationIssueListener-param-listener"><span class="type-annotation"><a href="../../location/LocationIssueListener-class.html">LocationIssueListener</a></span> <span class="parameter-name">listener</span></span></li>
 </ol>)
 
-      <div class="features"><span class="feature">override</span></div>
+      <div class="features"><span class="feature">inherited</span></div>
 
     </section>
     
@@ -80,7 +80,9 @@
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">void removeLocationIssueListener(LocationIssueListener listener) {
-  LocationIssueListenerBridge? bridge = _locationIssueListeners.remove(listener);
+  LocationIssueListenerBridge? bridge = _locationIssueListeners.remove(
+    listener,
+  );
   if (bridge == null) {
     return;
   }
@@ -119,7 +121,7 @@
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

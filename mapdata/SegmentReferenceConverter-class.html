@@ -64,7 +64,7 @@
     
 <section class="desc markdown">
   <p>A SegmentReferenceConverter provides possibility to convert mapmatched instances of
-<a href="../routing/SegmentReference-class.html">SegmentReference</a> to corresponding instances of <a href="../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a>.</p>
+<a href="../routing/SegmentReference-class.html">SegmentReference</a> to corresponding instances of <a class="deprecated" href="../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a>.</p>
 <p><strong>Note:</strong> Loading map data can be time-consuming, so <code>SegmentReferenceConverter</code> can be used
 in a background thread to avoid blocking the main thread. However, this class is not
 thread-safe, and each instance should be used exclusively by a single thread.</p>
@@ -126,15 +126,28 @@ behaviors. Related APIs may change for new releases without a deprecation proces
       id="instance-methods">
     <h2>Methods</h2>
     <dl class="callables">
-        <dt id="getOCMSegmentId" class="callable">
-  <span class="name"><a href="../mapdata/SegmentReferenceConverter/getOCMSegmentId.html">getOCMSegmentId</a></span><span class="signature">(<wbr><span class="parameter" id="getOCMSegmentId-param-segmentReference"><span class="type-annotation"><a href="../routing/SegmentReference-class.html">SegmentReference</a></span> <span class="parameter-name">segmentReference</span></span>)
-    <span class="returntype parameter">&#8594; <a href="../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a>?</span>
+        <dt id="getLocalSegmentId" class="callable">
+  <span class="name"><a href="../mapdata/SegmentReferenceConverter/getLocalSegmentId.html">getLocalSegmentId</a></span><span class="signature">(<wbr><span class="parameter" id="getLocalSegmentId-param-segmentReference"><span class="type-annotation"><a href="../routing/SegmentReference-class.html">SegmentReference</a></span> <span class="parameter-name">segmentReference</span></span>)
+    <span class="returntype parameter">&#8594; <a href="../mapdata/DirectedLocalSegmentId-class.html">DirectedLocalSegmentId</a>?</span>
   </span>
   
 
 </dt>
 <dd>
-  The <a href="../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a> for provided <a href="../routing/SegmentReference-class.html">SegmentReference</a>.
+  The <a href="../mapdata/DirectedLocalSegmentId-class.html">DirectedLocalSegmentId</a> for provided <a href="../routing/SegmentReference-class.html">SegmentReference</a>.
+  
+
+</dd>
+
+        <dt id="getOCMSegmentId" class="callable">
+  <span class="name deprecated"><a class="deprecated" href="../mapdata/SegmentReferenceConverter/getOCMSegmentId.html">getOCMSegmentId</a></span><span class="signature">(<wbr><span class="parameter" id="getOCMSegmentId-param-segmentReference"><span class="type-annotation"><a href="../routing/SegmentReference-class.html">SegmentReference</a></span> <span class="parameter-name">segmentReference</span></span>)
+    <span class="returntype parameter">&#8594; <a class="deprecated" href="../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a>?</span>
+  </span>
+  
+
+</dt>
+<dd>
+  The <a class="deprecated" href="../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a> for provided <a href="../routing/SegmentReference-class.html">SegmentReference</a>.
   
 
 </dd>
@@ -222,7 +235,7 @@ behaviors. Related APIs may change for new releases without a deprecation proces
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

@@ -73,9 +73,9 @@
     </section>
     
 <section class="desc markdown">
-  <p>Returns a <a href="../../mapview/MapMarker-class.html">MapMarker</a> for a given indoor feature and
-the number of levels to change.</p>
-<p>By default, no map markers are provided.</p>
+  <p>Returns a <a href="../../mapview/MapMarker-class.html">MapMarker</a> for a given indoor feature and direction.</p>
+<p>If no custom marker has been set for the given feature and direction, returns null.
+When null, the SDK uses a built-in default icon during route rendering.</p>
 <ul>
 <li>
 <p><code>feature</code> An indoor feature.</p>
@@ -85,7 +85,7 @@ the number of levels to change.</p>
 In the case of 0, the method returns an exit map marker.</p>
 </li>
 </ul>
-<p>Returns <a href="../../mapview/MapMarker-class.html">MapMarker?</a>. The result <a href="../../mapview/MapMarker-class.html">MapMarker</a>, if it was set.</p>
+<p>Returns <a href="../../mapview/MapMarker-class.html">MapMarker?</a>. The custom <a href="../../mapview/MapMarker-class.html">MapMarker</a> if set, or null if the SDK default should be used.</p>
 </section>
 
 
@@ -126,7 +126,7 @@ In the case of 0, the method returns an exit map marker.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

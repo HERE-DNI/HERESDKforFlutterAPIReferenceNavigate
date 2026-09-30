@@ -67,16 +67,16 @@
 <span class="name ">startWithLocationAccuracy</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="startWithLocationAccuracy-param-locationAccuracy"><span class="type-annotation"><a href="../../location/LocationAccuracy.html">LocationAccuracy</a></span> <span class="parameter-name">locationAccuracy</span></span></li>
 </ol>)
 
-      <div class="features"><span class="feature">override</span></div>
+      <div class="features"><span class="feature">inherited</span></div>
 
     </section>
     
 <section class="desc markdown">
   <p>Starts the location engine with desired <a href="../../location/LocationAccuracy.html">LocationAccuracy</a>.
-Make sure to call either <a href="../../location/LocationEngine/confirmHEREPrivacyNoticeInclusion.html">LocationEngine.confirmHEREPrivacyNoticeInclusion</a> or
-<a href="../../location/LocationEngine/confirmHEREPrivacyNoticeException.html">LocationEngine.confirmHEREPrivacyNoticeException</a> beforehand.
-Returns <a href="../../location/LocationEngineStatus.html">LocationEngineStatus.alreadyStarted</a> if <a href="../../location/LocationEngine/startWithLocationAccuracy.html">LocationEngine.startWithLocationAccuracy</a> or
-<a href="../../location/LocationEngine/startWithLocationOptions.html">LocationEngine.startWithLocationOptions</a> is called again without calling <a href="../../location/LocationEngine/stop.html">LocationEngine.stop</a> in between.
+Make sure to call either <code>LocationEngine.confirmHEREPrivacyNoticeInclusion</code> or
+<code>LocationEngine.confirmHEREPrivacyNoticeException</code> beforehand.
+Returns <a href="../../location/LocationEngineStatus.html">LocationEngineStatus.alreadyStarted</a> if <code>LocationEngine.startWithLocationAccuracy</code> or
+<code>LocationEngine.startWithLocationOptions</code> is called again without calling <code>LocationEngine.stop</code> in between.
 See <a href="../../location/LocationEngineStatus.html">LocationEngineStatus</a> for other possible return values.</p>
 </section>
 
@@ -84,8 +84,9 @@ See <a href="../../location/LocationEngineStatus.html">LocationEngineStatus</a> 
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">LocationEngineStatus startWithLocationAccuracy(LocationAccuracy locationAccuracy) =&gt;
-    _location.startWithLocationAccuracy(locationAccuracy);</code></pre>
+  <pre class="language-dart"><code class="language-dart">LocationEngineStatus startWithLocationAccuracy(
+  LocationAccuracy locationAccuracy,
+) =&gt; _location.startWithLocationAccuracy(locationAccuracy);</code></pre>
 </section>
 
 
@@ -119,7 +120,7 @@ See <a href="../../location/LocationEngineStatus.html">LocationEngineStatus</a> 
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

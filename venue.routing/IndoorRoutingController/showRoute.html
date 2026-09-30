@@ -74,13 +74,14 @@
     
 <section class="desc markdown">
   <p>Shows an indoor route on the map.</p>
-<p>The previously visible indoor route will be hidden.</p>
+<p>The previously visible indoor route will be hidden.
+Any markers not explicitly set in the style will use SDK built-in default icons.</p>
 <ul>
 <li>
-<p><code>route</code> A route to show</p>
+<p><code>route</code> A route to show.</p>
 </li>
 <li>
-<p><code>style</code> A route style for the given route.</p>
+<p><code>style</code> A route style for the given route. Unset markers fall back to SDK defaults.</p>
 </li>
 </ul>
 </section>
@@ -123,7 +124,7 @@
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

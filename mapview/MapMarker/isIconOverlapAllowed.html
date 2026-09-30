@@ -31,7 +31,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../mapview/mapview-library.html">mapview.dart</a></li>
     <li><a href="../../mapview/MapMarker-class.html">MapMarker</a></li>
-    <li class="self-crumb">isIconOverlapAllowed property</li>
+    <li class="self-crumb"><span class="deprecated">isIconOverlapAllowed</span> property</li>
   </ol>
   <div class="self-name">isIconOverlapAllowed</div>
   <form class="search navbar-right" role="search">
@@ -66,15 +66,20 @@
 
     <section class="multi-line-signature">
       
+  <div>
+    <ol class="annotation-list">
+        <li>@Deprecated(&quot;Will be removed in v4.30.0. Use [MapMarker.isOverlapAllowed] together with [MapMarker.isTextOptional] instead. Together, these properties provide the same behavior.&quot;)</li>
+    </ol>
+  </div>
       <span class="returntype">bool</span>
-      <span class="name ">isIconOverlapAllowed</span>
+      <span class="name deprecated">isIconOverlapAllowed</span>
       
 
     </section>
 
     
 <section class="desc markdown">
-  <p>Determines if the icon can overlap other icons when <a href="../../mapview/MapMarker/isOverlapAllowed.html">MapMarker.isOverlapAllowed</a> is <code>false</code>.
+  <p>Determines if the icon can overlap other icons.
 Returns <code>true</code> if the icon is allowed to overlap other icons, <code>false</code> otherwise.
 Defaults to <code>false</code>.</p>
 </section>
@@ -82,7 +87,8 @@ Defaults to <code>false</code>.</p>
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">bool get isIconOverlapAllowed;</code></pre>
+  <pre class="language-dart"><code class="language-dart">@Deprecated(&quot;Will be removed in v4.30.0. Use [MapMarker.isOverlapAllowed] together with [MapMarker.isTextOptional] instead. Together, these properties provide the same behavior.&quot;)
+bool get isIconOverlapAllowed;</code></pre>
 </section>
 
   </section>
@@ -93,25 +99,30 @@ Defaults to <code>false</code>.</p>
 
     <section class="multi-line-signature">
       
+  <div>
+    <ol class="annotation-list">
+        <li>@Deprecated(&quot;Will be removed in v4.30.0. Use [MapMarker.isOverlapAllowed] together with [MapMarker.isTextOptional] instead. Together, these properties provide the same behavior.&quot;)</li>
+    </ol>
+  </div>
       <span class="returntype">void</span>
-      <span class="name ">isIconOverlapAllowed=</span><span class="signature">(<wbr><span class="parameter" id="isIconOverlapAllowed=-param-value"><span class="type-annotation">bool</span> <span class="parameter-name">value</span></span>)</span>
+      <span class="name deprecated">isIconOverlapAllowed=</span><span class="signature">(<wbr><span class="parameter" id="isIconOverlapAllowed=-param-value"><span class="type-annotation">bool</span> <span class="parameter-name">value</span></span>)</span>
       
 
     </section>
 
     
 <section class="desc markdown">
-  <p>Determines if the icon can overlap other icons when <a href="../../mapview/MapMarker/isOverlapAllowed.html">MapMarker.isOverlapAllowed</a> is <code>false</code>.
+  <p>Determines if the icon can overlap other icons.
 Sets whether the icon is allowed to overlap other icons.</p>
 <p>When <code>true</code>, icons are always rendered on top of each other on collision;
-only the label (text) of the topmost icon is shown.
-Has no effect when <a href="../../mapview/MapMarker/isOverlapAllowed.html">MapMarker.isOverlapAllowed</a> is <code>true</code>.</p>
+only the label (text) of the topmost icon is shown.</p>
 </section>
 
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">set isIconOverlapAllowed(bool value);</code></pre>
+  <pre class="language-dart"><code class="language-dart">@Deprecated(&quot;Will be removed in v4.30.0. Use [MapMarker.isOverlapAllowed] together with [MapMarker.isTextOptional] instead. Together, these properties provide the same behavior.&quot;)
+set isIconOverlapAllowed(bool value);</code></pre>
 </section>
 
   </section>
@@ -130,7 +141,7 @@ Has no effect when <a href="../../mapview/MapMarker/isOverlapAllowed.html">MapMa
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../mapview/mapview-library.html">mapview</a></li>
     <li><a href="../../mapview/MapMarker-class.html">MapMarker</a></li>
-    <li class="self-crumb">isIconOverlapAllowed property</li>
+    <li class="self-crumb"><span class="deprecated">isIconOverlapAllowed</span> property</li>
 </ol>
 
 
@@ -146,7 +157,7 @@ Has no effect when <a href="../../mapview/MapMarker/isOverlapAllowed.html">MapMa
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

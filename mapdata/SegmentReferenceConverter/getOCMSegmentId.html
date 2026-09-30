@@ -31,7 +31,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../mapdata/mapdata-library.html">mapdata.dart</a></li>
     <li><a href="../../mapdata/SegmentReferenceConverter-class.html">SegmentReferenceConverter</a></li>
-    <li class="self-crumb">getOCMSegmentId abstract method</li>
+    <li class="self-crumb"><span class="deprecated">getOCMSegmentId</span> abstract method</li>
   </ol>
   <div class="self-name">getOCMSegmentId</div>
   <form class="search navbar-right" role="search">
@@ -62,9 +62,14 @@
 
     <section class="multi-line-signature">
       
+  <div>
+    <ol class="annotation-list">
+        <li>@Deprecated(&quot;Will be removed in v4.30.0. Use `getLocalSegmentId()` instead.&quot;)</li>
+    </ol>
+  </div>
 
-<span class="returntype"><a href="../../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a>?</span>
-<span class="name ">getOCMSegmentId</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="getOCMSegmentId-param-segmentReference"><span class="type-annotation"><a href="../../routing/SegmentReference-class.html">SegmentReference</a></span> <span class="parameter-name">segmentReference</span></span></li>
+<span class="returntype"><a class="deprecated" href="../../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a>?</span>
+<span class="name deprecated">getOCMSegmentId</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="getOCMSegmentId-param-segmentReference"><span class="type-annotation"><a href="../../routing/SegmentReference-class.html">SegmentReference</a></span> <span class="parameter-name">segmentReference</span></span></li>
 </ol>)
 
       
@@ -72,18 +77,20 @@
     </section>
     
 <section class="desc markdown">
-  <p>The <a href="../../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a> for provided <a href="../../routing/SegmentReference-class.html">SegmentReference</a>.</p>
+  <p>The <a class="deprecated" href="../../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a> for provided <a href="../../routing/SegmentReference-class.html">SegmentReference</a>.</p>
 <ul>
 <li><code>segmentReference</code> <a href="../../routing/SegmentReference-class.html">SegmentReference</a> to convert.</li>
 </ul>
-<p>Returns <a href="../../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId?</a>. <a href="../../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a> corresponding to provided <a href="../../routing/SegmentReference-class.html">SegmentReference</a>.</p>
+<p>Returns <a class="deprecated" href="../../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId?</a>. <a class="deprecated" href="../../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a> corresponding to provided <a href="../../routing/SegmentReference-class.html">SegmentReference</a>.</p>
 </section>
 
 
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">DirectedOCMSegmentId? getOCMSegmentId(SegmentReference segmentReference);</code></pre>
+  <pre class="language-dart"><code class="language-dart">@Deprecated(&quot;Will be removed in v4.30.0. Use `getLocalSegmentId()` instead.&quot;)
+
+DirectedOCMSegmentId? getOCMSegmentId(SegmentReference segmentReference);</code></pre>
 </section>
 
 
@@ -101,7 +108,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../mapdata/mapdata-library.html">mapdata</a></li>
     <li><a href="../../mapdata/SegmentReferenceConverter-class.html">SegmentReferenceConverter</a></li>
-    <li class="self-crumb">getOCMSegmentId abstract method</li>
+    <li class="self-crumb"><span class="deprecated">getOCMSegmentId</span> abstract method</li>
 </ol>
 
 
@@ -117,7 +124,7 @@
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

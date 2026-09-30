@@ -99,7 +99,7 @@ This is especially interesting in cases where terrain elevation is used within t
 directly connected and changing one will automatically change the others as well (except for <code>distance</code>/<code>scale</code> changes that map to <code>zoom-level</code> values &lt; 0 or &gt; 23).</p>
 <ul>
 <li><code>distance</code>: the distance from the camera to the look-at target on the surface of the Earth, in meters</li>
-<li><code>zoom-level</code>: the map zoom level, in the range [0, 3]. The relation between the width of the equator in logical pixels <code>w</code> and the zoom level <code>z</code> is: <code>w = 256 * 2^(z)</code></li>
+<li><code>zoom-level</code>: the map zoom level, in the range [0, 23]. The relation between the width of the equator in logical pixels <code>w</code> and the zoom level <code>z</code> is: <code>w = 256 * 2^(z)</code></li>
 <li><code>scale</code>: the scale of the map at the look-at target in meters on screen per meters on Earth. So a scale of 0.001 shows 10 meters on Earth within 1 cm on screen.</li>
 </ul>
 <p>The following mapping represents the <code>zoom-level</code> values:</p>
@@ -352,11 +352,9 @@ Gets a MapCameraLimits instance that controls limits for the camera settings.
 
 </dt>
 <dd>
-  Determines the pixel point where the target is placed within the map view. Setting a new
-principal point instantly moves the map to render the current target coordinates
-at the new principal point.
-Gets the pixel point that determines where the target is placed within the map view.
+  The pixel point where the target is placed within the map view.
 By default, the principal point is located at the center of the map view.
+It is set in pixels relative to the map view's origin top-left <code>(0, 0)</code>.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -601,7 +599,7 @@ delta values.
 
 </dt>
 <dd>
-  Sets far plane distance configs per zoom level.
+  Sets far plane distance configuration per zoom level.
   
 
 </dd>
@@ -741,7 +739,7 @@ delta values.
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

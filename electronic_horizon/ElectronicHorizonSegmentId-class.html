@@ -100,9 +100,23 @@ behaviors. Related APIs may change for new releases without a deprecation proces
 
 </dd>
 
+        <dt id="localSegmentId" class="property">
+  <span class="name"><a href="../electronic_horizon/ElectronicHorizonSegmentId/localSegmentId.html">localSegmentId</a></span>
+  <span class="signature">&#8596; <a href="../mapdata/DirectedLocalSegmentId-class.html">DirectedLocalSegmentId</a>?</span>
+  
+
+</dt>
+<dd>
+  The directed local segment identifier.
+This value can be <code>null</code> if a route was built on a different version of the map and the route spans do not match any local segments.
+In this case, only <a href="../electronic_horizon/ElectronicHorizonSegmentId/segmentReference.html">ElectronicHorizonSegmentId.segmentReference</a> is provided.
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
         <dt id="ocmSegmentId" class="property">
-  <span class="name"><a href="../electronic_horizon/ElectronicHorizonSegmentId/ocmSegmentId.html">ocmSegmentId</a></span>
-  <span class="signature">&#8596; <a href="../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a>?</span>
+  <span class="name"><a class="deprecated" href="../electronic_horizon/ElectronicHorizonSegmentId/ocmSegmentId.html">ocmSegmentId</a></span>
+  <span class="signature">&#8596; <a class="deprecated" href="../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a>?</span>
   
 
 </dt>
@@ -230,7 +244,7 @@ In other cases, this value is <code>null</code>.
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

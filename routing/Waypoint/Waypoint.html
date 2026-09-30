@@ -108,9 +108,7 @@ in case the street has dividers.
 Note that this option is ignored if the user sets <a href="../../routing/Waypoint/radiusInMeters.html">Waypoint.radiusInMeters</a> or <a class="deprecated" href="../../routing/Waypoint/transitRadiusInMeters.html">Waypoint.transitRadiusInMeters</a>
 option with a value greater than zero.</li>
 <li><code>displayLocation</code> Optional coordinates to indicate physical location of the Points of Interest (PoI).
-It is different from coordinates and <a href="../../routing/Waypoint/sideOfStreetHint.html">Waypoint.sideOfStreetHint</a> which are generally expected to to be
-on the navigable road network and can be different from actual location of the PoI.
-display_location is used for visualization of the PoI regardless of road network.</li>
+It is different from <a href="../../routing/Waypoint/coordinates.html">Waypoint.coordinates</a> which is generally expected to be on the navigable road network.</li>
 <li><code>minCourseDistanceInMeters</code> Optional distance in meters during which the user wants to avoid taking actions. For example, if
 the origin is set by a moving vehicle, the user might not have time to react to immediate actions such
 as a sharp right turn.</li>
@@ -206,7 +204,7 @@ greater than zero.</li>
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

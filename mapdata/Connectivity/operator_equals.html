@@ -116,6 +116,7 @@ bool operator ==(Object other) {
   if (other is! Connectivity) return false;
   Connectivity _other = other;
   return directedSegmentId == _other.directedSegmentId &amp;&amp;
+      directedLocalSegmentId == _other.directedLocalSegmentId &amp;&amp;
       DeepCollectionEquality().equals(access, _other.access);
 }</code></pre>
 </section>
@@ -151,7 +152,7 @@ bool operator ==(Object other) {
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

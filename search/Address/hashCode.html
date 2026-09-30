@@ -123,6 +123,7 @@ int get hashCode {
   result = 31 * result + state.hashCode;
   result = 31 * result + county.hashCode;
   result = 31 * result + street.hashCode;
+  result = 31 * result + DeepCollectionEquality().hash(intersectionStreets);
   result = 31 * result + block.hashCode;
   result = 31 * result + subBlock.hashCode;
   result = 31 * result + addressText.hashCode;
@@ -165,7 +166,7 @@ int get hashCode {
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

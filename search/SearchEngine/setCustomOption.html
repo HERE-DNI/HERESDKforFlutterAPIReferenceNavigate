@@ -74,7 +74,7 @@
     
 <section class="desc markdown">
   <p>Sets a custom option for search backend queries.</p>
-<p>This allows more control over the&nbsp;behavior
+<p>This allows more control over the behavior
 of the search algorithm.
 Name has the format &lt;endpoint_name&gt;.&lt;option_name&gt;, for example "discover.show".
 Values can be combined for the same name by using a comma, for example "truck,fuel".
@@ -93,7 +93,7 @@ otherwise, a <a href="../../search/SearchError.html">SearchError.forbidden</a> w
 </li>
 <li>
 <p>name = "lookup.show" or "discover.show" or "autosuggest.show" or "browse.show", value = "fuel"
-enables retreival of fuel station details.
+enables retrieval of fuel station details.
 <strong>Note:</strong> Only participants of the closed-alpha group can get access from HERE to use this feature,
 otherwise, a <a href="../../search/SearchError.html">SearchError.forbidden</a> will be propagated in callbacks.</p>
 </li>
@@ -124,7 +124,12 @@ otherwise, a <a href="../../search/SearchError.html">SearchError.invalidCustomOp
 enables balanced distribution of results for search in <code>GeoCorridor</code>.
 Constraint: using this parameter when searching an area that is not a <code>GeoCorridor</code> generates
 an error <a href="../../search/SearchError.html">SearchError.badRequest</a>.
-<strong>Note:</strong> It is recommended to use <a href="../../search/SearchOptions/distributedResults.html">SearchOptions.distributedResults</a> instead.
+<strong>Note:</strong> It is recommended to use <a href="../../search/SearchOptions/distributedResults.html">SearchOptions.distributedResults</a> instead.</p>
+</li>
+<li>
+<p>name = "lookup.show" or "discover.show" or "autosuggest.show" or "browse.show", value = "streetInfo"
+enables retrieval of street name details.
+<strong>Note:</strong> Not supported in OfflineSearchEngine (only available for the Navigate license).
 For a complete list of available endpoints, parameter names and their valid values, refer to
 <a href="https://docs.here.com/geocoding-and-search/docs/construct-a-here-batch-api-v7-request">HERE Geocoding &amp; Search API v7</a>.
 <strong>Note:</strong> It's easy to set a wrong option that makes queries invalid,
@@ -178,7 +183,7 @@ so make sure you read and understand the backend documentation.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

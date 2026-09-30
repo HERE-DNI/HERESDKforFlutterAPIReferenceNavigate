@@ -64,9 +64,9 @@
     
 <section class="desc markdown">
   <p>Represents a style of the indoor route.</p>
-<p>Contains information about route colors and widths.
-Optionally, this style allows to set <a href="../mapview/MapMarker-class.html">MapMarker</a> instances that can be used for
-specific route elements.</p>
+<p>Contains information about route colors, widths, and markers.
+Markers set through this style override the SDK's built-in defaults. Any marker left unset will
+automatically use the SDK's default icon when the route is rendered.</p>
 </section>
 
 
@@ -98,7 +98,8 @@ specific route elements.</p>
 
 </dt>
 <dd>
-  A <a href="../mapview/MapMarker-class.html">MapMarker</a> instance representing the destination of the route. By default, no map marker is provided
+  A <a href="../mapview/MapMarker-class.html">MapMarker</a> instance representing the destination of the route.
+If not set, the SDK displays a built-in default destination marker.
 The destination map marker of the resulting route.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
@@ -111,7 +112,8 @@ The destination map marker of the resulting route.
 
 </dt>
 <dd>
-  A <a href="../mapview/MapMarker-class.html">MapMarker</a> instance representing the drive point of the route. By default, no map marker is provided.
+  A <a href="../mapview/MapMarker-class.html">MapMarker</a> instance representing the drive point of the route.
+If not set, the SDK displays a built-in default drive marker.
 The drive map marker of the resulting route. It signals that a user should take a transport vehicle.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
@@ -149,7 +151,7 @@ The color of polylines for indoor route sections.
 
 </dt>
 <dd>
-  The width in pixels. Default value is 15 pixels
+  The width in pixels. Default value is 15 pixels.
 The width in pixels of polylines for indoor route sections.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
@@ -174,7 +176,8 @@ The width in pixels of polylines for indoor route sections.
 
 </dt>
 <dd>
-  A <a href="../mapview/MapMarker-class.html">MapMarker</a> instance representing the start of the route. By default, no map marker is provided.
+  A <a href="../mapview/MapMarker-class.html">MapMarker</a> instance representing the start of the route.
+If not set, the SDK displays a built-in default start marker.
 The start map marker of the resulting route.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
@@ -187,7 +190,8 @@ The start map marker of the resulting route.
 
 </dt>
 <dd>
-  A <a href="../mapview/MapMarker-class.html">MapMarker</a> instance representing the walk point of the route. By default, no map marker is provided.
+  A <a href="../mapview/MapMarker-class.html">MapMarker</a> instance representing the walk point of the route.
+If not set, the SDK displays a built-in default walk marker.
 The walk map marker of the resulting route. It signals that a user should leave their transport vehicle and continue on foot.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
@@ -209,8 +213,7 @@ The walk map marker of the resulting route. It signals that a user should leave 
 
 </dt>
 <dd>
-  Returns a <a href="../mapview/MapMarker-class.html">MapMarker</a> for a given indoor feature and
-the number of levels to change.
+  Returns a <a href="../mapview/MapMarker-class.html">MapMarker</a> for a given indoor feature and direction.
   
 
 </dd>
@@ -236,7 +239,7 @@ the number of levels to change.
 
 </dt>
 <dd>
-  Sets map markers for the given indoor feature.
+  Sets custom map markers for the given indoor feature.
   
 
 </dd>
@@ -311,7 +314,7 @@ the number of levels to change.
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

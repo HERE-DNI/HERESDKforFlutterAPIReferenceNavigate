@@ -75,19 +75,22 @@
     </section>
     
 <section class="desc markdown">
-  <p>Sets map markers for the given indoor feature.</p>
+  <p>Sets custom map markers for the given indoor feature.</p>
+<p>Pass null for any direction to let
+the SDK use its built-in default icon for that direction. Each direction (up, down, exit)
+is resolved independently — you can override only the ones you need.</p>
 <ul>
 <li>
 <p><code>feature</code> An indoor feature.</p>
 </li>
 <li>
-<p><code>upMarker</code> A <a href="../../mapview/MapMarker-class.html">MapMarker</a> to go up.</p>
+<p><code>upMarker</code> A <a href="../../mapview/MapMarker-class.html">MapMarker</a> to go up. Pass null to use SDK default.</p>
 </li>
 <li>
-<p><code>downMarker</code> A <a href="../../mapview/MapMarker-class.html">MapMarker</a> to go down.</p>
+<p><code>downMarker</code> A <a href="../../mapview/MapMarker-class.html">MapMarker</a> to go down. Pass null to use SDK default.</p>
 </li>
 <li>
-<p><code>exitMarker</code> A <a href="../../mapview/MapMarker-class.html">MapMarker</a> to exit the indoor feature.</p>
+<p><code>exitMarker</code> A <a href="../../mapview/MapMarker-class.html">MapMarker</a> to exit the indoor feature. Pass null to use SDK default.</p>
 </li>
 </ul>
 </section>
@@ -130,7 +133,7 @@
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

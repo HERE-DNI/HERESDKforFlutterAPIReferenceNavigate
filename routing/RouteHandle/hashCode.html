@@ -114,6 +114,7 @@ like <code>HashSet</code> or <code>HashMap</code>.</p>
 int get hashCode {
   int result = 7;
   result = 31 * result + handle.hashCode;
+  result = 31 * result + source.hashCode;
   return result;
 }</code></pre>
 </section>
@@ -151,7 +152,7 @@ int get hashCode {
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

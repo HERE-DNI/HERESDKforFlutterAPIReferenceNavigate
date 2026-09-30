@@ -125,6 +125,7 @@ bool operator ==(Object other) {
       state == _other.state &amp;&amp;
       county == _other.county &amp;&amp;
       street == _other.street &amp;&amp;
+      DeepCollectionEquality().equals(intersectionStreets, _other.intersectionStreets) &amp;&amp;
       block == _other.block &amp;&amp;
       subBlock == _other.subBlock &amp;&amp;
       addressText == _other.addressText &amp;&amp;
@@ -164,7 +165,7 @@ bool operator ==(Object other) {
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

@@ -115,7 +115,8 @@ bool operator ==(Object other) {
   if (identical(this, other)) return true;
   if (other is! RouteHandle) return false;
   RouteHandle _other = other;
-  return handle == _other.handle;
+  return handle == _other.handle &amp;&amp;
+      source == _other.source;
 }</code></pre>
 </section>
 
@@ -150,7 +151,7 @@ bool operator ==(Object other) {
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

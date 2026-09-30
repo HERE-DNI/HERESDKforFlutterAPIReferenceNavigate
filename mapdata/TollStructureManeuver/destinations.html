@@ -31,7 +31,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../mapdata/mapdata-library.html">mapdata.dart</a></li>
     <li><a href="../../mapdata/TollStructureManeuver-class.html">TollStructureManeuver</a></li>
-    <li class="self-crumb">destinations property</li>
+    <li class="self-crumb"><span class="deprecated">destinations</span> property</li>
   </ol>
   <div class="self-name">destinations</div>
   <form class="search navbar-right" role="search">
@@ -62,8 +62,13 @@
 
       <section class="multi-line-signature">
         
-        List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a></span>&gt;</span>
-        <span class="name ">destinations</span>
+  <div>
+    <ol class="annotation-list">
+        <li>@Deprecated(&quot;Will be removed in v4.30.0. Use `local_destinations` instead.&quot;)</li>
+    </ol>
+  </div>
+        List<span class="signature">&lt;<wbr><span class="type-parameter"><a class="deprecated" href="../../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a></span>&gt;</span>
+        <span class="name deprecated">destinations</span>
         <div class="features"><span class="feature">getter/setter pair</span></div>
 
       </section>
@@ -77,7 +82,8 @@ Empty if structure applied to all outgoing connected segments.</p>
       
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">List&lt;DirectedOCMSegmentId&gt; destinations;</code></pre>
+  <pre class="language-dart"><code class="language-dart">@Deprecated(&quot;Will be removed in v4.30.0. Use `local_destinations` instead.&quot;)
+List&lt;DirectedOCMSegmentId&gt; destinations;</code></pre>
 </section>
 
 
@@ -95,7 +101,7 @@ Empty if structure applied to all outgoing connected segments.</p>
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../mapdata/mapdata-library.html">mapdata</a></li>
     <li><a href="../../mapdata/TollStructureManeuver-class.html">TollStructureManeuver</a></li>
-    <li class="self-crumb">destinations property</li>
+    <li class="self-crumb"><span class="deprecated">destinations</span> property</li>
 </ol>
 
 
@@ -111,7 +117,7 @@ Empty if structure applied to all outgoing connected segments.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

@@ -116,6 +116,7 @@ bool operator ==(Object other) {
   if (other is! ElectronicHorizonSegmentId) return false;
   ElectronicHorizonSegmentId _other = other;
   return ocmSegmentId == _other.ocmSegmentId &amp;&amp;
+      localSegmentId == _other.localSegmentId &amp;&amp;
       segmentReference == _other.segmentReference;
 }</code></pre>
 </section>
@@ -151,7 +152,7 @@ bool operator ==(Object other) {
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

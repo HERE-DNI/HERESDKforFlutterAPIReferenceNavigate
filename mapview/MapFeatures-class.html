@@ -65,6 +65,16 @@
   <p>Holds constants for map features, to be used with
 <a href="../mapview/MapScene/enableFeatures.html">MapScene.enableFeatures</a> and <a href="../mapview/MapScene/disableFeatures.html">MapScene.disableFeatures</a>.</p>
 <p>See <a href="../mapview/MapFeatureModes-class.html">MapFeatureModes</a> for constants representing feature modes.</p>
+<p>Note: On Android devices using PowerVR Rogue GPUs,
+Adreno 730-740 GPUs, or ARM Mali GPU drivers version 32-38, map rendering
+automatically adjusts or disables certain features to improve stability.
+Enabling affected features may increase memory usage and lead to application
+freezes or map view instability. See the notes per map feature.</p>
+<p>On impacted GPUs, roads in <a href="../mapview/MapScheme.html">MapScheme.hybridDay</a>,
+<a href="../mapview/MapScheme.html">MapScheme.hybridNight</a>, <a href="../mapview/MapScheme.html">MapScheme.liteHybridDay</a>,
+<a href="../mapview/MapScheme.html">MapScheme.liteHybridNight</a>, <a href="../mapview/MapScheme.html">MapScheme.logisticsHybridDay</a> and
+<a href="../mapview/MapScheme.html">MapScheme.logisticsHybridNight</a> may
+appear darkened at road junctions due to overlapping rendering.</p>
 </section>
 
 
@@ -432,7 +442,7 @@ data is stored on disk, it might require updating using <code>MapUpdater</code>.
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

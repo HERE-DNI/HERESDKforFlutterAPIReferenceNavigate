@@ -79,20 +79,16 @@ immediately.</p>
 <ul>
 <li>
 <p><strong>Rendering layer (<code>LayerConfiguration.Feature.RENDERING</code>)</strong>: Enabled by default.
-If your application uses map rendering or <code>MapView</code> components, using this layer is recommended.</p>
+If your application uses map rendering or the <code>MapView</code> component, using this layer is recommended.</p>
 </li>
 <li>
 <p><strong>eHorizon layer (<code>LayerConfiguration.Feature.EHORIZON</code>)</strong>: Not enabled by default.
-It encodes segment geometries outside the rendering layer groups to reduce the amount of downloaded data.
-Use the eHorizon layer when:</p>
-<ul>
-<li>No <code>MapView</code> is used in your application.</li>
-<li>Only the eHorizon layer is used in your application.
-In these cases, using the eHorizon layer will reduce the required data to download. If the rendering layer is enabled, it will increase the required data to download.</li>
-</ul>
+It encodes segment geometries outside the rendering layer groups to reduce the amount of downloaded data
+when your app is headless. Therefore, use the <code>EHORIZON</code> layer when no <code>MapView</code> rendering is used in
+your application to reduce the required data to download.</p>
 </li>
 </ul>
-<p><strong>Important</strong>: If <code>useRenderingLayers</code> is set to <code>false</code> without properly enabling the eHorizon layer,
+<p><strong>Important</strong>: If <code>useRenderingLayers</code> is set to <code>false</code> without properly enabling the <code>EHORIZON</code> layer,
 it may produce incorrect results. Layer configuration is especially important when prefetching or installing
 region data. Missing data will be downloaded online automatically as needed.</p>
 <p>If your hardware supports pitch and high precision altitude information and you want to use them in the <code>MapMatcher</code>
@@ -268,7 +264,7 @@ to improve map-matching, then enable the <code>LayerConfiguration.Feature.ADAS</
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

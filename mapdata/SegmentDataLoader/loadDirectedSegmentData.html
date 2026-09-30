@@ -31,7 +31,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../mapdata/mapdata-library.html">mapdata.dart</a></li>
     <li><a href="../../mapdata/SegmentDataLoader-class.html">SegmentDataLoader</a></li>
-    <li class="self-crumb">loadDirectedSegmentData abstract method</li>
+    <li class="self-crumb"><span class="deprecated">loadDirectedSegmentData</span> abstract method</li>
   </ol>
   <div class="self-name">loadDirectedSegmentData</div>
   <form class="search navbar-right" role="search">
@@ -62,9 +62,14 @@
 
     <section class="multi-line-signature">
       
+  <div>
+    <ol class="annotation-list">
+        <li>@Deprecated(&quot;Will be removed in v4.30.0. Use `load_directed_local_segment_data()` instead.&quot;)</li>
+    </ol>
+  </div>
 
 <span class="returntype"><a href="../../mapdata/SegmentData-class.html">SegmentData</a></span>
-<span class="name ">loadDirectedSegmentData</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="loadDirectedSegmentData-param-segment"><span class="type-annotation"><a href="../../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a></span> <span class="parameter-name">segment</span>, </span></li>
+<span class="name deprecated">loadDirectedSegmentData</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="loadDirectedSegmentData-param-segment"><span class="type-annotation"><a class="deprecated" href="../../mapdata/DirectedOCMSegmentId-class.html">DirectedOCMSegmentId</a></span> <span class="parameter-name">segment</span>, </span></li>
 <li><span class="parameter" id="loadDirectedSegmentData-param-options"><span class="type-annotation"><a href="../../mapdata/SegmentDataLoaderOptions-class.html">SegmentDataLoaderOptions</a></span> <span class="parameter-name">options</span></span></li>
 </ol>)
 
@@ -90,7 +95,9 @@
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">SegmentData loadDirectedSegmentData(DirectedOCMSegmentId segment, SegmentDataLoaderOptions options);</code></pre>
+  <pre class="language-dart"><code class="language-dart">@Deprecated(&quot;Will be removed in v4.30.0. Use `load_directed_local_segment_data()` instead.&quot;)
+
+SegmentData loadDirectedSegmentData(DirectedOCMSegmentId segment, SegmentDataLoaderOptions options);</code></pre>
 </section>
 
 
@@ -108,7 +115,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../mapdata/mapdata-library.html">mapdata</a></li>
     <li><a href="../../mapdata/SegmentDataLoader-class.html">SegmentDataLoader</a></li>
-    <li class="self-crumb">loadDirectedSegmentData abstract method</li>
+    <li class="self-crumb"><span class="deprecated">loadDirectedSegmentData</span> abstract method</li>
 </ol>
 
 
@@ -124,7 +131,7 @@
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

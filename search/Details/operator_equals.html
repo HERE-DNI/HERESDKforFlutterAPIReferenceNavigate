@@ -127,7 +127,8 @@ bool operator ==(Object other) {
       fuelStation == _other.fuelStation &amp;&amp;
       DeepCollectionEquality().equals(foodTypes, _other.foodTypes) &amp;&amp;
       payment == _other.payment &amp;&amp;
-      evChargingLocation == _other.evChargingLocation;
+      evChargingLocation == _other.evChargingLocation &amp;&amp;
+      DeepCollectionEquality().equals(streetInfos, _other.streetInfos);
 }</code></pre>
 </section>
 
@@ -162,7 +163,7 @@ bool operator ==(Object other) {
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

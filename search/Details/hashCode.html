@@ -126,6 +126,7 @@ int get hashCode {
   result = 31 * result + DeepCollectionEquality().hash(foodTypes);
   result = 31 * result + payment.hashCode;
   result = 31 * result + evChargingLocation.hashCode;
+  result = 31 * result + DeepCollectionEquality().hash(streetInfos);
   return result;
 }</code></pre>
 </section>
@@ -163,7 +164,7 @@ int get hashCode {
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

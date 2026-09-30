@@ -31,7 +31,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../mapdata/mapdata-library.html">mapdata.dart</a></li>
     <li><a href="../../mapdata/SegmentDataLoader-class.html">SegmentDataLoader</a></li>
-    <li class="self-crumb">getSegmentsAroundCoordinates abstract method</li>
+    <li class="self-crumb"><span class="deprecated">getSegmentsAroundCoordinates</span> abstract method</li>
   </ol>
   <div class="self-name">getSegmentsAroundCoordinates</div>
   <form class="search navbar-right" role="search">
@@ -62,9 +62,14 @@
 
     <section class="multi-line-signature">
       
+  <div>
+    <ol class="annotation-list">
+        <li>@Deprecated(&quot;Will be removed in v4.30.0. Use `getLocalSegmentsAroundCoordinates()` instead.&quot;)</li>
+    </ol>
+  </div>
 
-<span class="returntype">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../mapdata/OCMSegmentId-class.html">OCMSegmentId</a></span>&gt;</span></span>
-<span class="name ">getSegmentsAroundCoordinates</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="getSegmentsAroundCoordinates-param-coordinates"><span class="type-annotation"><a href="../../core/GeoCoordinates-class.html">GeoCoordinates</a></span> <span class="parameter-name">coordinates</span>, </span></li>
+<span class="returntype">List<span class="signature">&lt;<wbr><span class="type-parameter"><a class="deprecated" href="../../mapdata/OCMSegmentId-class.html">OCMSegmentId</a></span>&gt;</span></span>
+<span class="name deprecated">getSegmentsAroundCoordinates</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="getSegmentsAroundCoordinates-param-coordinates"><span class="type-annotation"><a href="../../core/GeoCoordinates-class.html">GeoCoordinates</a></span> <span class="parameter-name">coordinates</span>, </span></li>
 <li><span class="parameter" id="getSegmentsAroundCoordinates-param-radiusInMeters"><span class="type-annotation">double</span> <span class="parameter-name">radiusInMeters</span></span></li>
 </ol>)
 
@@ -94,7 +99,9 @@ Throws if it's not possible to return list of a list of segments.</p>
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">List&lt;OCMSegmentId&gt; getSegmentsAroundCoordinates(GeoCoordinates coordinates, double radiusInMeters);</code></pre>
+  <pre class="language-dart"><code class="language-dart">@Deprecated(&quot;Will be removed in v4.30.0. Use `getLocalSegmentsAroundCoordinates()` instead.&quot;)
+
+List&lt;OCMSegmentId&gt; getSegmentsAroundCoordinates(GeoCoordinates coordinates, double radiusInMeters);</code></pre>
 </section>
 
 
@@ -112,7 +119,7 @@ Throws if it's not possible to return list of a list of segments.</p>
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../mapdata/mapdata-library.html">mapdata</a></li>
     <li><a href="../../mapdata/SegmentDataLoader-class.html">SegmentDataLoader</a></li>
-    <li class="self-crumb">getSegmentsAroundCoordinates abstract method</li>
+    <li class="self-crumb"><span class="deprecated">getSegmentsAroundCoordinates</span> abstract method</li>
 </ol>
 
 
@@ -128,7 +135,7 @@ Throws if it's not possible to return list of a list of segments.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

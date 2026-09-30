@@ -211,6 +211,19 @@ Note: This String can be empty when no data is available.
 
 </dd>
 
+        <dt id="intersectionStreets" class="property">
+  <span class="name"><a href="../search/Address/intersectionStreets.html">intersectionStreets</a></span>
+  <span class="signature">&#8596; List<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span>
+  
+
+</dt>
+<dd>
+  Streets participating in an intersection.
+Only populated for <a href="../search/PlaceType.html">PlaceType.intersection</a>.
+  <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
         <dt id="postalCode" class="property">
   <span class="name"><a href="../search/Address/postalCode.html">postalCode</a></span>
   <span class="signature">&#8596; String</span>
@@ -274,7 +287,7 @@ Note: This String can be empty when no data is available.
 </dt>
 <dd>
   The street name for the address, for example, "Lewis Ave".
-Note: This String can be empty when no data is available.
+Note: This String can be empty when no data is available or when <code>Address.intersectionStreets</code> is populated instead.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -409,7 +422,7 @@ Note: This String can be empty when no data is available.
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

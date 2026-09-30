@@ -64,7 +64,8 @@
     
 <section class="desc markdown">
   <p>Mesh-based visual representation of a PositionIndicator: geometry, texture, color and lighting.</p>
-<p>Attach it to a PositionIndicator via setRepresentation.</p>
+<p>Instances are immutable. Use PositionIndicatorMeshRepresentationBuilder to create instances.
+To change appearance, create a new instance and call setRepresentation again.</p>
 </section>
 
 
@@ -95,11 +96,10 @@
 
     <dl class="constructor-summary-list">
         <dt id="PositionIndicatorMeshRepresentation" class="callable">
-          <span class="name"><a href="../mapview.mapobject/PositionIndicatorMeshRepresentation/PositionIndicatorMeshRepresentation.html">PositionIndicatorMeshRepresentation</a></span><span class="signature">(<span class="parameter" id="-param-geometryUri"><span class="type-annotation">String</span> <span class="parameter-name">geometryUri</span></span>)</span>
+          <span class="name"><a href="../mapview.mapobject/PositionIndicatorMeshRepresentation/PositionIndicatorMeshRepresentation.html">PositionIndicatorMeshRepresentation</a></span><span class="signature">()</span>
         </dt>
         <dd>
-          Creates a mesh representation with the given geometry.
-            <div class="constructor-modifier features">factory</div>
+          
         </dd>
     </dl>
   </section>
@@ -137,23 +137,10 @@
   </section>
     
   <section
-      class="summary offset-anchor"
+      class="summary offset-anchor inherited"
       id="instance-methods">
     <h2>Methods</h2>
     <dl class="callables">
-        <dt id="enableLighting" class="callable">
-  <span class="name"><a href="../mapview.mapobject/PositionIndicatorMeshRepresentation/enableLighting.html">enableLighting</a></span><span class="signature">(<wbr><span class="parameter" id="enableLighting-param-state"><span class="type-annotation">bool</span> <span class="parameter-name">state</span></span>)
-    <span class="returntype parameter">&#8594; void</span>
-  </span>
-  
-
-</dt>
-<dd>
-  Enables/Disables light interaction with the object color.
-  
-
-</dd>
-
         <dt id="noSuchMethod" class="callable inherited">
   <span class="name"><a href="../mapview.mapobject/PositionIndicatorRepresentation/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
     <span class="returntype parameter">&#8594; dynamic</span>
@@ -164,71 +151,6 @@
 <dd class="inherited">
   Invoked when a nonexistent method or property is accessed.
   <div class="features"><span class="feature">inherited</span></div>
-
-</dd>
-
-        <dt id="setAmbientFactor" class="callable">
-  <span class="name"><a href="../mapview.mapobject/PositionIndicatorMeshRepresentation/setAmbientFactor.html">setAmbientFactor</a></span><span class="signature">(<wbr><span class="parameter" id="setAmbientFactor-param-factor"><span class="type-annotation">double</span> <span class="parameter-name">factor</span></span>)
-    <span class="returntype parameter">&#8594; void</span>
-  </span>
-  
-
-</dt>
-<dd>
-  Sets the ambient factor used when computing lighting.
-  
-
-</dd>
-
-        <dt id="setColor" class="callable">
-  <span class="name"><a href="../mapview.mapobject/PositionIndicatorMeshRepresentation/setColor.html">setColor</a></span><span class="signature">(<wbr><span class="parameter" id="setColor-param-color"><span class="type-annotation">Color</span> <span class="parameter-name">color</span></span>)
-    <span class="returntype parameter">&#8594; void</span>
-  </span>
-  
-
-</dt>
-<dd>
-  Sets the color which will modulate the diffuse texture color.
-  
-
-</dd>
-
-        <dt id="setDiffuseFactor" class="callable">
-  <span class="name"><a href="../mapview.mapobject/PositionIndicatorMeshRepresentation/setDiffuseFactor.html">setDiffuseFactor</a></span><span class="signature">(<wbr><span class="parameter" id="setDiffuseFactor-param-factor"><span class="type-annotation">double</span> <span class="parameter-name">factor</span></span>)
-    <span class="returntype parameter">&#8594; void</span>
-  </span>
-  
-
-</dt>
-<dd>
-  Sets the diffuse factor used when computing lighting.
-  
-
-</dd>
-
-        <dt id="setFlipTextureVertically" class="callable">
-  <span class="name"><a href="../mapview.mapobject/PositionIndicatorMeshRepresentation/setFlipTextureVertically.html">setFlipTextureVertically</a></span><span class="signature">(<wbr><span class="parameter" id="setFlipTextureVertically-param-flip"><span class="type-annotation">bool</span> <span class="parameter-name">flip</span></span>)
-    <span class="returntype parameter">&#8594; void</span>
-  </span>
-  
-
-</dt>
-<dd>
-  Sets whether to flip the image vertically.
-  
-
-</dd>
-
-        <dt id="setTexture" class="callable">
-  <span class="name"><a href="../mapview.mapobject/PositionIndicatorMeshRepresentation/setTexture.html">setTexture</a></span><span class="signature">(<wbr><span class="parameter" id="setTexture-param-textureUri"><span class="type-annotation">String</span> <span class="parameter-name">textureUri</span></span>)
-    <span class="returntype parameter">&#8594; void</span>
-  </span>
-  
-
-</dt>
-<dd>
-  Sets the diffuse texture.
-  
 
 </dd>
 
@@ -302,7 +224,7 @@
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

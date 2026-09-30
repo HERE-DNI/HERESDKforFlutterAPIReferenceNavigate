@@ -119,7 +119,9 @@ Related APIs may change for new releases without a deprecation process.</p>
 
 </dt>
 <dd>
-  Flag indicating if the road sign is a priority sign.
+  Flag indicating if the road sign is a priority sign. This flag will be set to <code>true</code> only for <a href="../navigation/RoadSign/roadSignCategory.html">RoadSign.roadSignCategory</a> with value
+<a href="../navigation/RoadSignCategory.html">RoadSignCategory.regulatorySign</a>. Examples of road signs types with priority flag set to <code>true</code> are <a href="../navigation/RoadSignType.html">RoadSignType.priorityOverOncomingTraffic</a>,
+<a href="../navigation/RoadSignType.html">RoadSignType.yieldToOncomingTraffic</a>, <a href="../navigation/RoadSignType.html">RoadSignType.stopSign</a>, <a href="../navigation/RoadSignType.html">RoadSignType.yield</a>, <a href="../navigation/RoadSignType.html">RoadSignType.yieldToBicycles</a>.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -199,7 +201,7 @@ in positive direction.
 
 </dt>
 <dd>
-  The main category to which the road sign belongs.
+  The main category to which the road sign belongs. It defines the general purpose of the sign (e.g.: regulatory sign).
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -356,7 +358,7 @@ The list will be empty when the road sign is applicable for all vehicles includi
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

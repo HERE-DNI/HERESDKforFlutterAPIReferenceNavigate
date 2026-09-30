@@ -554,6 +554,14 @@ of creating persistent map index.
   The options to specify a Place id query.
 </dd>
 
+          <dt id="PlaceIdResult">
+  <span class="name "><a href="../search/PlaceIdResult-class.html">PlaceIdResult</a></span> 
+
+</dt>
+<dd>
+  Holds the result for a single place ID from a <code>SearchEngine.searchByPlaceIds</code> request.
+</dd>
+
           <dt id="POIPaymentDetails">
   <span class="name "><a href="../search/POIPaymentDetails-class.html">POIPaymentDetails</a></span> 
 
@@ -611,6 +619,14 @@ search engines.
 </dt>
 <dd>
   Encapsulates options that control the behavior of search and suggest operations.
+</dd>
+
+          <dt id="StreetInfo">
+  <span class="name "><a href="../search/StreetInfo-class.html">StreetInfo</a></span> 
+
+</dt>
+<dd>
+  Street name details.
 </dd>
 
           <dt id="StructuredQuery">
@@ -1007,6 +1023,20 @@ has been completed.
   </dd>
 
           
+  <dt id="PlaceIdsSearchCallback" class="callable">
+    <span class="name"><a href="../search/PlaceIdsSearchCallback.html">PlaceIdsSearchCallback</a></span><span class="signature">
+      <span class="returntype parameter">= void Function<span class="signature">(<span class="parameter" id="param-searchError"><span class="type-annotation"><a href="../search/SearchError.html">SearchError</a>?</span> <span class="parameter-name">searchError</span>, </span><span class="parameter" id="param-results"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../search/PlaceIdResult-class.html">PlaceIdResult</a></span>&gt;</span>?</span> <span class="parameter-name">results</span>, </span><span class="parameter" id="param-responseDetails"><span class="type-annotation"><a href="../search/ResponseDetails-class.html">ResponseDetails</a>?</span> <span class="parameter-name">responseDetails</span></span>)</span></span>
+    </span>
+    
+
+  </dt>
+  <dd>
+    The method will be called on the main thread when a search call has been completed.
+    
+
+  </dd>
+
+          
   <dt id="SearchCallback" class="callable">
     <span class="name"><a href="../search/SearchCallback.html">SearchCallback</a></span><span class="signature">
       <span class="returntype parameter">= void Function<span class="signature">(<span class="parameter" id="param-searchError"><span class="type-annotation"><a href="../search/SearchError.html">SearchError</a>?</span> <span class="parameter-name">searchError</span>, </span><span class="parameter" id="param-places"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../search/Place-class.html">Place</a></span>&gt;</span>?</span> <span class="parameter-name">places</span></span>)</span></span>
@@ -1158,7 +1188,7 @@ has been completed.
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   

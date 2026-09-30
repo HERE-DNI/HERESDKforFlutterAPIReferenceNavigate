@@ -107,6 +107,9 @@ Sets whether the marker is allowed to overlap with other markers.</p>
 a higher visibility priority. A marker that allows overlap will always be drawn.
 Among markers that don't allow overlap, the one with the highest draw order has
 priority. Marker that is hidden due to overlapping with other markers is not pickable.</p>
+<p>If <a href="../../mapview/MapMarker/isTextOptional.html">MapMarker.isTextOptional</a> is also <code>true</code>, the icon is always rendered on top of
+other icons on collision, while the text label still participates in normal collision
+detection and can be hidden. See <a href="../../mapview/MapMarker/isTextOptional.html">MapMarker.isTextOptional</a> for details.</p>
 </section>
 
     
@@ -147,7 +150,7 @@ priority. Marker that is hidden due to overlapping with other markers is not pic
 <footer>
   <span class="no-break">
     here_sdk
-      4.27.3
+      4.28.0
   </span>
 
   
