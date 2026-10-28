@@ -77,10 +77,12 @@
 <p>Returns an empty list in case no segments could be found around the coordinates.</p>
 <ul>
 <li>
-<p><code>coordinates</code> The location to explore.</p>
+<p><code>coordinates</code> The location to explore.
+The center coordinate around which to search.</p>
 </li>
 <li>
-<p><code>radiusInMeters</code> The radius of the search. Only values between 1m and 5000m are accepted.</p>
+<p><code>radiusInMeters</code> The radius of the search. Only values between 1m and 5000m are accepted.
+The radius is measured in meters.</p>
 </li>
 </ul>
 <p>Returns <code>List&lt;LocalSegmentId&gt;</code>. The list of segments around the given position.</p>
@@ -128,7 +130,7 @@ Throws if it's not possible to return list of a list of segments.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

@@ -135,6 +135,7 @@ int get hashCode {
   result = 31 * result + tunnelCategory.hashCode;
   result = 31 * result + DeepCollectionEquality().hash(hazardousMaterials);
   result = 31 * result + occupancy.hashCode;
+  result = 31 * result + DeepCollectionEquality().hash(preferredTruckNetworks);
   return result;
 }</code></pre>
 </section>
@@ -172,7 +173,7 @@ int get hashCode {
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

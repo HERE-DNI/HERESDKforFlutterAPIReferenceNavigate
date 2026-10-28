@@ -72,7 +72,10 @@
     </section>
     
 <section class="desc markdown">
-  <p>Called whenever there is a change in the status of the loaded data from <a href="../../electronic_horizon/ElectronicHorizonDataLoader-class.html">ElectronicHorizonDataLoader</a>.</p>
+  <p>If multiple listeners are registered, callbacks are delivered sequentially, but their
+order is not defined.</p>
+<p>Do not depend on one listener receiving a status before another.
+Called whenever there is a change in the status of the loaded data from <a href="../../electronic_horizon/ElectronicHorizonDataLoader-class.html">ElectronicHorizonDataLoader</a>.</p>
 <ul>
 <li><code>electronicHorizonDataLoaderStatuses</code> The updated statuses of the loaded data from <a href="../../electronic_horizon/ElectronicHorizonDataLoader-class.html">ElectronicHorizonDataLoader</a>.
 The key is the level of a <code>ElectronicHorizonPath</code>, the value is the current status.</li>
@@ -117,7 +120,7 @@ The key is the level of a <code>ElectronicHorizonPath</code>, the value is the c
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

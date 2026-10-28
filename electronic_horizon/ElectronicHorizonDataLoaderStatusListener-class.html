@@ -65,8 +65,7 @@
 <section class="desc markdown">
   <p>Provides a listener for status updates from the <a href="../electronic_horizon/ElectronicHorizonDataLoader/loadData.html">ElectronicHorizonDataLoader.loadData</a> method.</p>
 <p>The listener receives the current state for different levels of the paths as <a href="../electronic_horizon/ElectronicHorizonDataLoadedStatus.html">ElectronicHorizonDataLoadedStatus</a>.</p>
-<p>Note: This is a <strong>beta</strong> release of this feature, so there could be a few bugs and unexpected behaviors.
-Related APIs may change for new releases without a deprecation process.</p>
+<p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</p>
 <p>Offline availability: This property is available online and offline.</p>
 </section>
 
@@ -145,7 +144,8 @@ Related APIs may change for new releases without a deprecation process.</p>
 
 </dt>
 <dd>
-  Called whenever there is a change in the status of the loaded data from <a href="../electronic_horizon/ElectronicHorizonDataLoader-class.html">ElectronicHorizonDataLoader</a>.
+  If multiple listeners are registered, callbacks are delivered sequentially, but their
+order is not defined.
   
 
 </dd>
@@ -220,7 +220,7 @@ Related APIs may change for new releases without a deprecation process.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

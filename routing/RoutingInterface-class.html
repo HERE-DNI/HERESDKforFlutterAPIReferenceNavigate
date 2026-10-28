@@ -94,7 +94,7 @@ routing engines.</p>
 
     <dl class="constructor-summary-list">
         <dt id="RoutingInterface" class="callable">
-          <span class="name"><a href="../routing/RoutingInterface/RoutingInterface.html">RoutingInterface</a></span><span class="signature">(<span class="parameter" id="-param-calculateRouteWithRoutingOptionsLambda"><span class="type-annotation"><a href="../core.threading/TaskHandle-class.html">TaskHandle</a></span> <span class="parameter-name">calculateRouteWithRoutingOptionsLambda</span>(<span class="parameter" id="param-"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../routing/Waypoint-class.html">Waypoint</a></span>&gt;</span></span>, </span><span class="parameter" id="param-"><span class="type-annotation"><a href="../routing/RoutingOptions-class.html">RoutingOptions</a></span>, </span><span class="parameter" id="param-"><span class="type-annotation"><a href="../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name"></span></span>), </span><span class="parameter" id="-param-returnToRouteWithTraveledDistanceLambda"><span class="type-annotation"><a href="../core.threading/TaskHandle-class.html">TaskHandle</a></span> <span class="parameter-name">returnToRouteWithTraveledDistanceLambda</span>(<span class="parameter" id="param-"><span class="type-annotation"><a href="../routing/Route-class.html">Route</a></span>, </span><span class="parameter" id="param-"><span class="type-annotation"><a href="../routing/Waypoint-class.html">Waypoint</a></span>, </span><span class="parameter" id="param-"><span class="type-annotation">int</span>, </span><span class="parameter" id="param-"><span class="type-annotation">int</span>, </span><span class="parameter" id="param-"><span class="type-annotation"><a href="../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name"></span></span>)</span>)</span>
+          <span class="name"><a href="../routing/RoutingInterface/RoutingInterface.html">RoutingInterface</a></span><span class="signature">(<span class="parameter" id="-param-importRouteFromRouteHandleWithRoutingOptionsLambda"><span class="type-annotation"><a href="../core.threading/TaskHandle-class.html">TaskHandle</a></span> <span class="parameter-name">importRouteFromRouteHandleWithRoutingOptionsLambda</span>(<span class="parameter" id="param-"><span class="type-annotation"><a href="../routing/RouteHandle-class.html">RouteHandle</a></span>, </span><span class="parameter" id="param-"><span class="type-annotation"><a href="../routing/RoutingOptions-class.html">RoutingOptions</a></span>, </span><span class="parameter" id="param-"><span class="type-annotation"><a href="../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name"></span></span>), </span><span class="parameter" id="-param-calculateRouteWithRoutingOptionsLambda"><span class="type-annotation"><a href="../core.threading/TaskHandle-class.html">TaskHandle</a></span> <span class="parameter-name">calculateRouteWithRoutingOptionsLambda</span>(<span class="parameter" id="param-"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../routing/Waypoint-class.html">Waypoint</a></span>&gt;</span></span>, </span><span class="parameter" id="param-"><span class="type-annotation"><a href="../routing/RoutingOptions-class.html">RoutingOptions</a></span>, </span><span class="parameter" id="param-"><span class="type-annotation"><a href="../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name"></span></span>), </span><span class="parameter" id="-param-returnToRouteWithTraveledDistanceLambda"><span class="type-annotation"><a href="../core.threading/TaskHandle-class.html">TaskHandle</a></span> <span class="parameter-name">returnToRouteWithTraveledDistanceLambda</span>(<span class="parameter" id="param-"><span class="type-annotation"><a href="../routing/Route-class.html">Route</a></span>, </span><span class="parameter" id="param-"><span class="type-annotation"><a href="../routing/Waypoint-class.html">Waypoint</a></span>, </span><span class="parameter" id="param-"><span class="type-annotation">int</span>, </span><span class="parameter" id="param-"><span class="type-annotation">int</span>, </span><span class="parameter" id="param-"><span class="type-annotation"><a href="../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name"></span></span>)</span>)</span>
         </dt>
         <dd>
           Provides the abstract class for the online and offline
@@ -151,6 +151,19 @@ routing engines.
 <dd>
   Asynchronously calculates a route from one point to another,
 passing through the given waypoints in the given order.
+  
+
+</dd>
+
+        <dt id="importRouteFromRouteHandleWithRoutingOptions" class="callable">
+  <span class="name"><a href="../routing/RoutingInterface/importRouteFromRouteHandleWithRoutingOptions.html">importRouteFromRouteHandleWithRoutingOptions</a></span><span class="signature">(<wbr><span class="parameter" id="importRouteFromRouteHandleWithRoutingOptions-param-routeHandle"><span class="type-annotation"><a href="../routing/RouteHandle-class.html">RouteHandle</a></span> <span class="parameter-name">routeHandle</span>, </span><span class="parameter" id="importRouteFromRouteHandleWithRoutingOptions-param-options"><span class="type-annotation"><a href="../routing/RoutingOptions-class.html">RoutingOptions</a></span> <span class="parameter-name">options</span>, </span><span class="parameter" id="importRouteFromRouteHandleWithRoutingOptions-param-callback"><span class="type-annotation"><a href="../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name">callback</span></span>)
+    <span class="returntype parameter">&#8594; <a href="../core.threading/TaskHandle-class.html">TaskHandle</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Asynchronously recreates a route from the <a href="../routing/RouteHandle-class.html">RouteHandle</a> provided, i.e.
   
 
 </dd>
@@ -251,7 +264,7 @@ passing through the given waypoints in the given order.
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

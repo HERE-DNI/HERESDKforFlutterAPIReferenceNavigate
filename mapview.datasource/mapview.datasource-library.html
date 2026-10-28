@@ -179,6 +179,30 @@ geodetic lines and their attributes through a <a href="../mapview.datasource/Lin
   Result handler of a load tile request.
 </dd>
 
+          <dt id="MapOcmTileDataSourceFactory">
+  <span class="name "><a href="../mapview.datasource/MapOcmTileDataSourceFactory-class.html">MapOcmTileDataSourceFactory</a></span> 
+
+</dt>
+<dd>
+  Factory for creation of <a href="../mapview.datasource/MapTileDataSource-class.html">MapTileDataSource</a> instances backed by OCM data.
+</dd>
+
+          <dt id="MapTileDataSource">
+  <span class="name "><a href="../mapview.datasource/MapTileDataSource-class.html">MapTileDataSource</a></span> 
+
+</dt>
+<dd>
+  A tile data source that exposes geometry data for map features.
+</dd>
+
+          <dt id="MapTileGeometryData">
+  <span class="name "><a href="../mapview.datasource/MapTileGeometryData-class.html">MapTileGeometryData</a></span> 
+
+</dt>
+<dd>
+  Holds map tile geometry data.
+</dd>
+
           <dt id="PointData">
   <span class="name "><a href="../mapview.datasource/PointData-class.html">PointData</a></span> 
 
@@ -414,7 +438,7 @@ in a particular tiling scheme (<a href="../mapview.datasource/TilingScheme.html"
 
 </dt>
 <dd>
-  Listener of <a href="../mapview.datasource/TileSource-class.html">TileSource</a> events.
+  Listener to receive <a href="../mapview.datasource/TileSource-class.html">TileSource</a> events.
 </dd>
 
           <dt id="TileSourceLoadTileRequestHandle">
@@ -454,6 +478,22 @@ in a particular tiling scheme (<a href="../mapview.datasource/TilingScheme.html"
 </dt>
 <dd>
   Supported types of the data attribute values.
+</dd>
+
+          <dt id="MapTileDataLayer">
+  <span class="name "><a href="../mapview.datasource/MapTileDataLayer.html">MapTileDataLayer</a></span> 
+
+</dt>
+<dd>
+  Specifies map data layer that <a href="../mapview.datasource/MapTileDataSource-class.html">MapTileDataSource</a> operates on.
+</dd>
+
+          <dt id="MapTileGeometryDataType">
+  <span class="name "><a href="../mapview.datasource/MapTileGeometryDataType.html">MapTileGeometryDataType</a></span> 
+
+</dt>
+<dd>
+  The type of geometry held by <a href="../mapview.datasource/MapTileGeometryData-class.html">MapTileGeometryData</a>.
 </dd>
 
           <dt id="RasterDataSourceError">
@@ -510,6 +550,20 @@ in a particular tiling scheme (<a href="../mapview.datasource/TilingScheme.html"
   </dt>
   <dd>
     Called for each line, allowing inspection, removal or update of coordinates and attributes.
+    
+
+  </dd>
+
+          
+  <dt id="MapTileDataSourceLoadTileCallback" class="callable">
+    <span class="name"><a href="../mapview.datasource/MapTileDataSourceLoadTileCallback.html">MapTileDataSourceLoadTileCallback</a></span><span class="signature">
+      <span class="returntype parameter">= void Function<span class="signature">(<span class="parameter" id="param-tileKey"><span class="type-annotation"><a href="../mapview.datasource/TileKey-class.html">TileKey</a></span> <span class="parameter-name">tileKey</span>, </span><span class="parameter" id="param-mapFeatureData"><span class="type-annotation"><a href="../mapview.datasource/MapTileGeometryData-class.html">MapTileGeometryData</a>?</span> <span class="parameter-name">mapFeatureData</span></span>)</span></span>
+    </span>
+    
+
+  </dt>
+  <dd>
+    Receives loaded tile data.
     
 
   </dd>
@@ -589,6 +643,7 @@ in a particular tiling scheme (<a href="../mapview.datasource/TilingScheme.html"
       <li><a href="../gestures/gestures-library.html">gestures</a></li>
       <li><a href="../location/location-library.html">location</a></li>
       <li><a href="../mapdata/mapdata-library.html">mapdata</a></li>
+      <li><a href="../mapdata.ocm/mapdata.ocm-library.html">mapdata.ocm</a></li>
       <li><a href="../maploader/maploader-library.html">maploader</a></li>
       <li><a href="../maploader.remote.connection/maploader.remote.connection-library.html">maploader.remote.connection</a></li>
       <li><a href="../mapmatcher/mapmatcher-library.html">mapmatcher</a></li>
@@ -623,7 +678,7 @@ in a particular tiling scheme (<a href="../mapview.datasource/TilingScheme.html"
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

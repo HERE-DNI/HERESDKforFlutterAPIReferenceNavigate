@@ -84,6 +84,13 @@ restored to its original value when stopRendering() is called.
 is automatically stopped on the previous map view instance. Also note that
 the <a href="../../mapview/MapViewBase/frameRate.html">MapViewBase.frameRate</a> can be lowered to reduce CPU usage, to adjust for tradeoffs
 between rendering smoothness versus battery consumption.</p>
+<p><strong>Note:</strong> For supported roads, a lane guidance experience is enabled once <a href="../../navigation/VisualNavigator-class.html">VisualNavigator</a> starts rendering if the following conditions are met:</p>
+<ul>
+<li>the camera behavior is set to <a href="../../navigation/TransitionCameraBehavior-class.html">TransitionCameraBehavior</a></li>
+<li>one of the map schemes <a href="../../mapview/MapScheme.html">MapScheme.clusterDay</a>, <a href="../../mapview/MapScheme.html">MapScheme.clusterNight</a>, <a href="../../mapview/MapScheme.html">MapScheme.tunnel</a> is loaded</li>
+<li>the user is authorized to use "lane guidance" feature</li>
+</ul>
+<p>The lane guidance experience will be disabled when <a href="../../navigation/VisualNavigator-class.html">VisualNavigator</a> stops rendering.</p>
 <ul>
 <li><code>mapView</code> The map view on which visual navigation will take place.</li>
 </ul>
@@ -127,7 +134,7 @@ between rendering smoothness versus battery consumption.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

@@ -80,7 +80,14 @@ the current location and keeps the last active camera state, i.e., current zoom 
 Furthermore, when <code>null</code> is set map gestures can be used again to freely pan and zoom
 the map. In opposition, when a camera behavior is defined, then the map cannot be panned and
 zoomed by the user.
-The default value is an instance of <a href="../../navigation/FixedCameraBehavior-class.html">FixedCameraBehavior</a>.
+The default value is an instance of <a href="../../navigation/FixedCameraBehavior-class.html">FixedCameraBehavior</a>.</p>
+<p><strong>Note:</strong> For supported roads, a lane guidance experience is enabled once <a href="../../navigation/VisualNavigator-class.html">VisualNavigator</a> starts rendering if the following conditions are met:</p>
+<ul>
+<li>the camera behavior is set to <a href="../../navigation/TransitionCameraBehavior-class.html">TransitionCameraBehavior</a></li>
+<li>one of the map schemes <a href="../../mapview/MapScheme.html">MapScheme.clusterDay</a>, <a href="../../mapview/MapScheme.html">MapScheme.clusterNight</a>, <a href="../../mapview/MapScheme.html">MapScheme.tunnel</a> is loaded</li>
+<li>the user is authorized to use "lane guidance" feature</li>
+</ul>
+<p>The lane guidance experience will be disabled when <a href="../../navigation/VisualNavigator-class.html">VisualNavigator</a> stops rendering.
 Gets the currently set camera behavior.</p>
 </section>
 
@@ -112,7 +119,14 @@ the current location and keeps the last active camera state, i.e., current zoom 
 Furthermore, when <code>null</code> is set map gestures can be used again to freely pan and zoom
 the map. In opposition, when a camera behavior is defined, then the map cannot be panned and
 zoomed by the user.
-The default value is an instance of <a href="../../navigation/FixedCameraBehavior-class.html">FixedCameraBehavior</a>.
+The default value is an instance of <a href="../../navigation/FixedCameraBehavior-class.html">FixedCameraBehavior</a>.</p>
+<p><strong>Note:</strong> For supported roads, a lane guidance experience is enabled once <a href="../../navigation/VisualNavigator-class.html">VisualNavigator</a> starts rendering if the following conditions are met:</p>
+<ul>
+<li>the camera behavior is set to <a href="../../navigation/TransitionCameraBehavior-class.html">TransitionCameraBehavior</a></li>
+<li>one of the map schemes <a href="../../mapview/MapScheme.html">MapScheme.clusterDay</a>, <a href="../../mapview/MapScheme.html">MapScheme.clusterNight</a>, <a href="../../mapview/MapScheme.html">MapScheme.tunnel</a> is loaded</li>
+<li>the user is authorized to use "lane guidance" feature</li>
+</ul>
+<p>The lane guidance experience will be disabled when <a href="../../navigation/VisualNavigator-class.html">VisualNavigator</a> stops rendering.
 Sets how the VisualNavigator handles the camera.</p>
 </section>
 
@@ -154,7 +168,7 @@ Sets how the VisualNavigator handles the camera.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

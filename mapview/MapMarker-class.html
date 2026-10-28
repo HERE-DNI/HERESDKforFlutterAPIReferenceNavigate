@@ -108,6 +108,13 @@ to the user in the current camera viewport and thus need to be added to the map.
 with anchor point specifying how the image is positioned relative to the marker's coordinates.
             <div class="constructor-modifier features">factory</div>
         </dd>
+        <dt id="MapMarker.withImageAndElevationTarget" class="callable">
+          <span class="name"><a href="../mapview/MapMarker/MapMarker.withImageAndElevationTarget.html">MapMarker.withImageAndElevationTarget</a></span><span class="signature">(<span class="parameter" id="withImageAndElevationTarget-param-coordinates"><span class="type-annotation"><a href="../core/GeoCoordinates-class.html">GeoCoordinates</a></span> <span class="parameter-name">coordinates</span>, </span><span class="parameter" id="withImageAndElevationTarget-param-image"><span class="type-annotation"><a href="../mapview/MapImage-class.html">MapImage</a></span> <span class="parameter-name">image</span>, </span><span class="parameter" id="withImageAndElevationTarget-param-elevationTarget"><span class="type-annotation"><a href="../mapview/ElevationTarget-class.html">ElevationTarget</a></span> <span class="parameter-name">elevationTarget</span></span>)</span>
+        </dt>
+        <dd>
+          Creates an instance of a marker at given coordinates, represented by specified image with specified elevation target.
+            <div class="constructor-modifier features">factory</div>
+        </dd>
         <dt id="MapMarker.withImageAndText" class="callable">
           <span class="name"><a href="../mapview/MapMarker/MapMarker.withImageAndText.html">MapMarker.withImageAndText</a></span><span class="signature">(<span class="parameter" id="withImageAndText-param-coordinates"><span class="type-annotation"><a href="../core/GeoCoordinates-class.html">GeoCoordinates</a></span> <span class="parameter-name">coordinates</span>, </span><span class="parameter" id="withImageAndText-param-image"><span class="type-annotation"><a href="../mapview/MapImage-class.html">MapImage</a></span> <span class="parameter-name">image</span>, </span><span class="parameter" id="withImageAndText-param-text"><span class="type-annotation">String</span> <span class="parameter-name">text</span></span>)</span>
         </dt>
@@ -160,6 +167,19 @@ Gets the point on the map where the marker is drawn.
   The draw order of this marker relative to other markers.
 Gets draw order of this marker relative to other markers. The default value is 0.
   <div class="features"><span class="feature">getter/setter pair</span></div>
+
+</dd>
+
+        <dt id="elevationTarget" class="property">
+  <span class="name"><a href="../mapview/MapMarker/elevationTarget.html">elevationTarget</a></span>
+  <span class="signature">&#8594; <a href="../mapview/ElevationTarget-class.html">ElevationTarget</a>?</span>
+  
+
+</dt>
+<dd>
+  Elevation target of the marker.
+Gets the elevation target of the marker. Returns <code>null</code> if no elevation target was specified.
+  <div class="features"><span class="feature">no setter</span></div>
 
 </dd>
 
@@ -280,6 +300,19 @@ Default value is 1.0.
 <dd class="inherited">
   A representation of the runtime type of the object.
   <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="scale" class="property">
+  <span class="name"><a href="../mapview/MapMarker/scale.html">scale</a></span>
+  <span class="signature">&#8596; double</span>
+  
+
+</dt>
+<dd>
+  Scale factor applied to the marker image before rendering.
+Gets the scale factor applied to the marker image. Default value is 1.0.
+  <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
 
@@ -440,7 +473,7 @@ ranges. When empty (the default), the map marker is visible without map measure 
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

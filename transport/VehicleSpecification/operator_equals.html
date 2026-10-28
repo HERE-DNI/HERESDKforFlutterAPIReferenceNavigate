@@ -136,7 +136,8 @@ bool operator ==(Object other) {
       tiresCount == _other.tiresCount &amp;&amp;
       tunnelCategory == _other.tunnelCategory &amp;&amp;
       DeepCollectionEquality().equals(hazardousMaterials, _other.hazardousMaterials) &amp;&amp;
-      occupancy == _other.occupancy;
+      occupancy == _other.occupancy &amp;&amp;
+      DeepCollectionEquality().equals(preferredTruckNetworks, _other.preferredTruckNetworks);
 }</code></pre>
 </section>
 
@@ -171,7 +172,7 @@ bool operator ==(Object other) {
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

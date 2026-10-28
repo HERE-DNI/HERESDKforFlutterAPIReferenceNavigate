@@ -77,6 +77,11 @@ rate when some camera behavior is set using the <a href="../navigation/VisualNav
 is preset, the original MapView's frame rate (the value prior to the <a href="../navigation/VisualNavigator/startRendering.html">VisualNavigator.startRendering</a> call) will
 be used. While the VisualNavigator is rendering, direct changes in the MapView's frame rate can
 lead to unexpected behavior and therefore should be avoided.</p>
+<p><strong>Note:</strong> After version 4.31.0, <a href="../navigation/VisualNavigator-class.html">VisualNavigator</a> will no longer implement the
+Abstract class <a href="../navigation/NavigatorInterface-class.html">NavigatorInterface</a> directly. A <a href="../navigation/VisualNavigator-class.html">VisualNavigator</a> instance should
+therefore not be used where a <a href="../navigation/NavigatorInterface-class.html">NavigatorInterface</a> is required. To access the
+<a href="../navigation/NavigatorInterface-class.html">NavigatorInterface</a> implementation associated with a <a href="../navigation/VisualNavigator-class.html">VisualNavigator</a>, use its <a href="../navigation/VisualNavigator/navigator.html">VisualNavigator.navigator</a>
+property and call the interface methods on that object.</p>
 </section>
 
 
@@ -186,7 +191,6 @@ Furthermore, when <code>null</code> is set map gestures can be used again to fre
 the map. In opposition, when a camera behavior is defined, then the map cannot be panned and
 zoomed by the user.
 The default value is an instance of <a href="../navigation/FixedCameraBehavior-class.html">FixedCameraBehavior</a>.
-Gets the currently set camera behavior.
   <div class="features"><span class="feature">getter/setter pair</span></div>
 
 </dd>
@@ -215,7 +219,7 @@ Gets an object containing colors used to render route progress and maneuver arro
   Object to receive current situation lane assistance view notifications.
 Setting <code>null</code> value to the listener will unset the listener.
 It returns <code>null</code> when no listener is set by an user.
-Gets the listener  to receive current situation lane assistance view notifications.
+Gets the listener to receive current situation lane assistance view notifications.
   <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
 
 </dd>
@@ -566,7 +570,7 @@ Gets the current state whether traffic conditions on route should be displayed d
 Junction view lane assistance notifications only occurs if a route has been set.
 Setting <code>null</code> value to the listener will unset the listener.
 It returns <code>null</code> when no listener is set by an user.
-Gets the listener  to receive junction view lane assistance notifications.
+Gets the listener to receive junction view lane assistance notifications.
   <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
 
 </dd>
@@ -640,7 +644,7 @@ Gets the maneuver notification options.
 Maneuver view lane assistance notifications only occurs if a route has been set.
 Setting <code>null</code> value to the listener will unset the listener.
 It returns <code>null</code> when no listener is set by an user.
-Gets the listener  to receive maneuver view lane assistance notifications.
+Gets the listener to receive maneuver view lane assistance notifications.
   <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
 
 </dd>
@@ -695,6 +699,19 @@ Gets the listener that notifies current location updates.
 
 </dd>
 
+        <dt id="navigator" class="property">
+  <span class="name"><a href="../navigation/VisualNavigator/navigator.html">navigator</a></span>
+  <span class="signature">&#8594; <a href="../navigation/NavigatorInterface-class.html">NavigatorInterface</a></span>
+  
+
+</dt>
+<dd>
+  The <a href="../navigation/NavigatorInterface-class.html">NavigatorInterface</a> instance used by the <a href="../navigation/VisualNavigator-class.html">VisualNavigator</a>.
+Gets the <a href="../navigation/NavigatorInterface-class.html">NavigatorInterface</a> instance used by the <a href="../navigation/VisualNavigator-class.html">VisualNavigator</a>.
+  <div class="features"><span class="feature">no setter</span></div>
+
+</dd>
+
         <dt id="offRoadDestinationReachedListener" class="property inherited">
   <span class="name"><a href="../navigation/NavigatorInterface/offRoadDestinationReachedListener.html">offRoadDestinationReachedListener</a></span>
   <span class="signature">&#8596; <a href="../navigation/OffRoadDestinationReachedListener-class.html">OffRoadDestinationReachedListener</a>?</span>
@@ -740,7 +757,7 @@ Gets the listener that notifies about off-road progress.
 Post actions notifications only occurs if a route has been set.
 Setting <code>null</code> value to the listener will unset the listener.
 It returns <code>null</code> when no listener is set by an user.
-Gets the listener  to receive post action notifications, such as a charge action at a charging station.
+Gets the listener to receive post action notifications, such as a charge action at a charging station.
   <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
 
 </dd>
@@ -801,7 +818,7 @@ It allow to filter realistic views to be passed to <a class="deprecated" href=".
   Object to receive notifications about attributes of the current road.
 Setting <code>null</code> value to the listener will unset the listener.
 It returns <code>null</code> when no listener is set by an user.
-Gets the listener  to receive notifications about attributes of the current road.
+Gets the listener to receive notifications about attributes of the current road.
   <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
 
 </dd>
@@ -844,7 +861,7 @@ Gets road sign warning options that allow to filter road signs to be passed to <
   Object to receive notifications about the textual attributes of the current road.
 Setting <code>null</code> value to the listener will unset the listener.
 It returns <code>null</code> when no listener is set by an user.
-Gets the listener  to receive notifications about the textual attributes of the current road.
+Gets the listener to receive notifications about the textual attributes of the current road.
   <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
 
 </dd>
@@ -920,11 +937,11 @@ Gets the listener that notifies when a route progress change occurs.
 </dt>
 <dd class="inherited">
   Object to receive safety camera warner notifications.
-If a listener  is present, notifications about
+If a listener is present, notifications about
 safety speed cameras will be also sent via <a class="deprecated" href="../navigation/SafetyCameraWarningListener-class.html">SafetyCameraWarningListener</a>.
 Setting <code>null</code> value to the listener will unset the listener.
 It returns <code>null</code> when no listener is set by an user.
-Gets the listener  to receive safety camera warning notifications.
+Gets the listener to receive safety camera warning notifications.
   <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
 
 </dd>
@@ -985,7 +1002,7 @@ passed to <a class="deprecated" href="../navigation/SchoolZoneWarningListener-cl
   Object to receive notifications about the speed limit of the current road.
 Setting <code>null</code> value to the listener will unset the listener.
 It returns <code>null</code> when no listener is set by an user.
-Gets the listener  to receive notifications about the speed limit of the current road.
+Gets the listener to receive notifications about the speed limit of the current road.
   <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
 
 </dd>
@@ -1033,23 +1050,6 @@ This is a <strong>beta release</strong> of this feature, so there could be a few
 behaviors. Related APIs may change for new releases without a deprecation process.
 Gets the listener to receive notifications about
 the the upcoming toll stop.
-  <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
-
-</dd>
-
-        <dt id="trackingTransportProfile" class="property inherited">
-  <span class="name"><a class="deprecated" href="../navigation/NavigatorInterface/trackingTransportProfile.html">trackingTransportProfile</a></span>
-  <span class="signature">&#8596; <a class="deprecated" href="../core/TransportProfile-class.html">TransportProfile</a>?</span>
-  
-
-</dt>
-<dd class="inherited">
-  Defines the transport profile for the <a href="../navigation/Navigator-class.html">Navigator</a>, when no route is present.
-Properly setting the transport profile optimizes the navigation experience, and improves resource consumption.
-For example, a <a class="deprecated" href="../core/TransportProfile-class.html">TransportProfile</a> can be defined with a <a class="deprecated" href="../transport/VehicleProfile-class.html">VehicleProfile</a>.
-A vehicle profile can have several parameters such as <a class="deprecated" href="../transport/VehicleType.html">VehicleType</a> to set the
-source of information describing the vehicle.
-The default is a <a href="../transport/VehicleType.html">VehicleType.car</a> profile.
   <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
 
 </dd>
@@ -1127,7 +1127,7 @@ Gets the traffic information for the current route.
   Object to receive notifications about truck restrictions on the current road.
 Setting <code>null</code> value to the listener will unset the listener.
 It returns <code>null</code> when no listener is set by an user.
-Gets the listener  to receive notifications about
+Gets the listener to receive notifications about
 truck restrictions on the current road.
   <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
 
@@ -1444,7 +1444,7 @@ Gets the warner engine used by the navigator.
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

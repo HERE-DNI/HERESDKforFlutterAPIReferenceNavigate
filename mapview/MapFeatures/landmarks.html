@@ -76,8 +76,12 @@ landmarks sink into or float above the terrain.</p>
 <a href="../../mapview/MapFeatureModes/landmarksGrayscale.html">MapFeatureModes.landmarksGrayscale</a> and <a href="../../mapview/MapFeatureModes/landmarksTextureless.html">MapFeatureModes.landmarksTextureless</a>.</p>
 <p>Default mode is <a href="../../mapview/MapFeatureModes/landmarksGrayscale.html">MapFeatureModes.landmarksGrayscale</a>.</p>
 <p>By default, 3D landmarks are enabled on all compatible map schemes.</p>
+<p>By default, landmark bridges are visible when <a href="../../mapview/MapFeatures/landmarks.html">MapFeatures.landmarks</a> is enabled.
+To hide them, override the <code>Landmark.Bridge.Enabled</code> definition with <code>false</code>
+in a custom style and apply it using <a href="../../mapview/Style/update.html">Style.update</a>.
+A <code>null</code> value restores the default.</p>
 <p>Not supported for <a href="../../mapview/MapScheme.html">MapScheme.satellite</a>, <a href="../../mapview/MapScheme.html">MapScheme.roadNetworkDay</a>,
-<a href="../../mapview/MapScheme.html">MapScheme.roadNetworkNight</a> and all hybrid schemes: <a href="../../mapview/MapScheme.html">MapScheme.hybridDay</a>
+<a href="../../mapview/MapScheme.html">MapScheme.roadNetworkNight</a>, <a href="../../mapview/MapScheme.html">MapScheme.tunnel</a> and all hybrid schemes: <a href="../../mapview/MapScheme.html">MapScheme.hybridDay</a>
 <a href="../../mapview/MapScheme.html">MapScheme.hybridNight</a>, <a href="../../mapview/MapScheme.html">MapScheme.liteHybridDay</a>
 <a href="../../mapview/MapScheme.html">MapScheme.liteHybridNight</a>, <a href="../../mapview/MapScheme.html">MapScheme.logisticsHybridDay</a> and
 <a href="../../mapview/MapScheme.html">MapScheme.logisticsHybridNight</a>.</p>
@@ -120,7 +124,7 @@ landmarks sink into or float above the terrain.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

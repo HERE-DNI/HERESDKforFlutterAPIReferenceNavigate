@@ -62,7 +62,11 @@
 
     <section class="multi-line-signature">
       
-      <span class="name ">RoutingInterface</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="-param-calculateRouteWithRoutingOptionsLambda"><span class="type-annotation"><a href="../../core.threading/TaskHandle-class.html">TaskHandle</a></span> <span class="parameter-name">calculateRouteWithRoutingOptionsLambda</span>(<ol class="parameter-list single-line"> <li><span class="parameter" id="param-"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../routing/Waypoint-class.html">Waypoint</a></span>&gt;</span></span>, </span></li>
+      <span class="name ">RoutingInterface</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="-param-importRouteFromRouteHandleWithRoutingOptionsLambda"><span class="type-annotation"><a href="../../core.threading/TaskHandle-class.html">TaskHandle</a></span> <span class="parameter-name">importRouteFromRouteHandleWithRoutingOptionsLambda</span>(<ol class="parameter-list single-line"> <li><span class="parameter" id="param-"><span class="type-annotation"><a href="../../routing/RouteHandle-class.html">RouteHandle</a></span>, </span></li>
+<li><span class="parameter" id="param-"><span class="type-annotation"><a href="../../routing/RoutingOptions-class.html">RoutingOptions</a></span>, </span></li>
+<li><span class="parameter" id="param-"><span class="type-annotation"><a href="../../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name"></span></span></li>
+</ol>), </span></li>
+<li><span class="parameter" id="-param-calculateRouteWithRoutingOptionsLambda"><span class="type-annotation"><a href="../../core.threading/TaskHandle-class.html">TaskHandle</a></span> <span class="parameter-name">calculateRouteWithRoutingOptionsLambda</span>(<ol class="parameter-list single-line"> <li><span class="parameter" id="param-"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../../routing/Waypoint-class.html">Waypoint</a></span>&gt;</span></span>, </span></li>
 <li><span class="parameter" id="param-"><span class="type-annotation"><a href="../../routing/RoutingOptions-class.html">RoutingOptions</a></span>, </span></li>
 <li><span class="parameter" id="param-"><span class="type-annotation"><a href="../../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name"></span></span></li>
 </ol>), </span></li>
@@ -86,10 +90,12 @@ routing engines.</p>
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">factory RoutingInterface(
+  TaskHandle Function(RouteHandle, RoutingOptions, CalculateRouteCallback) importRouteFromRouteHandleWithRoutingOptionsLambda,
   TaskHandle Function(List&lt;Waypoint&gt;, RoutingOptions, CalculateRouteCallback) calculateRouteWithRoutingOptionsLambda,
   TaskHandle Function(Route, Waypoint, int, int, CalculateRouteCallback) returnToRouteWithTraveledDistanceLambda,
 
 ) =&gt; RoutingInterface$Lambdas(
+  importRouteFromRouteHandleWithRoutingOptionsLambda,
   calculateRouteWithRoutingOptionsLambda,
   returnToRouteWithTraveledDistanceLambda,
 
@@ -127,7 +133,7 @@ routing engines.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

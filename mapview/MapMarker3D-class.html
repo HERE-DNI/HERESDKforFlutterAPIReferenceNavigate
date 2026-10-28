@@ -245,7 +245,7 @@ The default value is <code>null</code>.
 <dd>
   The opacity factor adjusting the opacity of a 3D marker.
 The factor is applied to the alpha channel of the resulting texture of the marker.
-Default value is 1.0 meaning marker is displayed with the default opacity of the texture image or the
+Default value of 1.0 leads to the marker being displayed with the default opacity of the texture image or the
 specified fill color specified
 in <a href="../mapview/MapMarker3DModel-class.html">MapMarker3DModel</a>.
 Returns an opacity factor which specifies the translucency of a 3D map marker.
@@ -331,10 +331,23 @@ is not contained in the range.
   </section>
     
   <section
-      class="summary offset-anchor inherited"
+      class="summary offset-anchor"
       id="instance-methods">
     <h2>Methods</h2>
     <dl class="callables">
+        <dt id="cancelAnimation" class="callable">
+  <span class="name"><a href="../mapview/MapMarker3D/cancelAnimation.html">cancelAnimation</a></span><span class="signature">(<wbr><span class="parameter" id="cancelAnimation-param-animation"><span class="type-annotation"><a href="../animation/MapMarkerAnimation-class.html">MapMarkerAnimation</a></span> <span class="parameter-name">animation</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Cancels single ongoing animation.
+  
+
+</dd>
+
         <dt id="noSuchMethod" class="callable inherited">
   <span class="name"><a href="../mapview/MapMarker3D/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
     <span class="returntype parameter">&#8594; dynamic</span>
@@ -345,6 +358,19 @@ is not contained in the range.
 <dd class="inherited">
   Invoked when a nonexistent method or property is accessed.
   <div class="features"><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="startAnimation" class="callable">
+  <span class="name"><a href="../mapview/MapMarker3D/startAnimation.html">startAnimation</a></span><span class="signature">(<wbr><span class="parameter" id="startAnimation-param-animation"><span class="type-annotation"><a href="../animation/MapMarkerAnimation-class.html">MapMarkerAnimation</a></span> <span class="parameter-name">animation</span>, </span><span class="parameter" id="startAnimation-param-animationListener"><span class="type-annotation"><a href="../animation/AnimationListener-class.html">AnimationListener</a>?</span> <span class="parameter-name">animationListener</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Starts animation of this 3D marker according to provided <a href="../animation/MapMarkerAnimation-class.html">MapMarkerAnimation</a>.
+  
 
 </dd>
 
@@ -418,7 +444,7 @@ is not contained in the range.
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

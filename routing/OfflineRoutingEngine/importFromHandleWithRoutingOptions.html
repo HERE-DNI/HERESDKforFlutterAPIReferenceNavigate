@@ -31,7 +31,7 @@
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../routing/routing-library.html">routing.dart</a></li>
     <li><a href="../../routing/OfflineRoutingEngine-class.html">OfflineRoutingEngine</a></li>
-    <li class="self-crumb">importFromHandleWithRoutingOptions abstract method</li>
+    <li class="self-crumb"><span class="deprecated">importFromHandleWithRoutingOptions</span> abstract method</li>
   </ol>
   <div class="self-name">importFromHandleWithRoutingOptions</div>
   <form class="search navbar-right" role="search">
@@ -62,9 +62,14 @@
 
     <section class="multi-line-signature">
       
+  <div>
+    <ol class="annotation-list">
+        <li>@Deprecated(&quot;Will be removed in v4.31.0 Use the `importRouteFromRouteHandleWithRoutingOptions` method instead.&quot;)</li>
+    </ol>
+  </div>
 
 <span class="returntype"><a href="../../core.threading/TaskHandle-class.html">TaskHandle</a></span>
-<span class="name ">importFromHandleWithRoutingOptions</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="importFromHandleWithRoutingOptions-param-routeHandle"><span class="type-annotation"><a href="../../routing/RouteHandle-class.html">RouteHandle</a></span> <span class="parameter-name">routeHandle</span>, </span></li>
+<span class="name deprecated">importFromHandleWithRoutingOptions</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="importFromHandleWithRoutingOptions-param-routeHandle"><span class="type-annotation"><a href="../../routing/RouteHandle-class.html">RouteHandle</a></span> <span class="parameter-name">routeHandle</span>, </span></li>
 <li><span class="parameter" id="importFromHandleWithRoutingOptions-param-options"><span class="type-annotation"><a href="../../routing/RoutingOptions-class.html">RoutingOptions</a></span> <span class="parameter-name">options</span>, </span></li>
 <li><span class="parameter" id="importFromHandleWithRoutingOptions-param-callback"><span class="type-annotation"><a href="../../routing/CalculateRouteCallback.html">CalculateRouteCallback</a></span> <span class="parameter-name">callback</span></span></li>
 </ol>)
@@ -76,7 +81,7 @@
 <section class="desc markdown">
   <p>Asynchronously recreates a route from the <a href="../../routing/RouteHandle-class.html">RouteHandle</a> provided, i.e.</p>
 <p>refreshes a previously
-calculated route, with the specified <a class="deprecated" href="../../routing/RefreshRouteOptions-class.html">RefreshRouteOptions</a>.</p>
+calculated route, with the specified <a href="../../routing/RouteHandle-class.html">RouteHandle</a>.</p>
 <p>A route handle can be invalid when the map data changes that is used by the HERE sdk to recreate the route. This happens regularly.
 Therefore, the route handle is not meant to be persisted for a longer time.</p>
 <ul>
@@ -98,7 +103,9 @@ It is always invoked on the main thread.</p>
     
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">TaskHandle importFromHandleWithRoutingOptions(RouteHandle routeHandle, RoutingOptions options, CalculateRouteCallback callback);</code></pre>
+  <pre class="language-dart"><code class="language-dart">@Deprecated(&quot;Will be removed in v4.31.0 Use the `importRouteFromRouteHandleWithRoutingOptions` method instead.&quot;)
+
+TaskHandle importFromHandleWithRoutingOptions(RouteHandle routeHandle, RoutingOptions options, CalculateRouteCallback callback);</code></pre>
 </section>
 
 
@@ -116,7 +123,7 @@ It is always invoked on the main thread.</p>
     <li><a href="../../index.html">here_sdk</a></li>
     <li><a href="../../routing/routing-library.html">routing</a></li>
     <li><a href="../../routing/OfflineRoutingEngine-class.html">OfflineRoutingEngine</a></li>
-    <li class="self-crumb">importFromHandleWithRoutingOptions abstract method</li>
+    <li class="self-crumb"><span class="deprecated">importFromHandleWithRoutingOptions</span> abstract method</li>
 </ol>
 
 
@@ -132,7 +139,7 @@ It is always invoked on the main thread.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

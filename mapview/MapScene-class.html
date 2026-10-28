@@ -244,6 +244,32 @@ Changes made to the map style using <a href="../mapview/Style/update.html">Style
 
 </dd>
 
+        <dt id="addMapMarker3dLayer" class="callable">
+  <span class="name"><a href="../mapview/MapScene/addMapMarker3dLayer.html">addMapMarker3dLayer</a></span><span class="signature">(<wbr><span class="parameter" id="addMapMarker3dLayer-param-name"><span class="type-annotation">String</span> <span class="parameter-name">name</span>, </span><span class="parameter" id="addMapMarker3dLayer-param-layerPriority"><span class="type-annotation"><a href="../mapview/MapLayerPriority-class.html">MapLayerPriority</a>?</span> <span class="parameter-name">layerPriority</span></span>)
+    <span class="returntype parameter">&#8594; bool</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Creates a named 3D marker layer with the specified render priority.
+  
+
+</dd>
+
+        <dt id="addMapMarker3dToLayer" class="callable">
+  <span class="name"><a href="../mapview/MapScene/addMapMarker3dToLayer.html">addMapMarker3dToLayer</a></span><span class="signature">(<wbr><span class="parameter" id="addMapMarker3dToLayer-param-marker"><span class="type-annotation"><a href="../mapview/MapMarker3D-class.html">MapMarker3D</a></span> <span class="parameter-name">marker</span>, </span><span class="parameter" id="addMapMarker3dToLayer-param-layerName"><span class="type-annotation">String</span> <span class="parameter-name">layerName</span></span>)
+    <span class="returntype parameter">&#8594; bool</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Adds a 3D map marker to the named layer.
+  
+
+</dd>
+
         <dt id="addMapMarkerCluster" class="callable">
   <span class="name"><a href="../mapview/MapScene/addMapMarkerCluster.html">addMapMarkerCluster</a></span><span class="signature">(<wbr><span class="parameter" id="addMapMarkerCluster-param-cluster"><span class="type-annotation"><a href="../mapview/MapMarkerCluster-class.html">MapMarkerCluster</a></span> <span class="parameter-name">cluster</span></span>)
     <span class="returntype parameter">&#8594; void</span>
@@ -279,6 +305,19 @@ Changes made to the map style using <a href="../mapview/Style/update.html">Style
 </dt>
 <dd>
   Adds multiple 3D map markers to this map scene.
+  
+
+</dd>
+
+        <dt id="addMapMarkers3dToLayer" class="callable">
+  <span class="name"><a href="../mapview/MapScene/addMapMarkers3dToLayer.html">addMapMarkers3dToLayer</a></span><span class="signature">(<wbr><span class="parameter" id="addMapMarkers3dToLayer-param-markers"><span class="type-annotation">List<span class="signature">&lt;<wbr><span class="type-parameter"><a href="../mapview/MapMarker3D-class.html">MapMarker3D</a></span>&gt;</span></span> <span class="parameter-name">markers</span>, </span><span class="parameter" id="addMapMarkers3dToLayer-param-layerName"><span class="type-annotation">String</span> <span class="parameter-name">layerName</span></span>)
+    <span class="returntype parameter">&#8594; bool</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Adds multiple 3D map markers to the named layer.
   
 
 </dd>
@@ -623,6 +662,20 @@ formats.
 
 </dd>
 
+        <dt id="removeMapMarker3dLayer" class="callable">
+  <span class="name"><a href="../mapview/MapScene/removeMapMarker3dLayer.html">removeMapMarker3dLayer</a></span><span class="signature">(<wbr><span class="parameter" id="removeMapMarker3dLayer-param-name"><span class="type-annotation">String</span> <span class="parameter-name">name</span></span>)
+    <span class="returntype parameter">&#8594; bool</span>
+  </span>
+  
+
+</dt>
+<dd>
+  Removes the 3D marker layer identified by a name from this map scene, including all 3D markers
+contained in it.
+  
+
+</dd>
+
         <dt id="removeMapMarkerCluster" class="callable">
   <span class="name"><a href="../mapview/MapScene/removeMapMarkerCluster.html">removeMapMarkerCluster</a></span><span class="signature">(<wbr><span class="parameter" id="removeMapMarkerCluster-param-cluster"><span class="type-annotation"><a href="../mapview/MapMarkerCluster-class.html">MapMarkerCluster</a></span> <span class="parameter-name">cluster</span></span>)
     <span class="returntype parameter">&#8594; void</span>
@@ -811,7 +864,7 @@ contained in it.
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

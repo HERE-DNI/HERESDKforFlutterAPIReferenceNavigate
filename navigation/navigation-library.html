@@ -73,6 +73,24 @@
       <h2>Classes</h2>
 
       <dl>
+          <dt id="AreaCameraBehavior">
+  <span class="name "><a href="../navigation/AreaCameraBehavior-class.html">AreaCameraBehavior</a></span> 
+
+</dt>
+<dd>
+  Use this class to show an overview of geo points.
+</dd>
+
+          <dt id="AutomotiveCameraBehavior">
+  <span class="name "><a href="../navigation/AutomotiveCameraBehavior-class.html">AutomotiveCameraBehavior</a></span> 
+
+</dt>
+<dd>
+  High-level camera controller for automotive navigation that delegates to either a
+<a href="../navigation/TrackingCameraBehavior-class.html">TrackingCameraBehavior</a> for following the vehicle or an <a href="../navigation/AreaCameraBehavior-class.html">AreaCameraBehavior</a> for showing
+geographic regions.
+</dd>
+
           <dt id="BorderCrossingWarning">
   <span class="name "><a href="../navigation/BorderCrossingWarning-class.html">BorderCrossingWarning</a></span> 
 
@@ -105,6 +123,15 @@ should be implemented in order to receive border crossing warnings for country a
 <dd>
   Abstract class used to change implement different
 camera behaviors.
+</dd>
+
+          <dt id="CameraHdTransition">
+  <span class="name "><a href="../navigation/CameraHdTransition-class.html">CameraHdTransition</a></span> 
+
+</dt>
+<dd>
+  Abstract class used to implement HD roads support
+for camera behaviors.
 </dd>
 
           <dt id="CurrentSituationLaneAssistanceView">
@@ -862,6 +889,113 @@ when a speed limit on a road is exceeded or driving speed is restored back to no
 should be implemented in order to receive information on the upcoming toll booth structure.
 </dd>
 
+          <dt id="TrackingCameraBehavior">
+  <span class="name "><a href="../navigation/TrackingCameraBehavior-class.html">TrackingCameraBehavior</a></span> 
+
+</dt>
+<dd>
+  Use this class to follow a moving target.
+</dd>
+
+          <dt id="TrackingCameraBehaviorDynamicSpeedOptions">
+  <span class="name "><a href="../navigation/TrackingCameraBehaviorDynamicSpeedOptions-class.html">TrackingCameraBehaviorDynamicSpeedOptions</a></span> 
+
+</dt>
+<dd>
+  Defines the animation speed of camera attributes, how quickly they move
+toward their target values.
+</dd>
+
+          <dt id="TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions">
+  <span class="name "><a href="../navigation/TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions-class.html">TrackingCameraBehaviorFunctionalRoadClassZoomPolicyOptions</a></span> 
+
+</dt>
+<dd>
+  Configuration for mapping functional road classes to zoom values.
+</dd>
+
+          <dt id="TrackingCameraBehaviorManeuverModeConfiguration">
+  <span class="name "><a href="../navigation/TrackingCameraBehaviorManeuverModeConfiguration-class.html">TrackingCameraBehaviorManeuverModeConfiguration</a></span> 
+
+</dt>
+<dd>
+  Configuration that defines how <a href="../navigation/TrackingCameraBehavior-class.html">TrackingCameraBehavior</a> reacts to nearby maneuvers.
+</dd>
+
+          <dt id="TrackingCameraBehaviorManeuverRule">
+  <span class="name "><a href="../navigation/TrackingCameraBehaviorManeuverRule-class.html">TrackingCameraBehaviorManeuverRule</a></span> 
+
+</dt>
+<dd>
+  Defines a single rule that determines how <a href="../navigation/TrackingCameraBehavior-class.html">TrackingCameraBehavior</a> reacts to nearby
+maneuvers when the current position matches this rule.
+</dd>
+
+          <dt id="TrackingCameraBehaviorManeuverRuleConfiguration">
+  <span class="name "><a href="../navigation/TrackingCameraBehaviorManeuverRuleConfiguration-class.html">TrackingCameraBehaviorManeuverRuleConfiguration</a></span> 
+
+</dt>
+<dd>
+  A matched rule configuration holding a target value and the distance thresholds
+that determine when the rule becomes active around a maneuver point.
+</dd>
+
+          <dt id="TrackingCameraBehaviorManeuverRuleOptions">
+  <span class="name "><a href="../navigation/TrackingCameraBehaviorManeuverRuleOptions-class.html">TrackingCameraBehaviorManeuverRuleOptions</a></span> 
+
+</dt>
+<dd>
+  Defines a set of configurations specific to a <a href="../navigation/TrackingCameraBehaviorManeuverRule-class.html">TrackingCameraBehaviorManeuverRule</a>.
+</dd>
+
+          <dt id="TrackingCameraBehaviorSpeedBasedTiltEntry">
+  <span class="name "><a href="../navigation/TrackingCameraBehaviorSpeedBasedTiltEntry-class.html">TrackingCameraBehaviorSpeedBasedTiltEntry</a></span> 
+
+</dt>
+<dd>
+  Definition of single speed-based tilt entry used in <a href="../navigation/TrackingCameraBehaviorSpeedBasedTiltPolicyOptions-class.html">TrackingCameraBehaviorSpeedBasedTiltPolicyOptions</a>.
+</dd>
+
+          <dt id="TrackingCameraBehaviorSpeedBasedTiltPolicyOptions">
+  <span class="name "><a href="../navigation/TrackingCameraBehaviorSpeedBasedTiltPolicyOptions-class.html">TrackingCameraBehaviorSpeedBasedTiltPolicyOptions</a></span> 
+
+</dt>
+<dd>
+  Configuration for the speed-based tilt policy.
+</dd>
+
+          <dt id="TrackingCameraBehaviorSpeedBasedZoomPolicyOptions">
+  <span class="name "><a href="../navigation/TrackingCameraBehaviorSpeedBasedZoomPolicyOptions-class.html">TrackingCameraBehaviorSpeedBasedZoomPolicyOptions</a></span> 
+
+</dt>
+<dd>
+  Configuration for computing zoom values from speed thresholds defined per road classification.
+</dd>
+
+          <dt id="TrackingCameraBehaviorSpeedThreshold">
+  <span class="name "><a href="../navigation/TrackingCameraBehaviorSpeedThreshold-class.html">TrackingCameraBehaviorSpeedThreshold</a></span> 
+
+</dt>
+<dd>
+  Defines a zoom value triggered when the vehicle reaches a specific speed.
+</dd>
+
+          <dt id="TrackingCameraBehaviorTiltPolicy">
+  <span class="name "><a href="../navigation/TrackingCameraBehaviorTiltPolicy-class.html">TrackingCameraBehaviorTiltPolicy</a></span> 
+
+</dt>
+<dd>
+  Defines tilt behavior in different policy settings.
+</dd>
+
+          <dt id="TrackingCameraBehaviorZoomPolicy">
+  <span class="name "><a href="../navigation/TrackingCameraBehaviorZoomPolicy-class.html">TrackingCameraBehaviorZoomPolicy</a></span> 
+
+</dt>
+<dd>
+  Defines zoom behavior in different policy settings.
+</dd>
+
           <dt id="TrafficMergeWarning">
   <span class="name "><a href="../navigation/TrafficMergeWarning-class.html">TrafficMergeWarning</a></span> 
 
@@ -894,6 +1028,15 @@ should be implemented in order to receive traffic merge warnings.
 <dd>
   This type contains colors used for the traffic with jam factor greater or equal to 4.0 on route
 ahead of the current location visualization.
+</dd>
+
+          <dt id="TransitionCameraBehavior">
+  <span class="name "><a href="../navigation/TransitionCameraBehavior-class.html">TransitionCameraBehavior</a></span> 
+
+</dt>
+<dd>
+  Provides a generic dynamic camera behavior that transitions between two pre-configured camera behaviors
+based on lane detection and data consistency.
 </dd>
 
           <dt id="TruckRestrictionsWarningListener">
@@ -977,12 +1120,37 @@ the route and the maneuver arrow visualization.
   The aspect ratio of the image.
 </dd>
 
+          <dt id="AutomotiveCameraBehaviorActiveCameraType">
+  <span class="name "><a href="../navigation/AutomotiveCameraBehaviorActiveCameraType.html">AutomotiveCameraBehaviorActiveCameraType</a></span> 
+
+</dt>
+<dd>
+  Identifies which child camera is currently active.
+</dd>
+
+          <dt id="AutomotiveCameraBehaviorOrientationMode">
+  <span class="name "><a href="../navigation/AutomotiveCameraBehaviorOrientationMode.html">AutomotiveCameraBehaviorOrientationMode</a></span> 
+
+</dt>
+<dd>
+  Visual presentation mode applied to the <a href="../navigation/TrackingCameraBehavior-class.html">TrackingCameraBehavior</a>.
+</dd>
+
           <dt id="BorderCrossingType">
   <span class="name "><a href="../navigation/BorderCrossingType.html">BorderCrossingType</a></span> 
 
 </dt>
 <dd>
   Type of a border crossing given in a <a href="../navigation/BorderCrossingWarning-class.html">BorderCrossingWarning</a>.
+</dd>
+
+          <dt id="CameraTransitionMode">
+  <span class="name "><a href="../navigation/CameraTransitionMode.html">CameraTransitionMode</a></span> 
+
+</dt>
+<dd>
+  Defines how the camera starts following the current position when a camera behavior becomes
+active.
 </dd>
 
           <dt id="DimensionRestrictionType">
@@ -1254,6 +1422,7 @@ via options specific for each warner.
       <li><a href="../gestures/gestures-library.html">gestures</a></li>
       <li><a href="../location/location-library.html">location</a></li>
       <li><a href="../mapdata/mapdata-library.html">mapdata</a></li>
+      <li><a href="../mapdata.ocm/mapdata.ocm-library.html">mapdata.ocm</a></li>
       <li><a href="../maploader/maploader-library.html">maploader</a></li>
       <li><a href="../maploader.remote.connection/maploader.remote.connection-library.html">maploader.remote.connection</a></li>
       <li><a href="../mapmatcher/mapmatcher-library.html">mapmatcher</a></li>
@@ -1288,7 +1457,7 @@ via options specific for each warner.
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

@@ -147,6 +147,23 @@ Gets the currently set camera tilt with axis parallel to the ground. The default
 
 </dd>
 
+        <dt id="cameraTransitionMode" class="property inherited">
+  <span class="name"><a href="../navigation/CameraBehavior/cameraTransitionMode.html">cameraTransitionMode</a></span>
+  <span class="signature">&#8596; <a href="../navigation/CameraTransitionMode.html">CameraTransitionMode</a></span>
+  
+
+</dt>
+<dd class="inherited">
+  Defines how the camera starts following the current position when this camera
+behavior becomes active.
+Use <a href="../navigation/CameraTransitionMode.html">CameraTransitionMode.instant</a> to skip the camera animation, for example
+when returning from a route overview to guidance.
+The default value is <a href="../navigation/CameraTransitionMode.html">CameraTransitionMode.animated</a>.
+Gets the currently set camera transition mode.
+  <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
+
+</dd>
+
         <dt id="hashCode" class="property inherited">
   <span class="name"><a href="../navigation/CameraBehavior/hashCode.html">hashCode</a></span>
   <span class="signature">&#8594; int</span>
@@ -184,6 +201,24 @@ Gets the currently set normalized principal point to be used during navigation.
 <dd class="inherited">
   A representation of the runtime type of the object.
   <div class="features"><span class="feature">no setter</span><span class="feature">inherited</span></div>
+
+</dd>
+
+        <dt id="viewRectangle" class="property inherited">
+  <span class="name"><a href="../navigation/CameraBehavior/viewRectangle.html">viewRectangle</a></span>
+  <span class="signature">&#8596; <a href="../core/Rectangle2D-class.html">Rectangle2D</a>?</span>
+  
+
+</dt>
+<dd class="inherited">
+  The view rectangle for camera updates.
+Defines a sub-space of the screen that the behavior should consider
+for camera updates. Using a view rectangle keeps the camera positioning consistent
+across different screen types and orientations without per-screen principal point
+adjustments.
+Defaults to <code>null</code>. If not set, it uses the viewport bounds of the underlying map view.
+Gets the current view rectangle, if it's set.
+  <div class="features"><span class="feature">getter/setter pair</span><span class="feature">inherited</span></div>
 
 </dd>
 
@@ -293,7 +328,7 @@ Gets the current camera's zoom configuration.
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

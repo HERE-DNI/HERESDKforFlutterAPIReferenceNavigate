@@ -73,22 +73,6 @@
       <h2>Classes</h2>
 
       <dl>
-          <dt id="BusSpecifications">
-  <span class="name deprecated"><a class="deprecated" href="../transport/BusSpecifications-class.html">BusSpecifications</a></span> 
-
-</dt>
-<dd>
-  Bus specifications contain vehicle related attributes.
-</dd>
-
-          <dt id="CarSpecifications">
-  <span class="name deprecated"><a class="deprecated" href="../transport/CarSpecifications-class.html">CarSpecifications</a></span> 
-
-</dt>
-<dd>
-  Car specifications contain vehicle related attributes.
-</dd>
-
           <dt id="GeneralVehicleSpeedLimits">
   <span class="name "><a href="../transport/GeneralVehicleSpeedLimits-class.html">GeneralVehicleSpeedLimits</a></span> 
 
@@ -177,6 +161,14 @@
   This class constructs a <a href="../transport/TransportSpecification-class.html">TransportSpecification</a> for a car.
 </dd>
 
+          <dt id="TransportSpecificationNetworkRestrictedTruckBuilder">
+  <span class="name "><a href="../transport/TransportSpecificationNetworkRestrictedTruckBuilder-class.html">TransportSpecificationNetworkRestrictedTruckBuilder</a></span> 
+
+</dt>
+<dd>
+  This class constructs a <a href="../transport/TransportSpecification-class.html">TransportSpecification</a> for a network restricted truck.
+</dd>
+
           <dt id="TransportSpecificationPedestrianBuilder">
   <span class="name "><a href="../transport/TransportSpecificationPedestrianBuilder-class.html">TransportSpecificationPedestrianBuilder</a></span> 
 
@@ -217,20 +209,13 @@
   This class constructs a <a href="../transport/TransportSpecification-class.html">TransportSpecification</a> for a truck.
 </dd>
 
-          <dt id="TruckSpecifications">
-  <span class="name deprecated"><a class="deprecated" href="../transport/TruckSpecifications-class.html">TruckSpecifications</a></span> 
+          <dt id="TruckNetwork">
+  <span class="name "><a href="../transport/TruckNetwork-class.html">TruckNetwork</a></span> 
 
 </dt>
 <dd>
-  Truck specifications contain vehicle related attributes.
-</dd>
-
-          <dt id="VehicleProfile">
-  <span class="name deprecated"><a class="deprecated" href="../transport/VehicleProfile-class.html">VehicleProfile</a></span> 
-
-</dt>
-<dd>
-  A vehicle profile describes the vehicle being used with the HSDK.
+  Specifies a list of truck network route types, scoped
+to a specific country and optionally to a specific state within that country.
 </dd>
 
           <dt id="VehicleRestriction">
@@ -263,6 +248,14 @@
 </dt>
 <dd>
   This class constructs a <a href="../transport/VehicleSpecification-class.html">VehicleSpecification</a> for a car.
+</dd>
+
+          <dt id="VehicleSpecificationNetworkRestrictedTruckBuilder">
+  <span class="name "><a href="../transport/VehicleSpecificationNetworkRestrictedTruckBuilder-class.html">VehicleSpecificationNetworkRestrictedTruckBuilder</a></span> 
+
+</dt>
+<dd>
+  This class constructs a <a href="../transport/VehicleSpecification-class.html">VehicleSpecification</a> for a truck.
 </dd>
 
           <dt id="VehicleSpecificationPrivateBusBuilder">
@@ -393,6 +386,14 @@ can be shipped by the truck.
   Define possible fuel types for trucks provided by a fuel station.
 </dd>
 
+          <dt id="TruckNetworkRouteType">
+  <span class="name "><a href="../transport/TruckNetworkRouteType.html">TruckNetworkRouteType</a></span> 
+
+</dt>
+<dd>
+  The type of Preferred Route.
+</dd>
+
           <dt id="TruckRoadType">
   <span class="name "><a href="../transport/TruckRoadType.html">TruckRoadType</a></span> 
 
@@ -401,28 +402,12 @@ can be shipped by the truck.
   Specifies Truck road type
 </dd>
 
-          <dt id="TruckType">
-  <span class="name deprecated"><a class="deprecated" href="../transport/TruckType.html">TruckType</a></span> 
-
-</dt>
-<dd>
-  Specifies the type of truck.
-</dd>
-
           <dt id="TunnelCategory">
   <span class="name "><a href="../transport/TunnelCategory.html">TunnelCategory</a></span> 
 
 </dt>
 <dd>
   Specifies the tunnel categories.
-</dd>
-
-          <dt id="VehicleType">
-  <span class="name deprecated"><a class="deprecated" href="../transport/VehicleType.html">VehicleType</a></span> 
-
-</dt>
-<dd>
-  Defines the type of the vehicle.
 </dd>
 
       </dl>
@@ -465,6 +450,7 @@ can be shipped by the truck.
       <li><a href="../gestures/gestures-library.html">gestures</a></li>
       <li><a href="../location/location-library.html">location</a></li>
       <li><a href="../mapdata/mapdata-library.html">mapdata</a></li>
+      <li><a href="../mapdata.ocm/mapdata.ocm-library.html">mapdata.ocm</a></li>
       <li><a href="../maploader/maploader-library.html">maploader</a></li>
       <li><a href="../maploader.remote.connection/maploader.remote.connection-library.html">maploader.remote.connection</a></li>
       <li><a href="../mapmatcher/mapmatcher-library.html">mapmatcher</a></li>
@@ -499,7 +485,7 @@ can be shipped by the truck.
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

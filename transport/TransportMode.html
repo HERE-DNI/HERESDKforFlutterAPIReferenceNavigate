@@ -164,9 +164,7 @@ representative if necessary.</p>
   <p>The taxi transport mode takes into account tax restricted streets as well as streets reserved for
 exclusive taxi access. Note that roads that are restricted or reserved for taxis are avoided, unless
 a waypoint is set on such a road - as this may indicate to pick-up or to drop-off a passenger.</p>
-<p><strong>Note:</strong> This is a beta release of this transport mode, so there could be a few bugs and unexpected
-behaviors. Related APIs may change for new releases or even become unsupported, without a
-deprecation process.</p>
+<p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</p>
   
 
 </dd>
@@ -195,6 +193,25 @@ This transport mode has the access to the bus-only lane/road.</p>
   <p>Route calculation for private buses.
 Denotes those vehicles operated by private transport company.
 This transport mode does not have the access to the bus-only lane/road.</p>
+  
+
+</dd>
+
+            <dt id="networkRestrictedTruck" class="constant">
+    <span class="name ">networkRestrictedTruck</span>
+  <span class="signature">&#8594; const <a href="../transport/TransportMode.html">TransportMode</a></span>
+  
+
+</dt>
+<dd>
+  <p>Route calculation for oversized trucks that are approved to use specific road networks only.</p>
+<p>This mode is conceptually distinct from <code>TRUCK</code>: it targets vehicle configurations that exceed
+the legal height/weight limits for general truck traffic, such as High Productivity Motor Vehicles
+(HPMV) in New Zealand or B-Double and Performance-Based Standards (PBS) networks in Australia.
+<code>TRUCK</code> is not suitable for these vehicles, as the restrictions governing
+their operation are typically not signposted. Use this mode instead to be guided
+only on roads approved for your specific network-restricted configuration.</p>
+<p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</p>
   
 
 </dd>
@@ -352,7 +369,7 @@ This transport mode does not have the access to the bus-only lane/road.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

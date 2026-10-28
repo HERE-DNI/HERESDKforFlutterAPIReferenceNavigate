@@ -232,6 +232,23 @@ representation of the country code can be obtained using <a href="../routing/Spa
 
 </dd>
 
+        <dt id="isOffPreferredTruckNetworks" class="property">
+  <span class="name"><a href="../routing/Span/isOffPreferredTruckNetworks.html">isOffPreferredTruckNetworks</a></span>
+  <span class="signature">&#8594; bool?</span>
+  
+
+</dt>
+<dd>
+  Indicates whether this span leaves the preferred (approved) truck network the route was
+requested for.
+Relevant only for routes calculated with <a href="../transport/TransportMode.html">TransportMode.networkRestrictedTruck</a>
+and <a href="../transport/VehicleSpecification/preferredTruckNetworks.html">VehicleSpecification.preferredTruckNetworks</a>. A value of <code>true</code> means the span has a road that is not part
+of any of the requested networks.
+Gets whether this span leaves the preferred (approved) truck network the route was requested for.
+  <div class="features"><span class="feature">no setter</span></div>
+
+</dd>
+
         <dt id="lengthInMeters" class="property">
   <span class="name"><a href="../routing/Span/lengthInMeters.html">lengthInMeters</a></span>
   <span class="signature">&#8594; int</span>
@@ -555,7 +572,7 @@ The list of walk attributes on the span.
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

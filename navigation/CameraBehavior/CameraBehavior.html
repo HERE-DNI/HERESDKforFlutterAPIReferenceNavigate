@@ -62,9 +62,15 @@
 
     <section class="multi-line-signature">
       
-      <span class="name ">CameraBehavior</span>(<wbr><ol class="parameter-list single-line"> <li><span class="parameter" id="-param-normalizedPrincipalPointGetLambda"><span class="type-annotation"><a href="../../core/Anchor2D-class.html">Anchor2D</a></span> <span class="parameter-name">normalizedPrincipalPointGetLambda</span>(), </span></li>
+      <span class="name ">CameraBehavior</span>(<wbr><ol class="parameter-list"> <li><span class="parameter" id="-param-normalizedPrincipalPointGetLambda"><span class="type-annotation"><a href="../../core/Anchor2D-class.html">Anchor2D</a></span> <span class="parameter-name">normalizedPrincipalPointGetLambda</span>(), </span></li>
 <li><span class="parameter" id="-param-normalizedPrincipalPointSetLambda"><span class="type-annotation">void</span> <span class="parameter-name">normalizedPrincipalPointSetLambda</span>(<ol class="parameter-list single-line"> <li><span class="parameter" id="param-"><span class="type-annotation"><a href="../../core/Anchor2D-class.html">Anchor2D</a></span></span></li>
-</ol>)</span></li>
+</ol>), </span></li>
+<li><span class="parameter" id="-param-viewRectangleGetLambda"><span class="type-annotation"><a href="../../core/Rectangle2D-class.html">Rectangle2D</a>?</span> <span class="parameter-name">viewRectangleGetLambda</span>(), </span></li>
+<li><span class="parameter" id="-param-viewRectangleSetLambda"><span class="type-annotation">void</span> <span class="parameter-name">viewRectangleSetLambda</span>(<ol class="parameter-list single-line"> <li><span class="parameter" id="param-"><span class="type-annotation"><a href="../../core/Rectangle2D-class.html">Rectangle2D</a>?</span></span></li>
+</ol>), </span></li>
+<li><span class="parameter" id="-param-cameraTransitionModeGetLambda"><span class="type-annotation"><a href="../../navigation/CameraTransitionMode.html">CameraTransitionMode</a></span> <span class="parameter-name">cameraTransitionModeGetLambda</span>(), </span></li>
+<li><span class="parameter" id="-param-cameraTransitionModeSetLambda"><span class="type-annotation">void</span> <span class="parameter-name">cameraTransitionModeSetLambda</span>(<ol class="parameter-list single-line"> <li><span class="parameter" id="param-"><span class="type-annotation"><a href="../../navigation/CameraTransitionMode.html">CameraTransitionMode</a></span></span></li>
+</ol>), </span></li>
 </ol>)
     </section>
 
@@ -80,10 +86,18 @@ camera behaviors.</p>
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">factory CameraBehavior(
   Anchor2D Function() normalizedPrincipalPointGetLambda,
-  void Function(Anchor2D) normalizedPrincipalPointSetLambda
+  void Function(Anchor2D) normalizedPrincipalPointSetLambda,
+  Rectangle2D? Function() viewRectangleGetLambda,
+  void Function(Rectangle2D?) viewRectangleSetLambda,
+  CameraTransitionMode Function() cameraTransitionModeGetLambda,
+  void Function(CameraTransitionMode) cameraTransitionModeSetLambda
 ) =&gt; CameraBehavior$Lambdas(
   normalizedPrincipalPointGetLambda,
-  normalizedPrincipalPointSetLambda
+  normalizedPrincipalPointSetLambda,
+  viewRectangleGetLambda,
+  viewRectangleSetLambda,
+  cameraTransitionModeGetLambda,
+  cameraTransitionModeSetLambda
 );</code></pre>
 </section>
 
@@ -118,7 +132,7 @@ camera behaviors.</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

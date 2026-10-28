@@ -117,7 +117,8 @@ bool operator ==(Object other) {
   RouteProgress _other = other;
   return DeepCollectionEquality().equals(sectionProgress, _other.sectionProgress) &amp;&amp;
       DeepCollectionEquality().equals(maneuverProgress, _other.maneuverProgress) &amp;&amp;
-      routeMatchedLocation == _other.routeMatchedLocation;
+      routeMatchedLocation == _other.routeMatchedLocation &amp;&amp;
+      routeTag == _other.routeTag;
 }</code></pre>
 </section>
 
@@ -152,7 +153,7 @@ bool operator ==(Object other) {
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

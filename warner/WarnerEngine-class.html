@@ -308,7 +308,8 @@ warnings from their corresponding registries by invoking the appropriate<code>Wa
 
 </dt>
 <dd class="inherited">
-  Called whenever the electronic horizon subsystem produces:
+  If multiple listeners are registered, callbacks are delivered sequentially, but their
+order is not defined.
   <div class="features"><span class="feature">inherited</span></div>
 
 </dd>
@@ -461,7 +462,7 @@ warnings from their corresponding registries by invoking the appropriate<code>Wa
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

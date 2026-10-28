@@ -601,6 +601,31 @@ Feature enables following OCM layer groups:</p>
 
 </dd>
 
+            <dt id="hdLanes" class="constant">
+    <span class="name ">hdLanes</span>
+  <span class="signature">&#8594; const <a href="../core.engine/LayerConfigurationFeature.html">LayerConfigurationFeature</a></span>
+  
+
+</dt>
+<dd>
+  <p>Map data which provides capability to render and perform Guidance over HD Lanes.
+This includes the HD road surface and lane-marking rendering as well as the physical
+lane geometry and topology required by the HD lane matcher (lane-matched location and
+HD camera transition) and by the RouteCarpet rendering. Enabling it keeps these
+features available during offline navigation.
+Feature enables following OCM layer groups:</p>
+<ul>
+<li>"physical_lane_rendering"</li>
+<li>"physical_lane_geometry"</li>
+<li>"physical_lane_boundary_geometry"</li>
+<li>"physical_lane_boundary_attribute"</li>
+<li>"physical_lane_topology_attribute"</li>
+</ul>
+<p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</p>
+  
+
+</dd>
+
         </dl>
       </section>
 
@@ -754,7 +779,7 @@ Feature enables following OCM layer groups:</p>
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

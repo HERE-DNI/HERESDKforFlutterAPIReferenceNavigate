@@ -136,7 +136,7 @@ Outside the threshold only segments which aren't one of highway/bridge/tunnel/sl
 The resulting <code>Route</code> may contain this waypoint as a <code>RoutePlace</code> with a non-null <code>ChargingStation</code> member
 when the provided specifications indicate that a stop is required to charge the EV battery.
 <strong>Note:</strong>
-If <code>EVCarOptions.ensure_reachability</code> is not set as <code>true</code> and <code>ChargingStop.min_duration</code> is not provided,
+If <code>ElectricVehicleOptions.ensure_reachability</code> is not set as <code>true</code> and <code>ChargingStop.min_duration</code> is not provided,
 route calculation may suggest a better charging stop instead of this stop.</li>
 <li><code>currentWeightChangeInKilograms</code> Changes the value of <code>vehicle[currentWeight]</code> by this value.
 Enables the support of scenarios where the vehicle takes additional cargo or unloads its cargo along the route.
@@ -150,8 +150,7 @@ Relative value in kilograms. Available range: from -40000 to 40000 (inclusive).
 <li>This feature is supported in transport modes of <a href="../../transport/TransportMode.html">TransportMode.car</a>, <a href="../../transport/TransportMode.html">TransportMode.taxi</a>, or
 <a href="../../transport/TransportMode.html">TransportMode.truck</a>.</li>
 </ul>
-<p><strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected behaviors.
-Related APIs may change for new releases without a deprecation process.</p>
+<p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</p>
 <ul>
 <li><code>radiusInMeters</code> The radius for potential candidates of a road to be used as a waypoint
 for the route calculation. This could be used either because it is not important which place is used,
@@ -204,7 +203,7 @@ greater than zero.</li>
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   

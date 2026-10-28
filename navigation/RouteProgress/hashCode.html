@@ -116,6 +116,7 @@ int get hashCode {
   result = 31 * result + DeepCollectionEquality().hash(sectionProgress);
   result = 31 * result + DeepCollectionEquality().hash(maneuverProgress);
   result = 31 * result + routeMatchedLocation.hashCode;
+  result = 31 * result + routeTag.hashCode;
   return result;
 }</code></pre>
 </section>
@@ -153,7 +154,7 @@ int get hashCode {
 <footer>
   <span class="no-break">
     here_sdk
-      4.28.0
+      4.28.1
   </span>
 
   
